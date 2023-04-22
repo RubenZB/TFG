@@ -19,7 +19,7 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE " + TABLE_TRANSMISORES + " ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "idBeacon TEXT PRIMARY KEY AUTOINCREMENT,"
                 + "nombre TEXT,"
                 + "descripcion TEXT,"
                 + "ubicacion TEXT"
