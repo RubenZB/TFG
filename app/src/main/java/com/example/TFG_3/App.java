@@ -6,6 +6,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.example.TFG_3.DB.DbHelper;
+import com.example.TFG_3.DB.DbTransmisor;
 
 import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.BeaconParser;
@@ -33,14 +34,16 @@ public class App extends Application implements MonitorNotifier {
 
         beaconManager.startMonitoring(escanRegion);
 
-        DbHelper dbHelper = new DbHelper(this);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        DbTransmisor dbTransmisor = new DbTransmisor(this);
+        SQLiteDatabase db = dbTransmisor.getWritableDatabase();
         if (db != null) {
             Toast.makeText(this, "Base de datos creada", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this, "Error al crear la base de datos", Toast.LENGTH_SHORT).show();
         }
-
+        dbTransmisor.insertarTransmisor("0xc36a2cf3dd73", "Baño", "El beacon se encuentra en el baño", "Baño");
+        dbTransmisor.insertarTransmisor("0x369586a8a974","Habitación", "El beacon se encuentra en la habitación", "Habitación");
+        dbTransmisor.insertarTransmisor("0x640b6d242840", "Salón", "El beacon se encuentra en el salón", "Salón");
     }
 
     @Override
