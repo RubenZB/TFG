@@ -1,21 +1,19 @@
 package com.example.TFG_3;
 
-import org.altbeacon.beacon.Beacon;
-
-public class Trasmisor {
+public class Transmisor {
 
     private String idBeacon;
     private String nombre;
     private String descripcion;
     private String ubicacion;
 
-    public Trasmisor(String idBeacon, String nombre, String descripcion, String ubicacion) {
+    public Transmisor(String idBeacon, String nombre, String descripcion, String ubicacion) {
         this.idBeacon = idBeacon;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.ubicacion = ubicacion;
     }
-    public Trasmisor(String idBeacon, String nombre) {
+    public Transmisor(String idBeacon, String nombre) {
         this.idBeacon = idBeacon;
         this.nombre = nombre;
     }
@@ -54,7 +52,7 @@ public class Trasmisor {
 
     @Override
     public String toString() {
-        return "Trasmisor{" +
+        return "Transmisor{" +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", ubicacion='" + ubicacion + '\'' +
