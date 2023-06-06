@@ -39,14 +39,6 @@ public class App extends Application implements MonitorNotifier {
         beaconManager.getBeaconParsers().add(new BeaconParser().
                 setBeaconLayout(BeaconParser.EDDYSTONE_UID_LAYOUT));
 
-        ArrayList<Transmisor> listaTransmisores = dbTransmisor.mostrarTransmisores();
-        if(listaTransmisores != null) {
-            for (Transmisor t : listaTransmisores) {
-                Log.d(TAG, "Transmisor: " + t.getNombre());
-            }
-        }else{
-            Log.d(TAG, "No funciona");
-        }
         Log.d(TAG, "setting up background monitoring in app onCreate");
         beaconManager.addMonitorNotifier(this);
 

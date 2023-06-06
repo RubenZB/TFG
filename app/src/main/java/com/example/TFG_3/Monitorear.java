@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+
 import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.MonitorNotifier;
 import org.altbeacon.beacon.Region;
@@ -29,23 +31,17 @@ public class Monitorear extends Activity implements MonitorNotifier {
 		verifyBluetooth();
 		requestPermissions();
 		BeaconManager.getInstanceForApplication(this).addMonitorNotifier(this);
-		if (App.insideRegion) {
-			mostrarPorPantalla("Los beacons son visibles.");
-		}
-		else {
-			mostrarPorPantalla("Los beacons NO son visibles.");
-		}
+
 	}
 
 	@Override
-	public void didEnterRegion(Region region) { mostrarPorPantalla("didEnterRegion called"); }
+	public void didEnterRegion(Region region) { /*mostrarPorPantalla("didEnterRegion called");*/ }
 	@Override
-	public void didExitRegion(Region region) {
-		mostrarPorPantalla("didExitRegion called");
+	public void didExitRegion(Region region) {/*mostrarPorPantalla("didExitRegion called");*/
 	}
 	@Override
 	public void didDetermineStateForRegion(int state, Region region) {
-		mostrarPorPantalla("didDetermineStateForRegion called with state: " + (state == 1 ? "INSIDE ("+state+")" : "OUTSIDE ("+state+")"));
+		//mostrarPorPantalla("didDetermineStateForRegion called with state: " + (state == 1 ? "INSIDE ("+state+")" : "OUTSIDE ("+state+")"));
 	}
 
 	private void requestPermissions() {
@@ -131,20 +127,19 @@ public class Monitorear extends Activity implements MonitorNotifier {
 		}
 	}
 
-	public void onRangingClicked(View view) {
+	public void escanearClicked(View view) {
 		Intent myIntent = new Intent(this, Escaner.class);
 		this.startActivity(myIntent);
 	}
-	public void onEnableClicked(View view) {
-		Button button = findViewById(R.id.enableButton);
-		if (BeaconManager.getInstanceForApplication(this).getMonitoredRegions().size() > 0) {
-			BeaconManager.getInstanceForApplication(this).stopMonitoring(App.escanRegion);
-			button.setText("Monitorear");
-		}
-		else {
-			BeaconManager.getInstanceForApplication(this).startMonitoring(App.escanRegion);
-			button.setText("Detener monitoreo");
-		}
+
+	public void mapaClicked(View view) {
+		setContentView(R.layout.activity_mostrarmapa);
+		ImageView foto = findViewById(R.id.imageView);
+		foto.setImageResource(R.drawable.mapaaulario);
+	}
+
+	public void menuClicked(View view) {
+		setContentView(R.layout.activity_monitorear);
 	}
 
 	private void verifyBluetooth() {
@@ -171,13 +166,13 @@ public class Monitorear extends Activity implements MonitorNotifier {
 	}
 
 	private String cumulativeLog = "";
-	private void mostrarPorPantalla(String line) {
+	/*private void mostrarPorPantalla(String line) {
 		cumulativeLog += line+"\n";
     	runOnUiThread(() -> {
 			EditText editText = Monitorear.this
 					.findViewById(R.id.monitoringText);
 			   editText.setText(cumulativeLog);
 		});
-    }
+    }*/
 
 }

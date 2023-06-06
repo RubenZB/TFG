@@ -1,5 +1,8 @@
 <resources>
 
-    <string name="app_name">TFG_3</string>
+    <string name="app_name">insdnav</string>
+    <string name="primary_color">Primary color</string>
+    <string name="secondary_color">Secondary color</string>
+
 
 </resources>
