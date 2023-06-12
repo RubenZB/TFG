@@ -22,4 +22,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     //implementation project(':android-beacon-library:lib')
     implementation 'org.altbeacon:android-beacon-library:2+'
+    implementation 'org.jgrapht:jgrapht-core:1.5.2'
 }

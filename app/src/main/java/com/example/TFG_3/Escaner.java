@@ -4,13 +4,11 @@ package com.example.TFG_3;
 
 import android.app.Activity;
 
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
-import android.widget.Toast;
 
-import com.example.TFG_3.DB.DbTransmisor;
+import com.example.TFG_3.DB.DbHelper;
 
 import org.altbeacon.beacon.Beacon;
 import org.altbeacon.beacon.BeaconManager;
@@ -23,7 +21,7 @@ public class Escaner extends Activity {
 
     private Transmisor t;
 
-    private DbTransmisor dbTransmisor = App.dbTransmisor;
+    private DbHelper dbTransmisor = App.dbTransmisor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +46,11 @@ public class Escaner extends Activity {
             }
 
             t = dbTransmisor.getTransmisor(beaconcer.getId2().toString());
-            mostrarPorPantalla("Has entrado en la zona del " + t.getNombre());
+            if (t != null){
+            mostrarPorPantalla("Has entrado en la zona de " + t.getNombre());}
             mostrarPorPantalla("El beacon mas cercano es: " + beaconcer.getId2().toString() + " is about " + beaconcer.getDistance() + " meters away.");
             Log.d(TAG, "didRangeBeaconsInRegion called with beacon: " + beaconcer.toString());
+
         };
         beaconManager.addRangeNotifier(rangeNotifier);
         beaconManager.setForegroundScanPeriod(10000);
