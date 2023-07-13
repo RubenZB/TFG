@@ -7,8 +7,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
-
-import com.example.TFG_3.DB.DbHelper;
+import android.widget.ImageView;
 
 import org.altbeacon.beacon.Beacon;
 import org.altbeacon.beacon.BeaconManager;
@@ -23,6 +22,9 @@ public class Escaner extends Activity {
 
     private DbHelper dbTransmisor = App.dbTransmisor;
 
+    private ImageView img;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,7 @@ public class Escaner extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+        img = findViewById(R.id.imagen);
         t = null;
         RangeNotifier rangeNotifier = (beacons, region) -> {
             int d = 100;
@@ -46,14 +49,19 @@ public class Escaner extends Activity {
             }
 
             t = dbTransmisor.getTransmisor(beaconcer.getId2().toString());
-            if (t != null){
-            mostrarPorPantalla("Has entrado en la zona de " + t.getNombre());}
-            mostrarPorPantalla("El beacon mas cercano es: " + beaconcer.getId2().toString() + " is about " + beaconcer.getDistance() + " meters away.");
-            Log.d(TAG, "didRangeBeaconsInRegion called with beacon: " + beaconcer.toString());
+            if(t == null){
+                mostrarPorPantalla("No se ha encontrado el transmisor");
+                return;
+            }else {
+                mostrarPorPantalla("Has entrado en la zona de " + t.getNombre()+" con id:" + beaconcer.getId2().toString() + " is about " + beaconcer.getDistance() + " meters away.");
+                Log.d(TAG, "didRangeBeaconsInRegion called with beacon: " + beaconcer.toString());
+                Integer im = getResources().getIdentifier(t.getImagen(), "drawable", getPackageName());
+                img.setImageDrawable(getResources().getDrawable(im));
+            }
 
         };
         beaconManager.addRangeNotifier(rangeNotifier);
-        beaconManager.setForegroundScanPeriod(10000);
+        beaconManager.setForegroundScanPeriod(500);
         beaconManager.startRangingBeacons(App.escanRegion);
     }
 
@@ -67,6 +75,7 @@ public class Escaner extends Activity {
     private void mostrarPorPantalla(final String line) {
         runOnUiThread(() -> {
             EditText editText = Escaner.this.findViewById(R.id.rangingText);
+            editText.setText("");
             editText.append(line+"\n");
         });
     }

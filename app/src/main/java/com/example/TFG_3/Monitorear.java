@@ -2,6 +2,7 @@ package com.example.TFG_3;
 
 import android.Manifest;
 
+import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -10,9 +11,11 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 
 import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.MonitorNotifier;
@@ -136,6 +139,12 @@ public class Monitorear extends Activity implements MonitorNotifier {
 		setContentView(R.layout.activity_mostrarmapa);
 		ImageView foto = findViewById(R.id.imageView);
 		foto.setImageResource(R.drawable.mapaaulario);
+
+		Spinner p = (Spinner) findViewById(R.id.p);
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+				R.array.mapa, android.R.layout.simple_spinner_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		p.setAdapter(adapter);
 	}
 
 	public void menuClicked(View view) {

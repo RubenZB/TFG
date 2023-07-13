@@ -1,4 +1,4 @@
-package com.example.TFG_3.DB;
+package com.example.TFG_3;
 
 import static android.content.ContentValues.TAG;
 
@@ -10,8 +10,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
-
-import com.example.TFG_3.Transmisor;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,11 +23,12 @@ public class DbHelper extends SQLiteOpenHelper {
     public static final String COLUMNA_NOMBRE = "nombre";
     public static final String COLUMNA_DESCRIPCION = "descripcion";
     public static final String COLUMNA_UBICACION = "ubicacion";
+    public static final String COLUMNA_IMAGEN = "imagen";
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NOMBRE = "TFG_3.db";
     public static final String TABLE_TRANSMISORES = "t_trasmisores";
+    public static Context context;
 
-     private Context context;
 
     public DbHelper(@Nullable Context context) {
         super(context, DATABASE_NOMBRE, null, DATABASE_VERSION);
@@ -42,7 +41,8 @@ public class DbHelper extends SQLiteOpenHelper {
                 + COLUMNA_ID + " TEXT PRIMARY KEY, " +
                 COLUMNA_NOMBRE + " TEXT, " +
                 COLUMNA_DESCRIPCION + " TEXT, " +
-                COLUMNA_UBICACION + " TEXT)");
+                COLUMNA_UBICACION + " TEXT, " +
+                COLUMNA_IMAGEN + " TEXT)");
 
     }
 
@@ -51,7 +51,7 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE " + TABLE_TRANSMISORES);
         onCreate(db);
     }
-    public long insertarTransmisor(String idBeacon, String nombre, String descripcion, String ubicacion) {
+    public long insertarTransmisor(String idBeacon, String nombre, String descripcion, String ubicacion, String imagen) {
 
         long id = 0;
 
@@ -64,6 +64,7 @@ public class DbHelper extends SQLiteOpenHelper {
             values.put("nombre", nombre);
             values.put("descripcion", descripcion);
             values.put("ubicacion", ubicacion);
+            values.put("imagen", imagen);
             id = db.insert(TABLE_TRANSMISORES, null, values);
             db.close();
         } catch (Exception e) {
@@ -88,8 +89,9 @@ public class DbHelper extends SQLiteOpenHelper {
             String nombre = cursor.getString(1);
             String descripcion = cursor.getString(2);
             String ubicacion = cursor.getString(3);
+            String imagen = cursor.getString(4);
 
-            Transmisor transmisor = new Transmisor(idBeacon, nombre, descripcion, ubicacion);
+            Transmisor transmisor = new Transmisor(idBeacon, nombre, descripcion, ubicacion,imagen);
             transmisores.add(transmisor);
         }
 
@@ -114,7 +116,7 @@ public class DbHelper extends SQLiteOpenHelper {
         BufferedReader reader = null;
 
         try {
-            inputStream = context.getAssets().open("datos.csv");
+            inputStream = context.getAssets().open("transmisores.csv");
             reader = new BufferedReader(new InputStreamReader(inputStream));
 
             String linea;
@@ -125,8 +127,9 @@ public class DbHelper extends SQLiteOpenHelper {
                 String nombre = datos[1];
                 String descripcion = datos[2];
                 String ubicacion = datos[3];
+                String imagen = datos[4];
                 if(getTransmisor(idBeacon) == null){
-                    long n = insertarTransmisor(idBeacon, nombre, descripcion, ubicacion);
+                    long n = insertarTransmisor(idBeacon, nombre, descripcion, ubicacion, imagen);
                 }else{
                     Log.d("BASE_DATOS", "El transmisor ya existe");
                 }
@@ -160,11 +163,32 @@ public class DbHelper extends SQLiteOpenHelper {
                 String nombre = cursor.getString(1);
                 String descripcion = cursor.getString(2);
                 String ubicacion = cursor.getString(3);
+                String imagen = cursor.getString(4);
 
-                Log.d("BASE_DATOS", "idBeacon: " + idBeacon + ", nombre: " + nombre + ", descripcion: " + descripcion + ", ubicacion: " + ubicacion);
+                Log.d("BASE_DATOS", "idBeacon: " + idBeacon + ", nombre: " + nombre + ", descripcion: " + descripcion + ", ubicacion: " + ubicacion + ", imagen: " + imagen);
             } while (cursor.moveToNext());
         }
 
         cursor.close();
+    }
+    public Transmisor buscarTransmisorNombre(String nombre) {
+        SQLiteDatabase db = getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM t_trasmisores WHERE nombre LIKE '" +nombre+"'", null);
+
+        Transmisor transmisor = null;
+        if (cursor.moveToFirst()) {
+            String idBeacon = cursor.getString(0);
+            String nom = cursor.getString(1);
+            String descripcion = cursor.getString(2);
+            String ubicacion = cursor.getString(3);
+            String imagen = cursor.getString(4);
+
+            transmisor = new Transmisor(idBeacon, nom, descripcion, ubicacion, imagen);
+        }
+
+        cursor.close();
+        db.close();
+
+        return transmisor;
     }
 }

@@ -1,24 +1,18 @@
 package com.example.TFG_3;
 
 import android.app.Application;
-import android.content.res.AssetManager;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 import android.widget.Toast;
-
-import com.example.TFG_3.DB.DbHelper;
 
 import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.BeaconParser;
 import org.altbeacon.beacon.MonitorNotifier;
 import org.altbeacon.beacon.Region;
-import org.jgrapht.Graph;
-import org.jgrapht.graph.DefaultEdge;
-import org.jgrapht.graph.Multigraph;
 
 
 public class App extends Application implements MonitorNotifier {
-    private Graph<Transmisor, DefaultEdge> g = new Multigraph<>(DefaultEdge.class);
+
     private static final String TAG = "App";
     public static final Region escanRegion = new Region("escanRegion", null, null, null);
 
@@ -26,10 +20,13 @@ public class App extends Application implements MonitorNotifier {
 
     public static boolean insideRegion = false;
 
+    private Grafo grafo;
+
     public void onCreate() {
         super.onCreate();
         dbTransmisor = new DbHelper(getApplicationContext());
         SQLiteDatabase db = dbTransmisor.getWritableDatabase();
+        grafo = new Grafo();
         if (db != null) {
             Toast.makeText(this, "Base de datos creada", Toast.LENGTH_SHORT).show();
         }else{
@@ -37,6 +34,9 @@ public class App extends Application implements MonitorNotifier {
         }
         dbTransmisor.cargarDatosCSV(db);
         dbTransmisor.mostrarContenidoBaseDatos();
+        grafo.leerTransmisoresDesdeCSV(this,"nodos.csv");
+        grafo.cargarConexionesDesdeCSV(this,"grafos.csv");
+
 
         BeaconManager beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);
         beaconManager.getBeaconParsers().add(new BeaconParser().

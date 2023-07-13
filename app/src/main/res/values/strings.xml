@@ -4,5 +4,34 @@
     <string name="primary_color">Primary color</string>
     <string name="secondary_color">Secondary color</string>
 
+    <string-array name="mapa">
+        <item>Aulas</item>
+        <item>Baños</item>
+        <item>Cafeteria</item>
+        <item>Banco</item>
+        <item>Reprografia</item>
+        <item>Libreria</item>
+        <item>Capilla</item>
+        <item>Baños 1</item>
+        <item>Baños 2</item>
+        <item>Baños 3</item>
+        <item>Baños 4</item>
+        <item>Aula 001</item>
+        <item>Aula 002</item>
+        <item>Aula 003</item>
+        <item>Aula 004</item>
+        <item>Aula 005</item>
+        <item>Aula 006</item>
+        <item>Aula 007</item>
+        <item>Aula 008</item>
+        <item>Aula 009</item>
+        <item>Aula 010</item>
+        <item>Aula 011</item>
+        <item>Aula 012</item>
+        <item>Aula 013</item>
+        <item>Aula 014</item>
+    </string-array>
+
+
 
 </resources>

@@ -6,12 +6,16 @@ public class Transmisor {
     private String nombre;
     private String descripcion;
     private String ubicacion;
+    private String imagen;
 
-    public Transmisor(String idBeacon, String nombre, String descripcion, String ubicacion) {
+
+
+    public Transmisor(String idBeacon, String nombre, String descripcion, String ubicacion, String imagen) {
         this.idBeacon = idBeacon;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.ubicacion = ubicacion;
+        this.imagen = imagen;
     }
     public Transmisor(String idBeacon, String nombre) {
         this.idBeacon = idBeacon;
@@ -49,7 +53,9 @@ public class Transmisor {
     public void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
     }
+    public String getImagen() {return imagen;}
 
+    public void setImagen(String imagen) {this.imagen = imagen;}
     @Override
     public String toString() {
         return "Transmisor{" +
