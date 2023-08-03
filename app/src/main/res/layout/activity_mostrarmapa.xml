@@ -25,252 +25,314 @@
         android:text="Menú Principal" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="55dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="156dp"
+        android:id="@+id/baula1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="55dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="156dp"
+        android:id="@+id/baula2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="50dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="227dp"
-        android:layout_marginTop="156dp"
+        android:id="@+id/baula14"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="233dp"
+        android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="56dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="269dp"
-        android:layout_marginTop="156dp"
+        android:id="@+id/baula13"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="278dp"
+        android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="50dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="135dp"
-        android:layout_marginTop="533dp"
+        android:id="@+id/baula9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="57dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="533dp"
+        android:id="@+id/baula8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="99dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="227dp"
-        android:layout_marginTop="533dp"
+        android:id="@+id/bcafeteria"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="42dp"
-        android:layout_height="57dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="212dp"
+        android:id="@+id/baula3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="228dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="42dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="298dp"
+        android:id="@+id/baula5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="312dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button10"
-        android:layout_width="42dp"
-        android:layout_height="46dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="261dp"
+        android:id="@+id/baula4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="274dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button11"
-        android:layout_width="42dp"
-        android:layout_height="24dp"
-        android:layout_marginLeft="29dp"
+        android:id="@+id/bcapilla"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="386dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-    android:id="@+id/button12"
-    android:layout_width="42dp"
-    android:layout_height="60dp"
-    android:layout_marginLeft="29dp"
-    android:layout_marginTop="403dp"
-    android:layout_marginEnd="-180dp"
-    android:text="" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="42dp"
-        android:layout_height="63dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="456dp"
+        android:id="@+id/baula6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="420dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button14"
-        android:layout_width="42dp"
-        android:layout_height="57dp"
-        android:layout_marginLeft="339dp"
-        android:layout_marginTop="212dp"
+        android:id="@+id/baula7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="473dp"
         android:layout_marginEnd="-180dp"
-        android:text="" />
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="42dp"
-        android:layout_height="57dp"
-        android:layout_marginLeft="339dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button16"
-        android:layout_width="42dp"
-        android:layout_height="34dp"
-        android:layout_marginLeft="339dp"
-        android:layout_marginTop="414dp"
+        android:id="@+id/baula12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="342dp"
+        android:layout_marginTop="230dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
+        android:text="" />
+    <Button
+        android:id="@+id/baula11"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="342dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button17"
-        android:layout_width="42dp"
-        android:layout_height="41dp"
-        android:layout_marginLeft="339dp"
-        android:layout_marginTop="439dp"
+        android:id="@+id/bbanco"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="342dp"
+        android:layout_marginTop="419dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button18"
-        android:layout_width="42dp"
-        android:layout_height="34dp"
-        android:layout_marginLeft="339dp"
-        android:layout_marginTop="471dp"
+        android:id="@+id/baula10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="342dp"
+        android:layout_marginTop="447dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button19"
-        android:layout_width="32dp"
-        android:layout_height="33dp"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="496dp"
+        android:id="@+id/brepo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="342dp"
+        android:layout_marginTop="475dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/blibreria"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="342dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
+        android:text="" />
+
+    <Button
+        android:id="@+id/bbano3_2"
         android:layout_width="36dp"
         android:layout_height="15dp"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="523dp"
+        android:layout_marginLeft="341dp"
+        android:layout_marginTop="521dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/bbano2_1"
         android:layout_width="36dp"
         android:layout_height="15dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="523dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="521dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/bbano1_2"
         android:layout_width="36dp"
         android:layout_height="15dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="193dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/bbano4_1"
         android:layout_width="36dp"
         android:layout_height="15dp"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="193dp"
+        android:layout_marginLeft="341dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/bbano4_2"
         android:layout_width="15dp"
         android:layout_height="36dp"
-        android:layout_marginLeft="330dp"
-        android:layout_marginTop="151dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button25"
+        android:id="@+id/bbano1_1"
         android:layout_width="15dp"
         android:layout_height="36dp"
-        android:layout_marginLeft="66dp"
-        android:layout_marginTop="151dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button26"
+        android:id="@+id/bbano2_2"
         android:layout_width="15dp"
         android:layout_height="36dp"
-        android:layout_marginLeft="66dp"
-        android:layout_marginTop="543dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="541dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Button
-        android:id="@+id/button27"
+        android:id="@+id/bbano3_1"
         android:layout_width="15dp"
         android:layout_height="36dp"
-        android:layout_marginLeft="330dp"
-        android:layout_marginTop="543dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="541dp"
         android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:backgroundTint="#FF9800"
         android:text="" />
 
     <Spinner
         android:id="@+id/p"
         android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="75dp" />
+
+    <Button
+        android:id="@+id/bmostrar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="75dp"
+        android:text="Mostrar" />
 
 </RelativeLayout>

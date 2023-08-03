@@ -140,11 +140,163 @@ public class Monitorear extends Activity implements MonitorNotifier {
 		ImageView foto = findViewById(R.id.imageView);
 		foto.setImageResource(R.drawable.mapaaulario);
 
+	    Button mostrar = findViewById(R.id.bmostrar);
 		Spinner p = (Spinner) findViewById(R.id.p);
+
+		Button baula1 = findViewById(R.id.baula1);
+		Button baula2 = findViewById(R.id.baula2);
+		Button baula3 = findViewById(R.id.baula3);
+		Button baula4 = findViewById(R.id.baula4);
+		Button baula5 = findViewById(R.id.baula5);
+		Button baula6 = findViewById(R.id.baula6);
+		Button baula7 = findViewById(R.id.baula7);
+		Button baula8 = findViewById(R.id.baula8);
+		Button baula9 = findViewById(R.id.baula9);
+		Button baula10 = findViewById(R.id.baula10);
+		Button baula11 = findViewById(R.id.baula11);
+		Button baula12 = findViewById(R.id.baula12);
+		Button baula13 = findViewById(R.id.baula13);
+		Button baula14 = findViewById(R.id.baula14);
+		Button bbano1_1 = findViewById(R.id.bbano1_1);
+		Button bbano1_2 = findViewById(R.id.bbano1_2);
+		Button bbano2_1 = findViewById(R.id.bbano2_1);
+		Button bbano2_2 = findViewById(R.id.bbano2_2);
+		Button bbano3_1 = findViewById(R.id.bbano3_1);
+		Button bbano3_2 = findViewById(R.id.bbano3_2);
+		Button bbano4_1 = findViewById(R.id.bbano4_1);
+		Button bbano4_2 = findViewById(R.id.bbano4_2);
+		Button brepo = findViewById(R.id.brepo);
+		Button bcafeteria = findViewById(R.id.bcafeteria);
+		Button blibrerria = findViewById(R.id.blibreria);
+		Button bbanco = findViewById(R.id.bbanco);
+		Button bcapilla = findViewById(R.id.bcapilla);
+
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 				R.array.mapa, android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		p.setAdapter(adapter);
+
+		mostrar.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				ocultarBotones();
+				String opcion = p.getSelectedItem().toString();
+				if (opcion.equals("Aulas")) {
+					baula1.setVisibility(View.VISIBLE);
+					baula2.setVisibility(View.VISIBLE);
+					baula3.setVisibility(View.VISIBLE);
+					baula4.setVisibility(View.VISIBLE);
+					baula5.setVisibility(View.VISIBLE);
+					baula6.setVisibility(View.VISIBLE);
+					baula7.setVisibility(View.VISIBLE);
+					baula8.setVisibility(View.VISIBLE);
+					baula9.setVisibility(View.VISIBLE);
+					baula10.setVisibility(View.VISIBLE);
+					baula11.setVisibility(View.VISIBLE);
+					baula12.setVisibility(View.VISIBLE);
+					baula13.setVisibility(View.VISIBLE);
+					baula14.setVisibility(View.VISIBLE);
+
+				} else if (opcion.equals("Baños")) {
+					bbano1_1.setVisibility(View.VISIBLE);
+					bbano1_2.setVisibility(View.VISIBLE);
+					bbano2_1.setVisibility(View.VISIBLE);
+					bbano2_2.setVisibility(View.VISIBLE);
+					bbano3_1.setVisibility(View.VISIBLE);
+					bbano3_2.setVisibility(View.VISIBLE);
+					bbano4_1.setVisibility(View.VISIBLE);
+					bbano4_2.setVisibility(View.VISIBLE);
+
+				} else if (opcion.equals("Cafeteria")){
+					bcafeteria.setVisibility(View.VISIBLE);
+
+				} else if (opcion.equals("Libreria")){
+					blibrerria.setVisibility(View.VISIBLE);
+
+				} else if (opcion.equals("Banco")){
+					bbanco.setVisibility(View.VISIBLE);
+
+				} else if (opcion.equals("Capilla")){
+					bcapilla.setVisibility(View.VISIBLE);
+
+				} else if (opcion.equals("Reprografia")){
+					brepo.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Baños 1")){
+					bbano1_1.setVisibility(View.VISIBLE);
+					bbano1_2.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Baños 2")){
+					bbano2_1.setVisibility(View.VISIBLE);
+					bbano2_2.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Baños 3")){
+					bbano3_1.setVisibility(View.VISIBLE);
+					bbano3_2.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Baños 4")){
+					bbano4_1.setVisibility(View.VISIBLE);
+					bbano4_2.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 001")){
+					baula1.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 002")){
+					baula2.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 003")){
+					baula3.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 004")){
+					baula4.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 005")){
+					baula5.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 006")){
+					baula6.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 007")){
+					baula7.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 008")){
+					baula8.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 009")){
+					baula9.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 010")){
+					baula10.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 011")){
+					baula11.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 012")){
+					baula12.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 013")){
+					baula13.setVisibility(View.VISIBLE);
+				}else if (opcion.equals("Aula 014")){
+					baula14.setVisibility(View.VISIBLE);
+				}
+
+			}
+
+			public void ocultarBotones(){
+				baula1.setVisibility(View.INVISIBLE);
+				baula2.setVisibility(View.INVISIBLE);
+				baula3.setVisibility(View.INVISIBLE);
+				baula4.setVisibility(View.INVISIBLE);
+				baula5.setVisibility(View.INVISIBLE);
+				baula6.setVisibility(View.INVISIBLE);
+				baula7.setVisibility(View.INVISIBLE);
+				baula8.setVisibility(View.INVISIBLE);
+				baula9.setVisibility(View.INVISIBLE);
+				baula10.setVisibility(View.INVISIBLE);
+				baula11.setVisibility(View.INVISIBLE);
+				baula12.setVisibility(View.INVISIBLE);
+				baula13.setVisibility(View.INVISIBLE);
+				baula14.setVisibility(View.INVISIBLE);
+				bbano1_1.setVisibility(View.INVISIBLE);
+				bbano1_2.setVisibility(View.INVISIBLE);
+				bbano2_1.setVisibility(View.INVISIBLE);
+				bbano2_2.setVisibility(View.INVISIBLE);
+				bbano3_1.setVisibility(View.INVISIBLE);
+				bbano3_2.setVisibility(View.INVISIBLE);
+				bbano4_1.setVisibility(View.INVISIBLE);
+				bbano4_2.setVisibility(View.INVISIBLE);
+				brepo.setVisibility(View.INVISIBLE);
+				bcafeteria.setVisibility(View.INVISIBLE);
+				blibrerria.setVisibility(View.INVISIBLE);
+				bbanco.setVisibility(View.INVISIBLE);
+				bcapilla.setVisibility(View.INVISIBLE);
+			}
+		});
+
+
 	}
 
 	public void menuClicked(View view) {
