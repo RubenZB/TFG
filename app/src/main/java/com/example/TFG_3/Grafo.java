@@ -4,6 +4,7 @@ import android.util.Log;
 
 import org.jgrapht.Graph;
 import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.Multigraph;
 import org.jgrapht.graph.SimpleGraph;
 
 import java.io.BufferedReader;
@@ -21,7 +22,7 @@ public class Grafo {
 
     public Grafo() {
         // Crear un grafo no dirigido y multigrafo
-        grafo = new SimpleGraph<>(DefaultEdge.class);
+        grafo = new Multigraph<>(DefaultEdge.class);
 
     }
 
@@ -31,6 +32,7 @@ public class Grafo {
 
     public void conectarTransmisores(Transmisor transmisor1, Transmisor transmisor2) {
         grafo.addEdge(transmisor1, transmisor2);
+        grafo.addEdge(transmisor2, transmisor1);
     }
 
     public void leerTransmisoresDesdeCSV(Context context, String nombreArchivoCSV) {
@@ -77,7 +79,7 @@ public class Grafo {
         }
     }
 
-    private Transmisor buscarTransmisorPorNombre(String nombre) {
+    public Transmisor buscarTransmisorPorNombre(String nombre) {
         for (Transmisor transmisor : grafo.vertexSet()) {
             if (transmisor.getNombre().equals(nombre)) {
                 return transmisor;

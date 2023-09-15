@@ -1,339 +1,460 @@
 package com.example.TFG_3;
 
-import android.Manifest;
-
-import android.annotation.SuppressLint;
-import android.content.pm.PackageManager;
-import android.os.Build;
-import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
+
+import org.altbeacon.beacon.Beacon;
 import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.MonitorNotifier;
+import org.altbeacon.beacon.RangeNotifier;
 import org.altbeacon.beacon.Region;
 
 public class Monitorear extends Activity implements MonitorNotifier {
-	protected static final String TAG = "Monitorear";
-	private static final int PERMISSION_REQUEST_FINE_LOCATION = 1;
-	private static final int PERMISSION_REQUEST_BACKGROUND_LOCATION = 2;
+    protected static final String TAG = "Monitorear";
+    private BeaconManager beaconManager = BeaconManager.getInstanceForApplication(this);
+    private Transmisor t;
+    private DbHelper dbTransmisor = App.dbTransmisor;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		Log.d(TAG, "onCreate");
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_monitorear);
-		verifyBluetooth();
-		requestPermissions();
-		BeaconManager.getInstanceForApplication(this).addMonitorNotifier(this);
-
-	}
-
-	@Override
-	public void didEnterRegion(Region region) { /*mostrarPorPantalla("didEnterRegion called");*/ }
-	@Override
-	public void didExitRegion(Region region) {/*mostrarPorPantalla("didExitRegion called");*/
-	}
-	@Override
-	public void didDetermineStateForRegion(int state, Region region) {
-		//mostrarPorPantalla("didDetermineStateForRegion called with state: " + (state == 1 ? "INSIDE ("+state+")" : "OUTSIDE ("+state+")"));
-	}
-
-	private void requestPermissions() {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-			if (this.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-					== PackageManager.PERMISSION_GRANTED) {
-				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-					if (this.checkSelfPermission(Manifest.permission.ACCESS_BACKGROUND_LOCATION)
-							!= PackageManager.PERMISSION_GRANTED) {
-						if (!this.shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_BACKGROUND_LOCATION)) {
-							final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-							builder.setTitle("This app needs background location access");
-							builder.setMessage("Please grant location access so this app can detect beacons in the background.");
-							builder.setPositiveButton(android.R.string.ok, null);
-							builder.setOnDismissListener(dialog -> requestPermissions(new String[]{Manifest.permission.ACCESS_BACKGROUND_LOCATION},
-									PERMISSION_REQUEST_BACKGROUND_LOCATION));
-							builder.show();
-						}
-						else {
-							final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-							builder.setTitle("Funcionalidad limitada");
-							builder.setMessage("Es necesario que active los permisos de localización en segundo plano para el correcto uso de la aplicación. Vaya a Configuración -> Aplicaciones -> Permisos y permita el acceso a la ubicación a esta aplicación.");
-							builder.setPositiveButton(android.R.string.ok, null);
-							builder.setOnDismissListener(dialog -> {
-							});
-							builder.show();
-						}
-					}
-				}
-			} else {
-				if (!this.shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_FINE_LOCATION)) {
-					requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
-									Manifest.permission.ACCESS_BACKGROUND_LOCATION},
-							PERMISSION_REQUEST_FINE_LOCATION);
-				}
-				else {
-					final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-					builder.setTitle("Funcionalidad limitada");
-					builder.setMessage("Es necesario que active los permisos de localización para el correcto uso de la aplicación. Vaya a Configuración -> Aplicaciones -> Permisos y permita el acceso a la ubicación a esta aplicación.");
-					builder.setPositiveButton(android.R.string.ok, null);
-					builder.setOnDismissListener(dialog -> {
-					});
-					builder.show();
-				}
-
-			}
-		}
-	}
+    private ImageView foto;
+    private Spinner spinner;
+    private Button mostrar;
+    private Button baula1;
+    private Button baula2;
+    private Button baula3;
+    private Button baula4;
+    private Button baula5;
+    private Button baula6;
+    private Button baula7;
+    private Button baula8;
+    private Button baula9;
+    private Button baula10;
+    private Button baula11;
+    private Button baula12;
+    private Button baula13;
+    private Button baula14;
+    private Button bbano1;
+    private Button bbano2;
+    private Button bbano3;
+    private Button bbano4;
+    private Button brepo;
+    private Button bcafeteria;
+    private Button blibreria;
+    private Button bbanco;
+    private Button bcapilla;
+    private Button bentrada1;
+    private Button bentrada2;
+    private Button bentrada3;
+    private Button bentrada4;
 
 
-
-	@Override
-	public void onRequestPermissionsResult(int requestCode,
-										   String[] permissions, int[] grantResults) {
-		switch (requestCode) {
-			case PERMISSION_REQUEST_FINE_LOCATION: {
-				if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-					Log.d(TAG, "fine location permission granted");
-				} else {
-					final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-					builder.setTitle("Funcionalidad limitada");
-					builder.setMessage("Sin los permisos de localización, la aplacación no podrá detectar los beacons");
-					builder.setPositiveButton(android.R.string.ok, null);
-					builder.setOnDismissListener(dialog -> {
-					});
-					builder.show();
-				}
-				return;
-			}
-			case PERMISSION_REQUEST_BACKGROUND_LOCATION: {
-				if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-					Log.d(TAG, "background location permission granted");
-				} else {
-					final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-					builder.setTitle("Funcionalidad limitada");
-					builder.setMessage("Sin los permisos de localización, la aplacación no podrá detectar los beacons");
-					builder.setPositiveButton(android.R.string.ok, null);
-					builder.setOnDismissListener(dialog -> {
-					});
-					builder.show();
-				}
-			}
-		}
-	}
-
-	public void escanearClicked(View view) {
-		Intent myIntent = new Intent(this, Escaner.class);
-		this.startActivity(myIntent);
-	}
-
-	public void mapaClicked(View view) {
-		setContentView(R.layout.activity_mostrarmapa);
-		ImageView foto = findViewById(R.id.imageView);
-		foto.setImageResource(R.drawable.mapaaulario);
-
-	    Button mostrar = findViewById(R.id.bmostrar);
-		Spinner p = (Spinner) findViewById(R.id.p);
-
-		Button baula1 = findViewById(R.id.baula1);
-		Button baula2 = findViewById(R.id.baula2);
-		Button baula3 = findViewById(R.id.baula3);
-		Button baula4 = findViewById(R.id.baula4);
-		Button baula5 = findViewById(R.id.baula5);
-		Button baula6 = findViewById(R.id.baula6);
-		Button baula7 = findViewById(R.id.baula7);
-		Button baula8 = findViewById(R.id.baula8);
-		Button baula9 = findViewById(R.id.baula9);
-		Button baula10 = findViewById(R.id.baula10);
-		Button baula11 = findViewById(R.id.baula11);
-		Button baula12 = findViewById(R.id.baula12);
-		Button baula13 = findViewById(R.id.baula13);
-		Button baula14 = findViewById(R.id.baula14);
-		Button bbano1_1 = findViewById(R.id.bbano1_1);
-		Button bbano1_2 = findViewById(R.id.bbano1_2);
-		Button bbano2_1 = findViewById(R.id.bbano2_1);
-		Button bbano2_2 = findViewById(R.id.bbano2_2);
-		Button bbano3_1 = findViewById(R.id.bbano3_1);
-		Button bbano3_2 = findViewById(R.id.bbano3_2);
-		Button bbano4_1 = findViewById(R.id.bbano4_1);
-		Button bbano4_2 = findViewById(R.id.bbano4_2);
-		Button brepo = findViewById(R.id.brepo);
-		Button bcafeteria = findViewById(R.id.bcafeteria);
-		Button blibrerria = findViewById(R.id.blibreria);
-		Button bbanco = findViewById(R.id.bbanco);
-		Button bcapilla = findViewById(R.id.bcapilla);
-
-		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-				R.array.mapa, android.R.layout.simple_spinner_item);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		p.setAdapter(adapter);
-
-		mostrar.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				ocultarBotones();
-				String opcion = p.getSelectedItem().toString();
-				if (opcion.equals("Aulas")) {
-					baula1.setVisibility(View.VISIBLE);
-					baula2.setVisibility(View.VISIBLE);
-					baula3.setVisibility(View.VISIBLE);
-					baula4.setVisibility(View.VISIBLE);
-					baula5.setVisibility(View.VISIBLE);
-					baula6.setVisibility(View.VISIBLE);
-					baula7.setVisibility(View.VISIBLE);
-					baula8.setVisibility(View.VISIBLE);
-					baula9.setVisibility(View.VISIBLE);
-					baula10.setVisibility(View.VISIBLE);
-					baula11.setVisibility(View.VISIBLE);
-					baula12.setVisibility(View.VISIBLE);
-					baula13.setVisibility(View.VISIBLE);
-					baula14.setVisibility(View.VISIBLE);
-
-				} else if (opcion.equals("Baños")) {
-					bbano1_1.setVisibility(View.VISIBLE);
-					bbano1_2.setVisibility(View.VISIBLE);
-					bbano2_1.setVisibility(View.VISIBLE);
-					bbano2_2.setVisibility(View.VISIBLE);
-					bbano3_1.setVisibility(View.VISIBLE);
-					bbano3_2.setVisibility(View.VISIBLE);
-					bbano4_1.setVisibility(View.VISIBLE);
-					bbano4_2.setVisibility(View.VISIBLE);
-
-				} else if (opcion.equals("Cafeteria")){
-					bcafeteria.setVisibility(View.VISIBLE);
-
-				} else if (opcion.equals("Libreria")){
-					blibrerria.setVisibility(View.VISIBLE);
-
-				} else if (opcion.equals("Banco")){
-					bbanco.setVisibility(View.VISIBLE);
-
-				} else if (opcion.equals("Capilla")){
-					bcapilla.setVisibility(View.VISIBLE);
-
-				} else if (opcion.equals("Reprografia")){
-					brepo.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Baños 1")){
-					bbano1_1.setVisibility(View.VISIBLE);
-					bbano1_2.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Baños 2")){
-					bbano2_1.setVisibility(View.VISIBLE);
-					bbano2_2.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Baños 3")){
-					bbano3_1.setVisibility(View.VISIBLE);
-					bbano3_2.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Baños 4")){
-					bbano4_1.setVisibility(View.VISIBLE);
-					bbano4_2.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 001")){
-					baula1.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 002")){
-					baula2.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 003")){
-					baula3.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 004")){
-					baula4.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 005")){
-					baula5.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 006")){
-					baula6.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 007")){
-					baula7.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 008")){
-					baula8.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 009")){
-					baula9.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 010")){
-					baula10.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 011")){
-					baula11.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 012")){
-					baula12.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 013")){
-					baula13.setVisibility(View.VISIBLE);
-				}else if (opcion.equals("Aula 014")){
-					baula14.setVisibility(View.VISIBLE);
-				}
-
-			}
-
-			public void ocultarBotones(){
-				baula1.setVisibility(View.INVISIBLE);
-				baula2.setVisibility(View.INVISIBLE);
-				baula3.setVisibility(View.INVISIBLE);
-				baula4.setVisibility(View.INVISIBLE);
-				baula5.setVisibility(View.INVISIBLE);
-				baula6.setVisibility(View.INVISIBLE);
-				baula7.setVisibility(View.INVISIBLE);
-				baula8.setVisibility(View.INVISIBLE);
-				baula9.setVisibility(View.INVISIBLE);
-				baula10.setVisibility(View.INVISIBLE);
-				baula11.setVisibility(View.INVISIBLE);
-				baula12.setVisibility(View.INVISIBLE);
-				baula13.setVisibility(View.INVISIBLE);
-				baula14.setVisibility(View.INVISIBLE);
-				bbano1_1.setVisibility(View.INVISIBLE);
-				bbano1_2.setVisibility(View.INVISIBLE);
-				bbano2_1.setVisibility(View.INVISIBLE);
-				bbano2_2.setVisibility(View.INVISIBLE);
-				bbano3_1.setVisibility(View.INVISIBLE);
-				bbano3_2.setVisibility(View.INVISIBLE);
-				bbano4_1.setVisibility(View.INVISIBLE);
-				bbano4_2.setVisibility(View.INVISIBLE);
-				brepo.setVisibility(View.INVISIBLE);
-				bcafeteria.setVisibility(View.INVISIBLE);
-				blibrerria.setVisibility(View.INVISIBLE);
-				bbanco.setVisibility(View.INVISIBLE);
-				bcapilla.setVisibility(View.INVISIBLE);
-			}
-		});
+    protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate");
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_mostrarmapa);
+        BeaconManager.getInstanceForApplication(this).addMonitorNotifier(this);
+        foto = findViewById(R.id.imageView);
+        foto.setImageResource(R.drawable.mapaaulario);
+        spinner = findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.mapa, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
 
-	}
+        mostrar = findViewById(R.id.bmostrar);
+        baula1 = findViewById(R.id.baula1);
+        baula2 = findViewById(R.id.baula2);
+        baula3 = findViewById(R.id.baula3);
+        baula4 = findViewById(R.id.baula4);
+        baula5 = findViewById(R.id.baula5);
+        baula6 = findViewById(R.id.baula6);
+        baula7 = findViewById(R.id.baula7);
+        baula8 = findViewById(R.id.baula8);
+        baula9 = findViewById(R.id.baula9);
+        baula10 = findViewById(R.id.baula10);
+        baula11 = findViewById(R.id.baula11);
+        baula12 = findViewById(R.id.baula12);
+        baula13 = findViewById(R.id.baula13);
+        baula14 = findViewById(R.id.baula14);
+        bbano1 = findViewById(R.id.bbano1);
+        bbano2 = findViewById(R.id.bbano2);
+        bbano3 = findViewById(R.id.bbano3);
+        bbano4 = findViewById(R.id.bbano4);
+        brepo = findViewById(R.id.brepo);
+        bcafeteria = findViewById(R.id.bcafeteria);
+        blibreria = findViewById(R.id.blibreria);
+        bbanco = findViewById(R.id.bbanco);
+        bcapilla = findViewById(R.id.bcapilla);
+        bentrada1 = findViewById(R.id.bentrada1);
+        bentrada2 = findViewById(R.id.bentrada2);
+        bentrada3 = findViewById(R.id.bentrada3);
+        bentrada4 = findViewById(R.id.bentrada4);
 
-	public void menuClicked(View view) {
-		setContentView(R.layout.activity_monitorear);
-	}
 
-	private void verifyBluetooth() {
-		try {
-			if (!BeaconManager.getInstanceForApplication(this).checkAvailability()) {
-				final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-				builder.setTitle("Bluetooth not enabled");
-				builder.setMessage("Please enable bluetooth in settings and restart this application.");
-				builder.setPositiveButton(android.R.string.ok, null);
-				builder.setOnDismissListener(dialog -> finishAffinity());
-				builder.show();
-			}
-		}
-		catch (RuntimeException e) {
-			final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setTitle("Bluetooth LE not available");
-			builder.setMessage("Sorry, this device does not support Bluetooth LE.");
-			builder.setPositiveButton(android.R.string.ok, null);
-			builder.setOnDismissListener(dialog -> finishAffinity());
-			builder.show();
+    }
 
-		}
+    protected void onResume() {
+        super.onResume();
+        t = null;
+        RangeNotifier rangeNotifier = (beacons, region) -> {
+            int d = 100;
+            Beacon beaconcer = null;
+            for (Beacon beacon : beacons) {
+                if (beacon.getDistance() < d) {
+                    d = (int) beacon.getDistance();
+                    beaconcer = beacon;
+                }
+            }
+            if (beaconcer != null) {
+                colorBotones();
+                t = dbTransmisor.getTransmisor(beaconcer.getId2().toString());
+                String nt = t.getNombre();
+                Log.d(TAG,nt);
+                botonActual(nt);
+            }
 
-	}
 
-	private String cumulativeLog = "";
-	/*private void mostrarPorPantalla(String line) {
-		cumulativeLog += line+"\n";
-    	runOnUiThread(() -> {
-			EditText editText = Monitorear.this
-					.findViewById(R.id.monitoringText);
-			   editText.setText(cumulativeLog);
-		});
-    }*/
+        };
+        beaconManager.addRangeNotifier(rangeNotifier);
+        beaconManager.setForegroundScanPeriod(500);
+        beaconManager.startRangingBeacons(App.escanRegion);
+    }
 
+    public void mostrarMapa(View view){
+        ocultarBotones();
+        String opcion = spinner.getSelectedItem().toString();
+
+
+        switch (opcion) {
+            case "Aulas":
+                baula1.setVisibility(View.VISIBLE);
+                baula2.setVisibility(View.VISIBLE);
+                baula3.setVisibility(View.VISIBLE);
+                baula4.setVisibility(View.VISIBLE);
+                baula5.setVisibility(View.VISIBLE);
+                baula6.setVisibility(View.VISIBLE);
+                baula7.setVisibility(View.VISIBLE);
+                baula8.setVisibility(View.VISIBLE);
+                baula9.setVisibility(View.VISIBLE);
+                baula10.setVisibility(View.VISIBLE);
+                baula11.setVisibility(View.VISIBLE);
+                baula12.setVisibility(View.VISIBLE);
+                baula13.setVisibility(View.VISIBLE);
+                baula14.setVisibility(View.VISIBLE);
+
+                break;
+            case "Baños":
+                bbano1.setVisibility(View.VISIBLE);
+                bbano2.setVisibility(View.VISIBLE);
+                bbano3.setVisibility(View.VISIBLE);
+                bbano4.setVisibility(View.VISIBLE);
+
+                break;
+            case "Entradas":
+                bentrada1.setVisibility(View.VISIBLE);
+                bentrada2.setVisibility(View.VISIBLE);
+                bentrada3.setVisibility(View.VISIBLE);
+                bentrada4.setVisibility(View.VISIBLE);
+
+                break;
+            case "Cafeteria":
+                bcafeteria.setVisibility(View.VISIBLE);
+
+                break;
+            case "Libreria":
+                blibreria.setVisibility(View.VISIBLE);
+
+                break;
+            case "Banco":
+                bbanco.setVisibility(View.VISIBLE);
+
+                break;
+            case "Capilla":
+                bcapilla.setVisibility(View.VISIBLE);
+
+                break;
+            case "Reprografia":
+                brepo.setVisibility(View.VISIBLE);
+                break;
+            case "Baños 1":
+                bbano1.setVisibility(View.VISIBLE);
+                break;
+            case "Baños 2":
+                bbano2.setVisibility(View.VISIBLE);
+                break;
+            case "Baños 3":
+                bbano3.setVisibility(View.VISIBLE);
+                break;
+            case "Baños 4":
+                bbano4.setVisibility(View.VISIBLE);
+                break;
+            case "Entrada 1":
+                bentrada1.setVisibility(View.VISIBLE);
+                break;
+            case "Entrada 2":
+                bentrada2.setVisibility(View.VISIBLE);
+                break;
+            case "Entrada 3":
+                bentrada3.setVisibility(View.VISIBLE);
+                break;
+            case "Entrada 4":
+                bentrada4.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 001":
+                baula1.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 002":
+                baula2.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 003":
+                baula3.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 004":
+                baula4.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 005":
+                baula5.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 006":
+                baula6.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 007":
+                baula7.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 008":
+                baula8.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 009":
+                baula9.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 010":
+                baula10.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 011":
+                baula11.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 012":
+                baula12.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 013":
+                baula13.setVisibility(View.VISIBLE);
+                break;
+            case "Aula 014":
+                baula14.setVisibility(View.VISIBLE);
+                break;
+            case "Todo":
+                baula1.setVisibility(View.VISIBLE);
+                baula2.setVisibility(View.VISIBLE);
+                baula3.setVisibility(View.VISIBLE);
+                baula4.setVisibility(View.VISIBLE);
+                baula5.setVisibility(View.VISIBLE);
+                baula6.setVisibility(View.VISIBLE);
+                baula7.setVisibility(View.VISIBLE);
+                baula8.setVisibility(View.VISIBLE);
+                baula9.setVisibility(View.VISIBLE);
+                baula10.setVisibility(View.VISIBLE);
+                baula11.setVisibility(View.VISIBLE);
+                baula12.setVisibility(View.VISIBLE);
+                baula13.setVisibility(View.VISIBLE);
+                baula14.setVisibility(View.VISIBLE);
+                bbano1.setVisibility(View.VISIBLE);
+                bbano2.setVisibility(View.VISIBLE);
+                bbano3.setVisibility(View.VISIBLE);
+                bbano4.setVisibility(View.VISIBLE);
+                brepo.setVisibility(View.VISIBLE);
+                bcafeteria.setVisibility(View.VISIBLE);
+                blibreria.setVisibility(View.VISIBLE);
+                bbanco.setVisibility(View.VISIBLE);
+                bcapilla.setVisibility(View.VISIBLE);
+                bentrada1.setVisibility(View.VISIBLE);
+                bentrada2.setVisibility(View.VISIBLE);
+                bentrada3.setVisibility(View.VISIBLE);
+                bentrada4.setVisibility(View.VISIBLE);
+                break;
+        }
+    }
+    public void ocultarBotones(){
+        baula1.setVisibility(View.INVISIBLE);
+        baula2.setVisibility(View.INVISIBLE);
+        baula3.setVisibility(View.INVISIBLE);
+        baula4.setVisibility(View.INVISIBLE);
+        baula5.setVisibility(View.INVISIBLE);
+        baula6.setVisibility(View.INVISIBLE);
+        baula7.setVisibility(View.INVISIBLE);
+        baula8.setVisibility(View.INVISIBLE);
+        baula9.setVisibility(View.INVISIBLE);
+        baula10.setVisibility(View.INVISIBLE);
+        baula11.setVisibility(View.INVISIBLE);
+        baula12.setVisibility(View.INVISIBLE);
+        baula13.setVisibility(View.INVISIBLE);
+        baula14.setVisibility(View.INVISIBLE);
+        bbano1.setVisibility(View.INVISIBLE);
+        bbano2.setVisibility(View.INVISIBLE);
+        bbano3.setVisibility(View.INVISIBLE);
+        bbano4.setVisibility(View.INVISIBLE);
+        brepo.setVisibility(View.INVISIBLE);
+        bcafeteria.setVisibility(View.INVISIBLE);
+        blibreria.setVisibility(View.INVISIBLE);
+        bbanco.setVisibility(View.INVISIBLE);
+        bcapilla.setVisibility(View.INVISIBLE);
+        bentrada1.setVisibility(View.INVISIBLE);
+        bentrada2.setVisibility(View.INVISIBLE);
+        bentrada3.setVisibility(View.INVISIBLE);
+        bentrada4.setVisibility(View.INVISIBLE);
+    }
+
+    public void colorBotones(){
+        baula1.setBackgroundColor(Color.DKGRAY);
+        baula2.setBackgroundColor(Color.DKGRAY);
+        baula3.setBackgroundColor(Color.DKGRAY);
+        baula4.setBackgroundColor(Color.DKGRAY);
+        baula5.setBackgroundColor(Color.DKGRAY);
+        baula6.setBackgroundColor(Color.DKGRAY);
+        baula7.setBackgroundColor(Color.DKGRAY);
+        baula8.setBackgroundColor(Color.DKGRAY);
+        baula9.setBackgroundColor(Color.DKGRAY);
+        baula10.setBackgroundColor(Color.DKGRAY);
+        baula11.setBackgroundColor(Color.DKGRAY);
+        baula12.setBackgroundColor(Color.DKGRAY);
+        baula13.setBackgroundColor(Color.DKGRAY);
+        baula14.setBackgroundColor(Color.DKGRAY);
+        bbano1.setBackgroundColor(Color.DKGRAY);
+        bbano2.setBackgroundColor(Color.DKGRAY);
+        bbano3.setBackgroundColor(Color.DKGRAY);
+        bbano4.setBackgroundColor(Color.DKGRAY);
+
+        brepo.setBackgroundColor(Color.DKGRAY);
+        bcafeteria.setBackgroundColor(Color.DKGRAY);
+        blibreria.setBackgroundColor(Color.DKGRAY);
+        bbanco.setBackgroundColor(Color.DKGRAY);
+        bcapilla.setBackgroundColor(Color.DKGRAY);
+        bentrada1.setBackgroundColor(Color.DKGRAY);
+        bentrada2.setBackgroundColor(Color.DKGRAY);
+        bentrada3.setBackgroundColor(Color.DKGRAY);
+        bentrada4.setBackgroundColor(Color.DKGRAY);
+    }
+    public void botonActual(String opcion) {
+        switch (opcion) {
+            case "TCafeteria":
+                bcafeteria.setBackgroundColor(Color.GREEN);
+                break;
+            case "TLibreria":
+                blibreria.setBackgroundColor(Color.GREEN);
+                break;
+            case "TBanco":
+                bbanco.setBackgroundColor(Color.GREEN);
+                break;
+            case "TCapilla":
+                bcapilla.setBackgroundColor(Color.GREEN);
+                break;
+            case "TReprografia":
+                brepo.setBackgroundColor(Color.GREEN);
+                break;
+            case "TBaño1":
+                bbano1.setBackgroundColor(Color.GREEN);
+                break;
+            case "TBaño2":
+                bbano2.setBackgroundColor(Color.GREEN);
+
+                break;
+            case "TBaño3":
+                bbano3.setBackgroundColor(Color.GREEN);
+                break;
+            case "TBaño4":
+                bbano4.setBackgroundColor(Color.GREEN);
+                break;
+            case "TEntrada1":
+                bentrada1.setBackgroundColor(Color.GREEN);
+                break;
+            case "TEntrada2":
+                bentrada2.setBackgroundColor(Color.GREEN);
+                break;
+            case "TEntrada3":
+                bentrada3.setBackgroundColor(Color.GREEN);
+                break;
+            case "TEntrada4":
+                bentrada4.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula1":
+                baula1.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula2":
+                baula2.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula3":
+                baula3.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula4":
+                baula4.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula5":
+                baula5.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula6":
+                baula6.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula7":
+                baula7.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula8":
+                baula8.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula9":
+                baula9.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula10":
+                baula10.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula11":
+                baula11.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula12":
+                baula12.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula13":
+                baula13.setBackgroundColor(Color.GREEN);
+                break;
+            case "TAula14":
+                baula14.setBackgroundColor(Color.GREEN);
+                break;
+        }
+    }
+    public void mostrarBoton(View view){
+        Button button = (Button) view;
+
+        // Mostrar una ventana flotante temporal con el nombre del botón
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(" ");
+        builder.setMessage(button.getText());
+        builder.setCancelable(true);
+        builder.setPositiveButton("Info",null);
+        builder.setNegativeButton("Ir", null);
+        builder.show();
+    }
+    @Override
+    public void didEnterRegion(Region region) { /*mostrarPorPantalla("didEnterRegion called");*/ }
+    @Override
+    public void didExitRegion(Region region) {/*mostrarPorPantalla("didExitRegion called");*/
+    }
+    @Override
+    public void didDetermineStateForRegion(int state, Region region) {
+        //mostrarPorPantalla("didDetermineStateForRegion called with state: " + (state == 1 ? "INSIDE ("+state+")" : "OUTSIDE ("+state+")"));
+    }
+    public void menuClick(){
+        beaconManager.stopRangingBeacons(App.escanRegion);
+        beaconManager.removeAllRangeNotifiers();
+        Intent myIntent = new Intent(this, Menu.class);
+        this.startActivity(myIntent);
+    }
 }

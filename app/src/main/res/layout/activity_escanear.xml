@@ -17,7 +17,8 @@
         android:gravity="left|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck">
+        tools:ignore="SpeakableTextPresentCheck"
+        android:visibility="invisible">
 
     </EditText>
 
@@ -26,5 +27,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/mapaaulario" />
+
+    <Button
+        android:id="@+id/bmenu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:onClick="menuClick"
+        android:text="Menú Principal" />
 
 </RelativeLayout>

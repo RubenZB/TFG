@@ -4,6 +4,7 @@ package com.example.TFG_3;
 
 import android.app.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
@@ -55,14 +56,13 @@ public class Escaner extends Activity {
             }else {
                 mostrarPorPantalla("Has entrado en la zona de " + t.getNombre()+" con id:" + beaconcer.getId2().toString() + " is about " + beaconcer.getDistance() + " meters away.");
                 Log.d(TAG, "didRangeBeaconsInRegion called with beacon: " + beaconcer.toString());
-                Integer im = getResources().getIdentifier(t.getImagen(), "drawable", getPackageName());
-                img.setImageDrawable(getResources().getDrawable(im));
             }
 
         };
         beaconManager.addRangeNotifier(rangeNotifier);
         beaconManager.setForegroundScanPeriod(500);
         beaconManager.startRangingBeacons(App.escanRegion);
+
     }
 
     @Override
@@ -78,5 +78,12 @@ public class Escaner extends Activity {
             editText.setText("");
             editText.append(line+"\n");
         });
+    }
+
+    public void menuClick() {
+        beaconManager.stopRangingBeacons(App.escanRegion);
+        beaconManager.removeAllRangeNotifiers();
+        Intent myIntent = new Intent(this, Menu.class);
+        this.startActivity(myIntent);
     }
 }

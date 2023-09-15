@@ -5,8 +5,10 @@
     <string name="secondary_color">Secondary color</string>
 
     <string-array name="mapa">
+        <item>Todo</item>
         <item>Aulas</item>
         <item>Baños</item>
+        <item>Entradas</item>
         <item>Cafeteria</item>
         <item>Banco</item>
         <item>Reprografia</item>
@@ -16,6 +18,10 @@
         <item>Baños 2</item>
         <item>Baños 3</item>
         <item>Baños 4</item>
+        <item>Entrada 1</item>
+        <item>Entrada 2</item>
+        <item>Entrada 3</item>
+        <item>Entrada 4</item>
         <item>Aula 001</item>
         <item>Aula 002</item>
         <item>Aula 003</item>
@@ -31,7 +37,6 @@
         <item>Aula 013</item>
         <item>Aula 014</item>
     </string-array>
-
 
 
 </resources>

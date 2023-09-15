@@ -10,6 +10,9 @@ import org.altbeacon.beacon.BeaconParser;
 import org.altbeacon.beacon.MonitorNotifier;
 import org.altbeacon.beacon.Region;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class App extends Application implements MonitorNotifier {
 
@@ -35,8 +38,7 @@ public class App extends Application implements MonitorNotifier {
         dbTransmisor.cargarDatosCSV(db);
         dbTransmisor.mostrarContenidoBaseDatos();
         grafo.leerTransmisoresDesdeCSV(this,"nodos.csv");
-        grafo.cargarConexionesDesdeCSV(this,"grafos.csv");
-
+        grafo.cargarConexionesDesdeCSV(this,"grafo.csv");
 
         BeaconManager beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);
         beaconManager.getBeaconParsers().add(new BeaconParser().
@@ -50,6 +52,7 @@ public class App extends Application implements MonitorNotifier {
         }
 
         beaconManager.startMonitoring(escanRegion);
+
 
     }
 

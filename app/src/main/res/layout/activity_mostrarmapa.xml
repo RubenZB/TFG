@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Monitorear" >
 
     <ImageView
         android:id="@+id/imageView"
@@ -21,7 +22,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:gravity="center_vertical"
-        android:onClick="menuClicked"
+        android:onClick="menuClick"
         android:text="Menú Principal" />
 
     <Button
@@ -31,9 +32,9 @@
         android:layout_marginLeft="140dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:onClick="mostrarBoton"
+        android:text="Aula 1"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/baula2"
@@ -42,9 +43,9 @@
         android:layout_marginLeft="95dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 2" />
 
     <Button
         android:id="@+id/baula14"
@@ -53,9 +54,9 @@
         android:layout_marginLeft="233dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 14" />
 
     <Button
         android:id="@+id/baula13"
@@ -64,9 +65,9 @@
         android:layout_marginLeft="278dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 13" />
 
     <Button
         android:id="@+id/baula9"
@@ -75,9 +76,9 @@
         android:layout_marginLeft="141dp"
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 9" />
 
     <Button
         android:id="@+id/baula8"
@@ -86,9 +87,9 @@
         android:layout_marginLeft="95dp"
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 8" />
 
     <Button
         android:id="@+id/bcafeteria"
@@ -97,9 +98,9 @@
         android:layout_marginLeft="257dp"
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Cafeteria" />
 
     <Button
         android:id="@+id/baula3"
@@ -108,9 +109,9 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="228dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 3" />
 
     <Button
         android:id="@+id/baula5"
@@ -119,9 +120,9 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="312dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 5" />
 
     <Button
         android:id="@+id/baula4"
@@ -130,9 +131,9 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="274dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 4" />
 
     <Button
         android:id="@+id/bcapilla"
@@ -141,9 +142,9 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="386dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Capilla" />
 
     <Button
         android:id="@+id/baula6"
@@ -152,9 +153,9 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="420dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 6" />
 
     <Button
         android:id="@+id/baula7"
@@ -163,9 +164,9 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="473dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 7" />
 
     <Button
         android:id="@+id/baula12"
@@ -174,9 +175,9 @@
         android:layout_marginLeft="342dp"
         android:layout_marginTop="230dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 12" />
     <Button
         android:id="@+id/baula11"
         android:layout_width="20dp"
@@ -184,9 +185,9 @@
         android:layout_marginLeft="342dp"
         android:layout_marginTop="278dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 11" />
 
     <Button
         android:id="@+id/bbanco"
@@ -195,9 +196,9 @@
         android:layout_marginLeft="342dp"
         android:layout_marginTop="419dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Banco" />
 
     <Button
         android:id="@+id/baula10"
@@ -206,9 +207,9 @@
         android:layout_marginLeft="342dp"
         android:layout_marginTop="447dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Aula 10" />
 
     <Button
         android:id="@+id/brepo"
@@ -217,9 +218,9 @@
         android:layout_marginLeft="342dp"
         android:layout_marginTop="475dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Reprografia" />
 
     <Button
         android:id="@+id/blibreria"
@@ -228,100 +229,101 @@
         android:layout_marginLeft="342dp"
         android:layout_marginTop="500dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Libreria" />
 
     <Button
-        android:id="@+id/bbano3_2"
-        android:layout_width="36dp"
-        android:layout_height="15dp"
-        android:layout_marginLeft="341dp"
-        android:layout_marginTop="521dp"
+        android:id="@+id/bentrada1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="185dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Entrada 1" />
 
     <Button
-        android:id="@+id/bbano2_1"
-        android:layout_width="36dp"
-        android:layout_height="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="521dp"
+        android:id="@+id/bentrada2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="353dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Entrada 2" />
 
     <Button
-        android:id="@+id/bbano1_2"
-        android:layout_width="36dp"
-        android:layout_height="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="192dp"
+        android:id="@+id/bentrada3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="525dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Entrada 3" />
 
     <Button
-        android:id="@+id/bbano4_1"
-        android:layout_width="36dp"
-        android:layout_height="15dp"
-        android:layout_marginLeft="341dp"
-        android:layout_marginTop="192dp"
+        android:id="@+id/bentrada4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="353dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"    
+        android:onClick="mostrarBoton"
+        android:text="Entrada 4" />
 
     <Button
-        android:id="@+id/bbano4_2"
-        android:layout_width="15dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="150dp"
+        android:id="@+id/bbano1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Baño 1" />
 
     <Button
-        android:id="@+id/bbano1_1"
-        android:layout_width="15dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="57dp"
-        android:layout_marginTop="150dp"
+        android:id="@+id/bbano2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="519dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Baño 2" />
 
     <Button
-        android:id="@+id/bbano2_2"
-        android:layout_width="15dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="57dp"
-        android:layout_marginTop="541dp"
-        android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:id="@+id/bbano3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="317dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd ="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Baño 3" />
 
     <Button
-        android:id="@+id/bbano3_1"
-        android:layout_width="15dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="541dp"
+        android:id="@+id/bbano4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="317dp"
+        android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="invisible"
-        android:backgroundTint="#FF9800"
-        android:text="" />
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="Baño 4" />
+
 
     <Spinner
-        android:id="@+id/p"
+        android:id="@+id/spinner"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginLeft="45dp"
@@ -333,6 +335,7 @@
         android:layout_height="50dp"
         android:layout_marginLeft="260dp"
         android:layout_marginTop="75dp"
+        android:onClick="mostrarMapa"
         android:text="Mostrar" />
 
 </RelativeLayout>
