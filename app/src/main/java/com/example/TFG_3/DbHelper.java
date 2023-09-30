@@ -22,8 +22,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public static final String COLUMNA_ID = "idBeacon";
     public static final String COLUMNA_NOMBRE = "nombre";
     public static final String COLUMNA_DESCRIPCION = "descripcion";
-    public static final String COLUMNA_UBICACION = "ubicacion";
-    public static final String COLUMNA_IMAGEN = "imagen";
+    public static final String COLUMNA_INFORMACION = "info";
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NOMBRE = "TFG_3.db";
     public static final String TABLE_TRANSMISORES = "t_trasmisores";
@@ -41,8 +40,7 @@ public class DbHelper extends SQLiteOpenHelper {
                 + COLUMNA_ID + " TEXT PRIMARY KEY, " +
                 COLUMNA_NOMBRE + " TEXT, " +
                 COLUMNA_DESCRIPCION + " TEXT, " +
-                COLUMNA_UBICACION + " TEXT, " +
-                COLUMNA_IMAGEN + " TEXT)");
+                COLUMNA_INFORMACION + " TEXT)");
 
     }
 
@@ -51,7 +49,7 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE " + TABLE_TRANSMISORES);
         onCreate(db);
     }
-    public long insertarTransmisor(String idBeacon, String nombre, String descripcion, String ubicacion, String imagen) {
+    public long insertarTransmisor(String idBeacon, String nombre, String descripcion, String info) {
 
         long id = 0;
 
@@ -63,8 +61,7 @@ public class DbHelper extends SQLiteOpenHelper {
             values.put("idBeacon", idBeacon);
             values.put("nombre", nombre);
             values.put("descripcion", descripcion);
-            values.put("ubicacion", ubicacion);
-            values.put("imagen", imagen);
+            values.put("info", info);
             id = db.insert(TABLE_TRANSMISORES, null, values);
             db.close();
         } catch (Exception e) {
@@ -88,10 +85,9 @@ public class DbHelper extends SQLiteOpenHelper {
             String idBeacon = cursor.getString(0);
             String nombre = cursor.getString(1);
             String descripcion = cursor.getString(2);
-            String ubicacion = cursor.getString(3);
-            String imagen = cursor.getString(4);
+            String info = cursor.getString(3);
 
-            Transmisor transmisor = new Transmisor(idBeacon, nombre, descripcion, ubicacion,imagen);
+            Transmisor transmisor = new Transmisor(idBeacon, nombre, descripcion, info);
             transmisores.add(transmisor);
         }
 
@@ -126,10 +122,9 @@ public class DbHelper extends SQLiteOpenHelper {
                 String idBeacon = datos[0];
                 String nombre = datos[1];
                 String descripcion = datos[2];
-                String ubicacion = datos[3];
-                String imagen = datos[4];
+                String info = datos[3];
                 if(getTransmisor(idBeacon) == null){
-                    long n = insertarTransmisor(idBeacon, nombre, descripcion, ubicacion, imagen);
+                    long n = insertarTransmisor(idBeacon, nombre, descripcion, info);
                 }else{
                     Log.d("BASE_DATOS", "El transmisor ya existe");
                 }
@@ -162,10 +157,9 @@ public class DbHelper extends SQLiteOpenHelper {
                 String idBeacon = cursor.getString(0);
                 String nombre = cursor.getString(1);
                 String descripcion = cursor.getString(2);
-                String ubicacion = cursor.getString(3);
-                String imagen = cursor.getString(4);
+                String info = cursor.getString(3);
 
-                Log.d("BASE_DATOS", "idBeacon: " + idBeacon + ", nombre: " + nombre + ", descripcion: " + descripcion + ", ubicacion: " + ubicacion + ", imagen: " + imagen);
+                Log.d("BASE_DATOS", "idBeacon: " + idBeacon + ", nombre: " + nombre + ", descripcion: " + descripcion + ", informacion: " + info);
             } while (cursor.moveToNext());
         }
 
@@ -180,10 +174,9 @@ public class DbHelper extends SQLiteOpenHelper {
             String idBeacon = cursor.getString(0);
             String nom = cursor.getString(1);
             String descripcion = cursor.getString(2);
-            String ubicacion = cursor.getString(3);
-            String imagen = cursor.getString(4);
+            String info = cursor.getString(3);
 
-            transmisor = new Transmisor(idBeacon, nom, descripcion, ubicacion, imagen);
+            transmisor = new Transmisor(idBeacon, nom, descripcion, info);
         }
 
         cursor.close();

@@ -3,6 +3,8 @@ import android.content.Context;
 import android.util.Log;
 
 import org.jgrapht.Graph;
+import org.jgrapht.Graphs;
+import org.jgrapht.alg.shortestpath.DijkstraShortestPath;
 import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.Multigraph;
 import org.jgrapht.graph.SimpleGraph;
@@ -14,6 +16,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class Grafo {
     private Graph<Transmisor, DefaultEdge> grafo;
@@ -63,8 +66,6 @@ public class Grafo {
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split(",");
                 if (datos.length >= 2) {
-                    String nombreTransmisor1 = datos[0];
-                    String nombreTransmisor2 = datos[1];
                     Transmisor transmisor1 = buscarTransmisorPorNombre(datos[0]);
                     Transmisor transmisor2 = buscarTransmisorPorNombre(datos[1]);
                     if (transmisor1 != null && transmisor2 != null) {
@@ -88,30 +89,56 @@ public class Grafo {
         return null;
     }
 
-    public List<Transmisor> obtenerCamino(Transmisor nodoPartida, Transmisor nodoDestino) {
-        // Realizar un recorrido en profundidad (DFS) para obtener el camino
-        List<Transmisor> camino = new ArrayList<>();
-        DFSRecursivo(nodoPartida, nodoDestino, camino);
-        return camino;
-    }
+    public ArrayList<Transmisor> obtenerCaminoMasRapido(Transmisor origen, Transmisor destino) {
+        DijkstraShortestPath<Transmisor, DefaultEdge> dijkstra = new DijkstraShortestPath<>(grafo);
+        List<DefaultEdge> edgeList = dijkstra.getPath(origen, destino).getEdgeList();
 
-    private boolean DFSRecursivo(Transmisor nodoActual, Transmisor nodoDestino, List<Transmisor> camino) {
-        camino.add(nodoActual);
+        ArrayList<Transmisor> camino = new ArrayList<>();
+        camino.add(origen);
 
-        if (nodoActual.equals(nodoDestino)) {
-            return true;
-        }
-
-        for (DefaultEdge edge : grafo.edgesOf(nodoActual)) {
-            Transmisor vecino = grafo.getEdgeTarget(edge);
-            if (!vecino.equals(nodoActual)) {
-                if (DFSRecursivo(vecino, nodoDestino, camino)) {
-                    return true;
-                }
+        if (edgeList != null) {
+            for (DefaultEdge edge : edgeList) {
+                Log.d("Arco", edge.toString());
+                Transmisor siguienteTransmisor = Graphs.getOppositeVertex(grafo, edge, camino.get(camino.size() - 1));
+                Transmisor transmisorActual = camino.get(camino.size() - 1);
+                String ar = transmisorActual.getNombre() + siguienteTransmisor.getNombre();
+                camino.add(siguienteTransmisor);
             }
         }
 
-        camino.remove(nodoActual);
-        return false;
+        return camino;
+    }
+
+    public ArrayList<String> obtenerArcos(Transmisor origen, Transmisor destino) {
+        DijkstraShortestPath<Transmisor, DefaultEdge> dijkstra = new DijkstraShortestPath<>(grafo);
+        List<DefaultEdge> edgeList = dijkstra.getPath(origen, destino).getEdgeList();
+
+        ArrayList<Transmisor> camino = new ArrayList<>();
+        ArrayList<String> arcos = new ArrayList<>();
+        camino.add(origen);
+
+        if (edgeList != null) {
+            for (DefaultEdge edge : edgeList) {
+                Log.d("Arco", edge.toString());
+                Transmisor siguienteTransmisor = Graphs.getOppositeVertex(grafo, edge, camino.get(camino.size() - 1));
+                Transmisor transmisorActual = camino.get(camino.size() - 1);
+                String ar = transmisorActual.getNombre() + siguienteTransmisor.getNombre();
+                camino.add(siguienteTransmisor);
+                arcos.add(ar);
+            }
+        }
+
+        return arcos;
+    }
+
+    public void mostrarGrafo() {
+        Set<Transmisor> vertices = grafo.vertexSet();
+        for (Transmisor t : vertices) {
+            Log.d("Grafo", t.getNombre());
+        }
+        Set<DefaultEdge> arcos = grafo.edgeSet();
+        for (DefaultEdge e : arcos) {
+            Log.d("Grafo", e.toString());
+        }
     }
 }

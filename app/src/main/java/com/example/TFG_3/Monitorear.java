@@ -26,6 +26,9 @@ public class Monitorear extends Activity implements MonitorNotifier {
     private Transmisor t;
     private DbHelper dbTransmisor = App.dbTransmisor;
 
+    public static String nT1;
+    public static String nT2;
+
     private ImageView foto;
     private Spinner spinner;
     private Button mostrar;
@@ -71,7 +74,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-
         mostrar = findViewById(R.id.bmostrar);
         baula1 = findViewById(R.id.baula1);
         baula2 = findViewById(R.id.baula2);
@@ -101,11 +103,8 @@ public class Monitorear extends Activity implements MonitorNotifier {
         bentrada3 = findViewById(R.id.bentrada3);
         bentrada4 = findViewById(R.id.bentrada4);
 
+        colorBotones();
 
-    }
-
-    protected void onResume() {
-        super.onResume();
         t = null;
         RangeNotifier rangeNotifier = (beacons, region) -> {
             int d = 100;
@@ -114,22 +113,25 @@ public class Monitorear extends Activity implements MonitorNotifier {
                 if (beacon.getDistance() < d) {
                     d = (int) beacon.getDistance();
                     beaconcer = beacon;
+                    Log.d(TAG, "Beacon: " + beacon.getId2() + " - " + beacon.getDistance() + " metros.");
                 }
             }
             if (beaconcer != null) {
                 colorBotones();
                 t = dbTransmisor.getTransmisor(beaconcer.getId2().toString());
-                String nt = t.getNombre();
-                Log.d(TAG,nt);
-                botonActual(nt);
+                nT1 = t.getNombre();
+                Log.d(TAG,nT1);
+                botonActual(nT1);
             }
 
 
         };
         beaconManager.addRangeNotifier(rangeNotifier);
-        beaconManager.setForegroundScanPeriod(500);
+        beaconManager.setForegroundScanPeriod(1000);
         beaconManager.startRangingBeacons(App.escanRegion);
+
     }
+
 
     public void mostrarMapa(View view){
         ocultarBotones();
@@ -333,7 +335,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
         bbano2.setBackgroundColor(Color.DKGRAY);
         bbano3.setBackgroundColor(Color.DKGRAY);
         bbano4.setBackgroundColor(Color.DKGRAY);
-
         brepo.setBackgroundColor(Color.DKGRAY);
         bcafeteria.setBackgroundColor(Color.DKGRAY);
         blibreria.setBackgroundColor(Color.DKGRAY);
@@ -346,92 +347,91 @@ public class Monitorear extends Activity implements MonitorNotifier {
     }
     public void botonActual(String opcion) {
         switch (opcion) {
-            case "TCafeteria":
+            case "cafeteria":
                 bcafeteria.setBackgroundColor(Color.GREEN);
                 break;
-            case "TLibreria":
-                blibreria.setBackgroundColor(Color.GREEN);
-                break;
-            case "TBanco":
+
+            case "banco":
                 bbanco.setBackgroundColor(Color.GREEN);
                 break;
-            case "TCapilla":
+            case "capilla":
                 bcapilla.setBackgroundColor(Color.GREEN);
                 break;
-            case "TReprografia":
+            case "reprografia":
                 brepo.setBackgroundColor(Color.GREEN);
                 break;
-            case "TBaño1":
+            case "baños1":
                 bbano1.setBackgroundColor(Color.GREEN);
                 break;
-            case "TBaño2":
+            case "baños2":
                 bbano2.setBackgroundColor(Color.GREEN);
-
                 break;
-            case "TBaño3":
+            case "baños3":
                 bbano3.setBackgroundColor(Color.GREEN);
                 break;
-            case "TBaño4":
+            case "baños4":
                 bbano4.setBackgroundColor(Color.GREEN);
                 break;
-            case "TEntrada1":
+            case "entrada1":
                 bentrada1.setBackgroundColor(Color.GREEN);
                 break;
-            case "TEntrada2":
+            case "entrada2":
                 bentrada2.setBackgroundColor(Color.GREEN);
                 break;
-            case "TEntrada3":
+            case "entrada3":
                 bentrada3.setBackgroundColor(Color.GREEN);
                 break;
-            case "TEntrada4":
+            case "entrada4":
                 bentrada4.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula1":
+            case "aula1":
                 baula1.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula2":
+            case "aula2":
                 baula2.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula3":
+            case "aula3":
                 baula3.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula4":
+            case "aula4":
                 baula4.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula5":
+            case "aula5":
                 baula5.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula6":
+            case "aula6":
                 baula6.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula7":
+            case "aula7":
                 baula7.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula8":
+            case "aula8":
                 baula8.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula9":
+            case "aula9":
                 baula9.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula10":
+            case "aula10":
                 baula10.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula11":
+            case "aula11":
                 baula11.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula12":
+            case "aula12":
                 baula12.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula13":
+            case "aula13":
                 baula13.setBackgroundColor(Color.GREEN);
                 break;
-            case "TAula14":
+            case "aula14":
                 baula14.setBackgroundColor(Color.GREEN);
                 break;
         }
     }
     public void mostrarBoton(View view){
         Button button = (Button) view;
+        nT2 = button.getText().toString();
+        Log.d(TAG,nT2);
 
         // Mostrar una ventana flotante temporal con el nombre del botón
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -439,7 +439,16 @@ public class Monitorear extends Activity implements MonitorNotifier {
         builder.setMessage(button.getText());
         builder.setCancelable(true);
         builder.setPositiveButton("Info",null);
-        builder.setNegativeButton("Ir", null);
+        builder.setNegativeButton("Ir", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent myIntent = new Intent(Monitorear.this, Escaner.class);
+                beaconManager.stopRangingBeacons(App.escanRegion);
+                beaconManager.removeAllRangeNotifiers();
+                Monitorear.this.startActivity(myIntent);
+
+            }
+        });
         builder.show();
     }
     @Override

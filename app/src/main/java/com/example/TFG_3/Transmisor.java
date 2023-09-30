@@ -5,17 +5,16 @@ public class Transmisor {
     private String idBeacon;
     private String nombre;
     private String descripcion;
-    private String ubicacion;
-    private String imagen;
+    private String info;
 
 
 
-    public Transmisor(String idBeacon, String nombre, String descripcion, String ubicacion, String imagen) {
+    public Transmisor(String idBeacon, String nombre, String descripcion, String info ) {
         this.idBeacon = idBeacon;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.ubicacion = ubicacion;
-        this.imagen = imagen;
+        this.info = info;
+
     }
     public Transmisor(String idBeacon, String nombre) {
         this.idBeacon = idBeacon;
@@ -46,22 +45,16 @@ public class Transmisor {
         this.descripcion = descripcion;
     }
 
-    public String getUbicacion() {
-        return ubicacion;
+    public String getInfo() {
+        return info;
     }
 
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
-    }
-    public String getImagen() {return imagen;}
-
-    public void setImagen(String imagen) {this.imagen = imagen;}
     @Override
     public String toString() {
         return "Transmisor{" +
-                ", nombre='" + nombre + '\'' +
+                "nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
-                ", ubicacion='" + ubicacion + '\'' +
+                ", Informacion='" + info + '\'' +
                 '}';
     }
 }

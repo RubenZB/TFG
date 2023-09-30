@@ -1,9 +1,41 @@
-0xe630f4b1dea0,TCafeteria,Cafeteria,Cafeteria,cafeteria
-0x530801241127,TBaño3,Baños 3,Baños 3,banos3
-0xc36a2cf3dd73,TBanco,Banco Santander,Banco Santander,bancosantander
-0x369586a8a974,TAula10,Aula 10,Aula10,aula10
-0x640b6d242840,TAula11,Aula 11,Aula11,aula11
-0xfc0ed82db1f5,TBaño4,Baños 4,Baños 4,banos4
-0x15c210b9f1ea,TAula12,Aula 12,Aula12,aula12
-0xd4fcb04a6573,TAula13,Aula 13,Aula13,aula13
-0x3d4721ba9b35,TEntrada4,Entrada4 ,Entrada4,entrada4
+0xe630f4b1dea0,entrada2,Segunda entrada al edificio,Entre la capila y el aula 5
+0x530801241127,entrada3,Tercera entrada al edificio,Entre la cafeteria y el aula 9
+0xc36a2cf3dd73,baños3,Tercer baño del edificio,Entre el la cafeteria y la libreria
+0x369586a8a974,patio7,Entrada al patio proxima a la entrada 2,Entrada al patio proxima a la entrada 2
+0x640b6d242840,patio8,a,b
+0xfc0ed82db1f5,patio10,a,b
+0x15c210b9f1ea,patio12,a,b
+0xd4fcb04a6573,patio14,a,b
+0x3d4721ba9b35,patio15,a,b
+0x0,entrada1,a,b
+0x1,aula1,a,b
+0x2,aula2,a,b
+0x3,baños1,a,b
+0x4,aula3,a,b
+0x5,aula4,a,b
+0x6,aula5,a,b
+0x7,capilla,a,b
+0x8,aula6,a,b
+0x9,aula7,a,b
+0x10,baños2,a,b
+0x11,aula8,a,b
+0x12,aula9,a,b
+0x13,cafeteria,a,b
+0x14,reprografia,a,b
+0x15,aula10,a,b
+0x16,banco,a,b
+0x17,entrada4,a,b
+0x18,aula11,a,b
+0x19,aula12,a,b
+0x20,baños4,a,b
+0x21,aula13,a,b
+0x22,aula14,a,b
+0x23,patio1,a,b
+0x24,patio2,a,b
+0x25,patio3,a,b
+0x26,patio4,a,b
+0x27,patio5,a,b
+0x28,patio6,a,b
+0x29,patio9,a,b
+0x30,patio11,a,b
+0x31,patio13,a,b
