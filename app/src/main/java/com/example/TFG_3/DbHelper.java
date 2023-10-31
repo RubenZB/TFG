@@ -123,6 +123,7 @@ public class DbHelper extends SQLiteOpenHelper {
                 String nombre = datos[1];
                 String descripcion = datos[2];
                 String info = datos[3];
+
                 if(getTransmisor(idBeacon) == null){
                     long n = insertarTransmisor(idBeacon, nombre, descripcion, info);
                 }else{
@@ -158,6 +159,7 @@ public class DbHelper extends SQLiteOpenHelper {
                 String nombre = cursor.getString(1);
                 String descripcion = cursor.getString(2);
                 String info = cursor.getString(3);
+
 
                 Log.d("BASE_DATOS", "idBeacon: " + idBeacon + ", nombre: " + nombre + ", descripcion: " + descripcion + ", informacion: " + info);
             } while (cursor.moveToNext());

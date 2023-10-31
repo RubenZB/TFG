@@ -124,9 +124,18 @@ public class Menu extends Activity implements MonitorNotifier {
 		}
 	}
 
-	public void escanearClicked(View view) {
-		Intent myIntent = new Intent(this, Escaner.class);
-		this.startActivity(myIntent);
+	public void tutorialClicked(View view) {
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("¿Como funciona?");
+		builder.setMessage("La aplicación detecta los sensore que se encuentran en el entorno y muestra la información asociada a cada uno de ellos.\n"+
+				"Al pulsar el botón de iniciar, se mostrará un mapa con los distintos sitos de interes en el edificio.\n"+
+				"Podemos filtrar los sitios que se muestran en el mapa, para encontrar alguno en especifico.\n"+
+				"Al seleccionar un punto del mapa, se mostrará una ventana con dos opciones: Mostrar información y Mostrar ruta.\n"+
+				"Si pulsamos en Mostrar información, se mostrará la información asociada a este lugar como horarios,eventos...\n"+
+				"Si pulsamos en Mostrar ruta, mostrará la ruta desde nuestra posición actual hasta el punto seleccionado y se irá actualizando en tiempo real mientras avancemos.\n");
+		builder.setCancelable(true);
+		builder.setPositiveButton("Aceptar", null);
+		builder.show();
 	}
 
 	public void mapaClicked(View view) {

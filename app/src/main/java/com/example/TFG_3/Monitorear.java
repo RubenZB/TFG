@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -22,9 +23,9 @@ import org.altbeacon.beacon.Region;
 
 public class Monitorear extends Activity implements MonitorNotifier {
     protected static final String TAG = "Monitorear";
-    private BeaconManager beaconManager = BeaconManager.getInstanceForApplication(this);
+    private final BeaconManager beaconManager = BeaconManager.getInstanceForApplication(this);
     private Transmisor t;
-    private DbHelper dbTransmisor = App.dbTransmisor;
+    private final DbHelper dbTransmisor = App.dbTransmisor;
 
     public static String nT1;
     public static String nT2;
@@ -105,6 +106,11 @@ public class Monitorear extends Activity implements MonitorNotifier {
 
         colorBotones();
 
+
+    }
+
+    public void onResume(){
+        super.onResume();
         t = null;
         RangeNotifier rangeNotifier = (beacons, region) -> {
             int d = 100;
@@ -128,6 +134,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         };
         beaconManager.addRangeNotifier(rangeNotifier);
         beaconManager.setForegroundScanPeriod(1000);
+        beaconManager.setForegroundBetweenScanPeriod(500);
         beaconManager.startRangingBeacons(App.escanRegion);
 
     }
@@ -154,7 +161,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
                 baula12.setVisibility(View.VISIBLE);
                 baula13.setVisibility(View.VISIBLE);
                 baula14.setVisibility(View.VISIBLE);
-
                 break;
             case "Baños":
                 bbano1.setVisibility(View.VISIBLE);
@@ -431,14 +437,26 @@ public class Monitorear extends Activity implements MonitorNotifier {
     public void mostrarBoton(View view){
         Button button = (Button) view;
         nT2 = button.getText().toString();
+        Transmisor tAux = dbTransmisor.buscarTransmisorNombre(nT2);
+        String info = tAux.getInfo();
         Log.d(TAG,nT2);
 
         // Mostrar una ventana flotante temporal con el nombre del botón
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(" ");
-        builder.setMessage(button.getText());
+        builder.setMessage(tAux.getDescripcion());
         builder.setCancelable(true);
-        builder.setPositiveButton("Info",null);
+        builder.setPositiveButton("Info", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                AlertDialog.Builder builder2 = new AlertDialog.Builder(Monitorear.this);
+                builder2.setTitle("Información");
+                builder2.setMessage(Html.fromHtml(info));
+                builder2.setCancelable(true);
+                builder2.setPositiveButton("Aceptar",null);
+                builder2.show();
+            }
+        });
         builder.setNegativeButton("Ir", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -446,7 +464,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
                 beaconManager.stopRangingBeacons(App.escanRegion);
                 beaconManager.removeAllRangeNotifiers();
                 Monitorear.this.startActivity(myIntent);
-
             }
         });
         builder.show();

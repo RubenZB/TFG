@@ -10,19 +10,19 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignParentLeft="true"
-         android:layout_marginLeft="150dp"
-         android:layout_marginTop="400dp"
-         android:onClick="escanearClicked"
-         android:text="Escanear" />
+         android:layout_marginLeft="110dp"
+         android:layout_marginTop="500dp"
+         android:onClick="tutorialClicked"
+         android:text="¿Como funciona?" />
 
      <Button
          android:id="@+id/Boton2"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignParentLeft="true"
-         android:layout_marginLeft="130dp"
-         android:layout_marginTop="500dp"
+         android:layout_marginLeft="150dp"
+         android:layout_marginTop="400dp"
          android:onClick="mapaClicked"
-         android:text="Mostrar Mapa" />
+         android:text="Iniciar" />
 
  </RelativeLayout>

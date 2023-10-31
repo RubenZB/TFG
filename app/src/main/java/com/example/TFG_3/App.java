@@ -25,23 +25,27 @@ public class App extends Application implements MonitorNotifier {
 
     public static Grafo grafo;
 
+    public static Grafo grafo2;
+
     public void onCreate() {
         super.onCreate();
         dbTransmisor = new DbHelper(getApplicationContext());
         SQLiteDatabase db = dbTransmisor.getWritableDatabase();
         grafo = new Grafo();
+        grafo2 = new Grafo();
         if (db != null) {
             Toast.makeText(this, "Base de datos creada", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this, "Error al crear la base de datos", Toast.LENGTH_SHORT).show();
         }
-
+        //dbTransmisor.borrarBaseDeDatos();
         dbTransmisor.cargarDatosCSV(db);
         dbTransmisor.mostrarContenidoBaseDatos();
         grafo.leerTransmisoresDesdeCSV(this,"nodos.csv");
         grafo.cargarConexionesDesdeCSV(this,"grafo.csv");
-        //grafo.mostrarGrafo();
 
+        grafo2.leerTransmisoresDesdeCSV(this,"nodos2.csv");
+        grafo2.cargarConexionesDesdeCSV(this,"grafo2.csv");
 
 
         BeaconManager beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);

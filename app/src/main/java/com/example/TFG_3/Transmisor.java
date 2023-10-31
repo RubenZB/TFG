@@ -1,5 +1,7 @@
 package com.example.TFG_3;
 
+import java.util.Objects;
+
 public class Transmisor {
 
     private String idBeacon;
@@ -57,4 +59,13 @@ public class Transmisor {
                 ", Informacion='" + info + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Transmisor that = (Transmisor) o;
+        return Objects.equals(idBeacon, that.idBeacon) && Objects.equals(nombre, that.nombre) && Objects.equals(descripcion, that.descripcion) && Objects.equals(info, that.info);
+    }
+
 }

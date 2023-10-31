@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +19,6 @@
         android:minHeight="48dp"
         tools:ignore="SpeakableTextPresentCheck"
         android:visibility="invisible">
-
     </EditText>
 
     <ImageView
@@ -27,16 +27,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/mapaaulario" />
 
-    <Button
-        android:id="@+id/bmenu"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_vertical"
-        android:onClick="menuClick"
-        android:text="Menú Principal" />
-
     <ImageView
         android:id="@+id/a2b1"
         android:layout_width="80dp"
@@ -44,7 +34,7 @@
         android:layout_marginLeft="38dp"
         android:layout_marginTop="147dp"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a1a2"
@@ -52,7 +42,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="147dp"
         android:layout_marginLeft="80dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:src="@drawable/linea" />
 
     <ImageView
@@ -61,7 +51,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="147dp"
         android:layout_marginLeft="131dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:src="@drawable/linea" />
 
     <ImageView
@@ -70,7 +60,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="147dp"
         android:layout_marginLeft="183dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:src="@drawable/linea" />
 
     <ImageView
@@ -79,7 +69,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="147dp"
         android:layout_marginLeft="230dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:src="@drawable/linea" />
 
     <ImageView
@@ -88,7 +78,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="147dp"
         android:layout_marginLeft="277dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:src="@drawable/linea" />
 
     <ImageView
@@ -98,7 +88,7 @@
         android:layout_marginLeft="37dp"
         android:layout_marginTop="500dp"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a8a9"
@@ -107,7 +97,7 @@
         android:layout_marginLeft="85dp"
         android:layout_marginTop="500dp"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a9e3"
@@ -116,7 +106,7 @@
         android:layout_marginLeft="133dp"
         android:layout_marginTop="500dp"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/e3caf"
@@ -125,7 +115,7 @@
         android:layout_marginLeft="174dp"
         android:layout_marginTop="490dp"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
 
     <ImageView
@@ -135,7 +125,7 @@
         android:layout_marginLeft="248dp"
         android:layout_marginTop="485dp"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/e2p7"
@@ -145,7 +135,7 @@
         android:layout_marginTop="302dp"
         android:rotation="0"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p7p8"
@@ -155,7 +145,7 @@
         android:layout_marginTop="314dp"
         android:rotation="0"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p8p9"
@@ -165,7 +155,7 @@
         android:layout_marginTop="302dp"
         android:rotation="0"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p9e4"
@@ -175,7 +165,7 @@
         android:layout_marginTop="314dp"
         android:rotation="0"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/b1a3"
@@ -185,7 +175,7 @@
         android:layout_marginTop="169dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a3a4"
@@ -195,7 +185,7 @@
         android:layout_marginTop="212dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a4a5"
@@ -205,7 +195,7 @@
         android:layout_marginTop="256dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a5e2"
@@ -215,7 +205,7 @@
         android:layout_marginTop="298dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/e2cap"
@@ -225,7 +215,7 @@
         android:layout_marginTop="345dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/capa6"
@@ -235,7 +225,7 @@
         android:layout_marginTop="390dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a6a7"
@@ -245,7 +235,7 @@
         android:layout_marginTop="438dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a7b2"
@@ -255,7 +245,7 @@
         android:layout_marginTop="491dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/b4a12"
@@ -265,7 +255,7 @@
         android:layout_marginTop="169dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
     <ImageView
         android:id="@+id/a12a11"
         android:layout_width="80dp"
@@ -274,7 +264,7 @@
         android:layout_marginTop="217dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/a11e4_1"
@@ -284,7 +274,7 @@
         android:layout_marginTop="280dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
     <ImageView
         android:id="@+id/a11e4_2"
         android:layout_width="100dp"
@@ -293,7 +283,7 @@
         android:layout_marginTop="261dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
 
     <ImageView
@@ -304,7 +294,7 @@
         android:layout_marginTop="348dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
 
     <ImageView
@@ -315,7 +305,7 @@
         android:layout_marginTop="410dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
 
     <ImageView
@@ -326,7 +316,7 @@
         android:layout_marginTop="446dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/repb3"
@@ -336,7 +326,7 @@
         android:layout_marginTop="478dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/e1p2"
@@ -346,7 +336,7 @@
         android:layout_marginTop="168dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p2p6"
@@ -356,7 +346,7 @@
         android:layout_marginTop="226dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p6p8"
@@ -366,7 +356,7 @@
         android:layout_marginTop="283dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p8p10"
@@ -376,7 +366,7 @@
         android:layout_marginTop="347dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p10p14"
@@ -386,7 +376,7 @@
         android:layout_marginTop="408dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p14e3"
@@ -396,7 +386,7 @@
         android:layout_marginTop="475dp"
         android:rotation="90"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/b1p1"
@@ -406,7 +396,7 @@
         android:layout_marginTop="160dp"
         android:rotation="45"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p1p4"
@@ -416,7 +406,7 @@
         android:layout_marginTop="199dp"
         android:rotation="45"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
     <ImageView
         android:id="@+id/p4p6"
         android:layout_width="115dp"
@@ -425,7 +415,7 @@
         android:layout_marginTop="238dp"
         android:rotation="30"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/b4p3"
@@ -435,7 +425,7 @@
         android:layout_marginTop="160dp"
         android:rotation="-45"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p3p5"
@@ -445,7 +435,7 @@
         android:layout_marginTop="199dp"
         android:rotation="-45"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p5p6"
@@ -455,7 +445,7 @@
         android:layout_marginTop="238dp"
         android:rotation="-30"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/b2p13"
@@ -465,7 +455,7 @@
         android:layout_marginTop="470dp"
         android:rotation="135"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p13p11"
@@ -475,7 +465,7 @@
         android:layout_marginTop="432dp"
         android:rotation="135"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/b3p15"
@@ -485,7 +475,7 @@
         android:layout_marginTop="474dp"
         android:rotation="-135"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p15p12"
@@ -495,7 +485,7 @@
         android:layout_marginTop="427dp"
         android:rotation="-135"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p11p10"
@@ -505,7 +495,7 @@
         android:layout_marginTop="395dp"
         android:rotation="-30"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/p12p10"
@@ -515,7 +505,7 @@
         android:layout_marginTop="395dp"
         android:rotation="30"
         android:src="@drawable/linea"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
 
     <ImageView
@@ -525,7 +515,7 @@
         android:layout_marginTop="180dp"
         android:layout_marginLeft="189dp"
         android:src="@drawable/circle"
-        android:visibility="invisible"/>
+        android:visibility="visible"/>
 
     <ImageView
         android:id="@+id/paula1"
@@ -534,7 +524,7 @@
         android:layout_marginTop="180dp"
         android:layout_marginLeft="138dp"
         android:src="@drawable/circle"
-        android:visibility="invisible"/>
+        android:visibility="visible"/>
 
     <ImageView
         android:id="@+id/paula2"
@@ -543,7 +533,7 @@
         android:layout_marginTop="180dp"
         android:layout_marginLeft="90dp"
         android:src="@drawable/circle"
-        android:visibility="invisible"/>
+        android:visibility="visible"/>
 
     <ImageView
         android:id="@+id/pbaños1"
@@ -552,7 +542,7 @@
         android:layout_marginTop="180dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula3"
@@ -561,7 +551,7 @@
         android:layout_marginTop="222dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula4"
@@ -570,7 +560,7 @@
         android:layout_marginTop="267dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula5"
@@ -579,7 +569,7 @@
         android:layout_marginTop="309dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible"/>
+        android:visibility="visible"/>
 
     <ImageView
         android:id="@+id/pent2"
@@ -588,7 +578,7 @@
         android:layout_marginTop="357dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/pcap"
@@ -597,7 +587,7 @@
         android:layout_marginTop="400dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula6"
@@ -606,7 +596,7 @@
         android:layout_marginTop="447dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula7"
@@ -615,7 +605,7 @@
         android:layout_marginTop="497dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/pbaños2"
@@ -624,7 +614,7 @@
         android:layout_marginTop="532dp"
         android:layout_marginLeft="48dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula8"
@@ -633,7 +623,7 @@
         android:layout_marginTop="532dp"
         android:layout_marginLeft="90dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula9"
@@ -642,7 +632,7 @@
         android:layout_marginTop="532dp"
         android:layout_marginLeft="140dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/pent3"
@@ -651,7 +641,7 @@
         android:layout_marginLeft="189dp"
         android:layout_marginTop="532dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/pcafe"
@@ -660,7 +650,7 @@
         android:layout_marginTop="532dp"
         android:layout_marginLeft="260dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/pbaños3"
@@ -669,7 +659,7 @@
         android:layout_marginTop="532dp"
         android:layout_marginLeft="329dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/prepo"
@@ -678,7 +668,7 @@
         android:layout_marginTop="490dp"
         android:layout_marginLeft="329dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula10"
@@ -687,7 +677,7 @@
         android:layout_marginTop="455dp"
         android:layout_marginLeft="329dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/pbanco"
@@ -696,7 +686,7 @@
         android:layout_marginTop="420dp"
         android:layout_marginLeft="329dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/pent4"
@@ -705,7 +695,7 @@
         android:layout_marginTop="357dp"
         android:layout_marginLeft="329dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula11"
@@ -714,7 +704,7 @@
         android:layout_marginTop="275dp"
         android:layout_marginLeft="329dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
 
     <ImageView
@@ -724,7 +714,7 @@
         android:layout_marginTop="225dp"
         android:layout_marginLeft="329dp"
         android:src="@drawable/circle"
-        android:visibility="invisible"/>
+        android:visibility="visible"/>
 
     <ImageView
         android:id="@+id/pbaños4"
@@ -733,7 +723,7 @@
         android:layout_marginTop="180dp"
         android:layout_marginLeft="329dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula13"
@@ -742,7 +732,7 @@
         android:layout_marginTop="180dp"
         android:layout_marginLeft="285dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/paula14"
@@ -751,7 +741,7 @@
         android:layout_marginTop="180dp"
         android:layout_marginLeft="240dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
 
     <ImageView
@@ -761,7 +751,7 @@
         android:layout_marginTop="220dp"
         android:layout_marginLeft="88dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio2"
@@ -770,7 +760,7 @@
         android:layout_marginTop="240dp"
         android:layout_marginLeft="189dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio3"
@@ -779,7 +769,7 @@
         android:layout_marginTop="220dp"
         android:layout_marginLeft="288dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio4"
@@ -788,7 +778,7 @@
         android:layout_marginTop="263dp"
         android:layout_marginLeft="130dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio5"
@@ -797,7 +787,7 @@
         android:layout_marginTop="263dp"
         android:layout_marginLeft="246dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio6"
@@ -806,8 +796,8 @@
         android:layout_marginTop="297dp"
         android:layout_marginLeft="189dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
-    
+        android:visibility="visible" />
+
     <ImageView
         android:id="@+id/ppatio7"
         android:layout_width="15dp"
@@ -815,7 +805,7 @@
         android:layout_marginTop="357dp"
         android:layout_marginLeft="130dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio8"
@@ -824,7 +814,7 @@
         android:layout_marginTop="357dp"
         android:layout_marginLeft="189dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio9"
@@ -833,7 +823,7 @@
         android:layout_marginTop="357dp"
         android:layout_marginLeft="270dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio13"
@@ -842,7 +832,7 @@
         android:layout_marginTop="493dp"
         android:layout_marginLeft="88dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio14"
@@ -851,7 +841,7 @@
         android:layout_marginTop="482dp"
         android:layout_marginLeft="189dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio15"
@@ -860,7 +850,7 @@
         android:layout_marginTop="492dp"
         android:layout_marginLeft="288dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio11"
@@ -869,7 +859,7 @@
         android:layout_marginTop="452dp"
         android:layout_marginLeft="130dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio10"
@@ -878,7 +868,7 @@
         android:layout_marginTop="420dp"
         android:layout_marginLeft="189dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/ppatio12"
@@ -887,9 +877,41 @@
         android:layout_marginTop="450dp"
         android:layout_marginLeft="246dp"
         android:src="@drawable/circle"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="605dp"
+        android:src="@android:drawable/progress_horizontal"
+        android:tint="@color/Grey" />
 
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="605dp"
+        android:text="¿Quiere continuar con esta ruta?"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/otruta"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="645dp"
+        android:layout_marginLeft="250dp"
+        android:onClick="cambiarGrafo"
+        android:text="No" />
+
+    <Button
+        android:id="@+id/nav"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="645dp"
+        android:layout_marginLeft="100dp"
+        android:text="Si" />
 
 
 </RelativeLayout>
