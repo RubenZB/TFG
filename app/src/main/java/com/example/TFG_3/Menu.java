@@ -28,7 +28,6 @@ public class Menu extends Activity implements MonitorNotifier {
 		verifyBluetooth();
 		requestPermissions();
 		BeaconManager.getInstanceForApplication(this).addMonitorNotifier(this);
-
 	}
 
 	@Override

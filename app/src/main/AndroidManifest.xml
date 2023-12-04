@@ -14,14 +14,14 @@
         android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Insdnav"
+        android:label="Insdu"
         android:theme="@style/AppTheme">
 
 
         <activity
             android:name=".Menu"
             android:exported="true"
-            android:label="Insdnav">
+            android:label="Insdu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,10 +30,10 @@
         </activity>
         <activity
             android:name=".Escaner"
-            android:label="Insdnav"></activity>
+            android:label="Insdu"></activity>
         <activity
             android:name=".Monitorear"
-            android:label="Insdnav"></activity>
+            android:label="Insdu"></activity>
     </application>
 
 </manifest>

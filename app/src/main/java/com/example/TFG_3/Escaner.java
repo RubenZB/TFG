@@ -28,7 +28,7 @@ public class Escaner extends Activity {
     private final BeaconManager beaconManager = BeaconManager.getInstanceForApplication(this);
     private Transmisor tdetectado;
     private Transmisor tantiguo;
-    private final DbHelper dbTransmisor = App.dbTransmisor;
+    private final Basedatos dbTransmisor = App.dbTransmisor;
     private final Grafo grafo = App.grafo;
     private final Grafo grafo2 = App.grafo2;
     private final String nT1 = Monitorear.nT1;

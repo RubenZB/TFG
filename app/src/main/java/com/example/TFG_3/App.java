@@ -10,16 +10,13 @@ import org.altbeacon.beacon.BeaconParser;
 import org.altbeacon.beacon.MonitorNotifier;
 import org.altbeacon.beacon.Region;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class App extends Application implements MonitorNotifier {
 
     private static final String TAG = "App";
     public static final Region escanRegion = new Region("escanRegion", null, null, null);
 
-    public static DbHelper dbTransmisor;
+    public static Basedatos dbTransmisor;
 
     public static boolean insideRegion = false;
 
@@ -29,7 +26,7 @@ public class App extends Application implements MonitorNotifier {
 
     public void onCreate() {
         super.onCreate();
-        dbTransmisor = new DbHelper(getApplicationContext());
+        dbTransmisor = new Basedatos(getApplicationContext());
         SQLiteDatabase db = dbTransmisor.getWritableDatabase();
         grafo = new Grafo();
         grafo2 = new Grafo();
@@ -78,7 +75,6 @@ public class App extends Application implements MonitorNotifier {
 
     @Override
     public void didDetermineStateForRegion(int state, Region region) {
-
     }
 
 }

@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Monitorear" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="363dp"
+        android:layout_height="601dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/mapaaulario" />
+
+    <Button
+        android:id="@+id/baula1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:clickable="true"
+        android:onClick="mostrarBoton"
+        android:text="aula001"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/baula2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula002" />
+
+    <Button
+        android:id="@+id/baula14"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula14" />
+
+    <Button
+        android:id="@+id/baula13"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="278dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula013" />
+
+    <Button
+        android:id="@+id/baula9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula009" />
+
+    <Button
+        android:id="@+id/baula8"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:onClick="mostrarBoton"
+        android:text="aula008"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/bcafeteria"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="cafeteria" />
+
+    <Button
+        android:id="@+id/baula3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula003" />
+
+    <Button
+        android:id="@+id/baula5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula005" />
+
+    <Button
+        android:id="@+id/baula4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula004" />
+
+    <Button
+        android:id="@+id/bcapilla"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="386dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="capilla" />
+
+    <Button
+        android:id="@+id/baula6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula006" />
+
+    <Button
+        android:id="@+id/baula7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="473dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula007" />
+
+    <Button
+        android:id="@+id/baula12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula012" />
+    <Button
+        android:id="@+id/baula11"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula011" />
+
+    <Button
+        android:id="@+id/bbanco"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="banco" />
+
+    <Button
+        android:id="@+id/baula10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="447dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="aula010" />
+
+    <Button
+        android:id="@+id/brepo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="reprografia" />
+
+    <Button
+        android:id="@+id/blibreria"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="libreria" />
+
+    <Button
+        android:id="@+id/bentrada1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="entrada1" />
+
+    <Button
+        android:id="@+id/bentrada2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="entrada2" />
+
+    <Button
+        android:id="@+id/bentrada3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="entrada3" />
+
+    <Button
+        android:id="@+id/bentrada4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="entrada4" />
+
+    <Button
+        android:id="@+id/bbano1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="baños1" />
+
+    <Button
+        android:id="@+id/bbano2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="baños2" />
+
+    <Button
+        android:id="@+id/bbano3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd ="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="baños3" />
+
+    <Button
+        android:id="@+id/bbano4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="visible"
+        android:onClick="mostrarBoton"
+        android:text="baños4" />
+
+    <Button
+        android:id="@+id/baula101"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:clickable="true"
+        android:onClick="mostrarBoton"
+        android:text="aula101"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/baula102"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula102" />
+
+    <Button
+        android:id="@+id/baula119"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula119" />
+
+    <Button
+        android:id="@+id/baula118"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="278dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula118" />
+
+    <Button
+        android:id="@+id/baula109"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula109" />
+
+    <Button
+        android:id="@+id/baula110"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula110" />
+
+    <Button
+        android:id="@+id/baula111"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula111" />
+
+    <Button
+        android:id="@+id/baula112"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula112" />
+
+    <Button
+        android:id="@+id/baula103"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula103" />
+
+    <Button
+        android:id="@+id/baula105"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula105" />
+
+    <Button
+        android:id="@+id/baula104"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula104" />
+
+    <Button
+        android:id="@+id/baula106"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula106" />
+
+    <Button
+        android:id="@+id/baula107"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula107" />
+
+    <Button
+        android:id="@+id/baula108"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula108" />
+
+    <Button
+        android:id="@+id/baula117"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula117" />
+    <Button
+        android:id="@+id/baula116"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula116" />
+
+    <Button
+        android:id="@+id/baula115"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula115" />
+
+    <Button
+        android:id="@+id/baula114"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula114" />
+
+    <Button
+        android:id="@+id/baula113"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula113" />
+
+    <Button
+        android:id="@+id/bvestibulo101"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="vestibulo101" />
+
+    <Button
+        android:id="@+id/bvestibulo102"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="vestibulo102" />
+
+    <Button
+        android:id="@+id/bvestibulo103"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="vestibulo103" />
+
+    <Button
+        android:id="@+id/bbano101"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="baños101" />
+
+    <Button
+        android:id="@+id/bbano102"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="baños102" />
+
+    <Button
+        android:id="@+id/bbano103"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd ="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="baños103" />
+
+    <Button
+        android:id="@+id/bbano104"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="baños104" />
+
+    <Button
+        android:id="@+id/baula201"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:clickable="true"
+        android:onClick="mostrarBoton"
+        android:text="aula201"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/baula202"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula202" />
+
+    <Button
+        android:id="@+id/baula219"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula219" />
+
+    <Button
+        android:id="@+id/baula218"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="278dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula218" />
+
+    <Button
+        android:id="@+id/baula209"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula209" />
+
+    <Button
+        android:id="@+id/baula210"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula210" />
+
+    <Button
+        android:id="@+id/baula211"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula211" />
+
+    <Button
+        android:id="@+id/baula212"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula212" />
+
+    <Button
+        android:id="@+id/baula203"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula203" />
+
+    <Button
+        android:id="@+id/baula205"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula205" />
+
+    <Button
+        android:id="@+id/baula204"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula204" />
+
+    <Button
+        android:id="@+id/baula206"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula206" />
+
+    <Button
+        android:id="@+id/baula207"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula207" />
+
+    <Button
+        android:id="@+id/baula208"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula208" />
+
+    <Button
+        android:id="@+id/baula217"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula217" />
+    <Button
+        android:id="@+id/baula216"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula216" />
+
+    <Button
+        android:id="@+id/baula215"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula215" />
+
+    <Button
+        android:id="@+id/baula214"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula214" />
+
+    <Button
+        android:id="@+id/baula213"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="aula113" />
+
+    <Button
+        android:id="@+id/bvestibulo201"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="vestibulo101" />
+
+    <Button
+        android:id="@+id/bvestibulo202"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="vestibulo102" />
+
+    <Button
+        android:id="@+id/bvestibulo203"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="vestibulo103" />
+
+    <Button
+        android:id="@+id/bbano201"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="baños101" />
+
+    <Button
+        android:id="@+id/bbano202"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="baños102" />
+
+    <Button
+        android:id="@+id/bbano203"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="519dp"
+        android:layout_marginEnd ="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="baños103" />
+
+    <Button
+        android:id="@+id/bbano204"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="-180dp"
+        android:visibility="invisible"
+        android:onClick="mostrarBoton"
+        android:text="baños104" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/bmostrar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="50dp"
+        android:onClick="mostrarMapa"
+        android:text="Mostrar" />
+
+    <Button
+        android:id="@+id/planta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="595dp"
+        android:onClick="mostrarPlanta1"
+        android:text="Planta 1" />
+
+    <Button
+        android:id="@+id/planta0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="595dp"
+        android:onClick="mostrarPlanta0"
+        android:text="Planta 0" />
+    <Button
+        android:id="@+id/planta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="650dp"
+        android:onClick="mostrarPlanta2"
+        android:text="Planta 2" />
+
+
+
+
+</RelativeLayout>

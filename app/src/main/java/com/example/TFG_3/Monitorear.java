@@ -21,51 +21,114 @@ import org.altbeacon.beacon.MonitorNotifier;
 import org.altbeacon.beacon.RangeNotifier;
 import org.altbeacon.beacon.Region;
 
+import java.util.ArrayList;
+
 public class Monitorear extends Activity implements MonitorNotifier {
     protected static final String TAG = "Monitorear";
     private final BeaconManager beaconManager = BeaconManager.getInstanceForApplication(this);
     private Transmisor t;
-    private final DbHelper dbTransmisor = App.dbTransmisor;
+    private final Basedatos dbTransmisor = App.dbTransmisor;
 
     public static String nT1;
     public static String nT2;
-
+    private String aux = null;
+    private ArrayList<Button> botonesp0 = new ArrayList<>();
+    private ArrayList<Button> botonesp1 = new ArrayList<>();
+    private ArrayList<Button> botonesp2 = new ArrayList<>();
+    private ArrayList<Button> botones = new ArrayList<>();
     private ImageView foto;
     private Spinner spinner;
     private Button mostrar;
-    private Button baula1;
-    private Button baula2;
-    private Button baula3;
-    private Button baula4;
-    private Button baula5;
-    private Button baula6;
-    private Button baula7;
-    private Button baula8;
-    private Button baula9;
-    private Button baula10;
-    private Button baula11;
-    private Button baula12;
-    private Button baula13;
-    private Button baula14;
-    private Button bbano1;
-    private Button bbano2;
-    private Button bbano3;
-    private Button bbano4;
-    private Button brepo;
-    private Button bcafeteria;
-    private Button blibreria;
-    private Button bbanco;
-    private Button bcapilla;
-    private Button bentrada1;
-    private Button bentrada2;
-    private Button bentrada3;
-    private Button bentrada4;
+    private Button aula1;
+    private Button aula2;
+    private Button aula3;
+    private Button aula4;
+    private Button aula5;
+    private Button aula6;
+    private Button aula7;
+    private Button aula8;
+    private Button aula9;
+    private Button aula10;
+    private Button aula11;
+    private Button aula12;
+    private Button aula13;
+    private Button aula14;
+    private Button baño1;
+    private Button baño2;
+    private Button baño3;
+    private Button baño4;
+    private Button reprografia;
+    private Button cafeteria;
+    private Button libreria;
+    private Button banco;
+    private Button capilla;
+    private Button entrada1;
+    private Button entrada2;
+    private Button entrada3;
+    private Button entrada4;
+    private Button vestibulo101;
+    private Button vestibulo102;
+    private Button vestibulo103;
+    private Button aula101;
+    private Button aula102;
+    private Button aula103;
+    private Button aula104;
+    private Button aula105;
+    private Button aula106;
+    private Button aula107;
+    private Button aula108;
+    private Button aula109;
+    private Button aula110;
+    private Button aula111;
+    private Button aula112;
+    private Button aula113;
+    private Button aula114;
+    private Button aula115;
+    private Button aula116;
+    private Button aula117;
+    private Button aula118;
+    private Button aula119;
+    private Button baño101;
+    private Button baño102;
+    private Button baño103;
+    private Button baño104;
+
+    private Button vestibulo201;
+    private Button vestibulo202;
+    private Button vestibulo203;
+    private Button aula201;
+    private Button aula202;
+    private Button aula203;
+    private Button aula204;
+    private Button aula205;
+    private Button aula206;
+    private Button aula207;
+    private Button aula208;
+    private Button aula209;
+    private Button aula210;
+    private Button aula211;
+    private Button aula212;
+    private Button aula213;
+    private Button aula214;
+    private Button aula215;
+    private Button aula216;
+    private Button aula217;
+    private Button aula218;
+    private Button aula219;
+    private Button baño201;
+    private Button baño202;
+    private Button baño203;
+    private Button baño204;
+    private Button planta0;
+    private Button planta1;
+    private Button planta2;
+
 
 
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mostrarmapa);
+        setContentView(R.layout.activity_monitorear);
         BeaconManager.getInstanceForApplication(this).addMonitorNotifier(this);
         foto = findViewById(R.id.imageView);
         foto.setImageResource(R.drawable.mapaaulario);
@@ -76,40 +139,182 @@ public class Monitorear extends Activity implements MonitorNotifier {
         spinner.setAdapter(adapter);
 
         mostrar = findViewById(R.id.bmostrar);
-        baula1 = findViewById(R.id.baula1);
-        baula2 = findViewById(R.id.baula2);
-        baula3 = findViewById(R.id.baula3);
-        baula4 = findViewById(R.id.baula4);
-        baula5 = findViewById(R.id.baula5);
-        baula6 = findViewById(R.id.baula6);
-        baula7 = findViewById(R.id.baula7);
-        baula8 = findViewById(R.id.baula8);
-        baula9 = findViewById(R.id.baula9);
-        baula10 = findViewById(R.id.baula10);
-        baula11 = findViewById(R.id.baula11);
-        baula12 = findViewById(R.id.baula12);
-        baula13 = findViewById(R.id.baula13);
-        baula14 = findViewById(R.id.baula14);
-        bbano1 = findViewById(R.id.bbano1);
-        bbano2 = findViewById(R.id.bbano2);
-        bbano3 = findViewById(R.id.bbano3);
-        bbano4 = findViewById(R.id.bbano4);
-        brepo = findViewById(R.id.brepo);
-        bcafeteria = findViewById(R.id.bcafeteria);
-        blibreria = findViewById(R.id.blibreria);
-        bbanco = findViewById(R.id.bbanco);
-        bcapilla = findViewById(R.id.bcapilla);
-        bentrada1 = findViewById(R.id.bentrada1);
-        bentrada2 = findViewById(R.id.bentrada2);
-        bentrada3 = findViewById(R.id.bentrada3);
-        bentrada4 = findViewById(R.id.bentrada4);
+        planta0 = findViewById(R.id.planta0);
+        planta0.setBackgroundColor(Color.DKGRAY);
+        planta1 = findViewById(R.id.planta1);
+        planta1.setBackgroundColor(Color.LTGRAY);
+        planta2 = findViewById(R.id.planta2);
+        planta2.setBackgroundColor(Color.LTGRAY);
 
-        colorBotones();
+        //Definimos botones planta 0
+        aula1 = findViewById(R.id.baula1);
+        botonesp0.add(aula1);
+        aula2 = findViewById(R.id.baula2);
+        botonesp0.add(aula2);
+        aula3 = findViewById(R.id.baula3);
+        botonesp0.add(aula3);
+        aula4 = findViewById(R.id.baula4);
+        botonesp0.add(aula4);
+        aula5 = findViewById(R.id.baula5);
+        botonesp0.add(aula5);
+        aula6 = findViewById(R.id.baula6);
+        botonesp0.add(aula6);
+        aula7 = findViewById(R.id.baula7);
+        botonesp0.add(aula7);
+        aula8 = findViewById(R.id.baula8);
+        botonesp0.add(aula8);
+        aula9 = findViewById(R.id.baula9);
+        botonesp0.add(aula9);
+        aula10 = findViewById(R.id.baula10);
+        botonesp0.add(aula10);
+        aula11 = findViewById(R.id.baula11);
+        botonesp0.add(aula11);
+        aula12 = findViewById(R.id.baula12);
+        botonesp0.add(aula12);
+        aula13 = findViewById(R.id.baula13);
+        botonesp0.add(aula13);
+        aula14 = findViewById(R.id.baula14);
+        botonesp0.add(aula14);
+        baño1 = findViewById(R.id.bbano1);
+        botonesp0.add(baño1);
+        baño2 = findViewById(R.id.bbano2);
+        botonesp0.add(baño2);
+        baño3 = findViewById(R.id.bbano3);
+        botonesp0.add(baño3);
+        baño4 = findViewById(R.id.bbano4);
+        botonesp0.add(baño4);
+        reprografia = findViewById(R.id.brepo);
+        botonesp0.add(reprografia);
+        cafeteria = findViewById(R.id.bcafeteria);
+        botonesp0.add(cafeteria);
+        libreria = findViewById(R.id.blibreria);
+        botonesp0.add(libreria);
+        banco = findViewById(R.id.bbanco);
+        botonesp0.add(banco);
+        capilla = findViewById(R.id.bcapilla);
+        botonesp0.add(capilla);
+        entrada1 = findViewById(R.id.bentrada1);
+        botonesp0.add(entrada1);
+        entrada2 = findViewById(R.id.bentrada2);
+        botonesp0.add(entrada2);
+        entrada3 = findViewById(R.id.bentrada3);
+        botonesp0.add(entrada3);
+        entrada4 = findViewById(R.id.bentrada4);
+        botonesp0.add(entrada4);
 
+        //Definimos botones planta 1
+        vestibulo101 = findViewById(R.id.bvestibulo101);
+        botonesp1.add(vestibulo101);
+        vestibulo102 = findViewById(R.id.bvestibulo102);
+        botonesp1.add(vestibulo102);
+        vestibulo103 = findViewById(R.id.bvestibulo103);
+        botonesp1.add(vestibulo103);
+        aula101 = findViewById(R.id.baula101);
+        botonesp1.add(aula101);
+        aula102 = findViewById(R.id.baula102);
+        botonesp1.add(aula102);
+        aula103 = findViewById(R.id.baula103);
+        botonesp1.add(aula103);
+        aula104 = findViewById(R.id.baula104);
+        botonesp1.add(aula104);
+        aula105 = findViewById(R.id.baula105);
+        botonesp1.add(aula105);
+        aula106 = findViewById(R.id.baula106);
+        botonesp1.add(aula106);
+        aula107 = findViewById(R.id.baula107);
+        botonesp1.add(aula107);
+        aula108 = findViewById(R.id.baula108);
+        botonesp1.add(aula108);
+        aula109 = findViewById(R.id.baula109);
+        botonesp1.add(aula109);
+        aula110 = findViewById(R.id.baula110);
+        botonesp1.add(aula110);
+        aula111 = findViewById(R.id.baula111);
+        botonesp1.add(aula111);
+        aula112 = findViewById(R.id.baula112);
+        botonesp1.add(aula112);
+        aula113 = findViewById(R.id.baula113);
+        botonesp1.add(aula113);
+        aula114 = findViewById(R.id.baula114);
+        botonesp1.add(aula114);
+        aula115 = findViewById(R.id.baula115);
+        botonesp1.add(aula115);
+        aula116 = findViewById(R.id.baula116);
+        botonesp1.add(aula116);
+        aula117 = findViewById(R.id.baula117);
+        botonesp1.add(aula117);
+        aula118 = findViewById(R.id.baula118);
+        botonesp1.add(aula118);
+        aula119 = findViewById(R.id.baula119);
+        botonesp1.add(aula119);
+        baño101 = findViewById(R.id.bbano101);
+        botonesp1.add(baño101);
+        baño102 = findViewById(R.id.bbano102);
+        botonesp1.add(baño102);
+        baño103 = findViewById(R.id.bbano103);
+        botonesp1.add(baño103);
+        baño104 = findViewById(R.id.bbano104);
+        botonesp1.add(baño104);
 
+        //Definimos botones planta 2
+        vestibulo201 = findViewById(R.id.bvestibulo201);
+        botonesp2.add(vestibulo201);
+        vestibulo202 = findViewById(R.id.bvestibulo202);
+        botonesp2.add(vestibulo202);
+        vestibulo203 = findViewById(R.id.bvestibulo203);
+        botonesp2.add(vestibulo203);
+        aula201 = findViewById(R.id.baula201);
+        botonesp2.add(aula201);
+        aula202 = findViewById(R.id.baula202);
+        botonesp2.add(aula202);
+        aula203 = findViewById(R.id.baula203);
+        botonesp2.add(aula203);
+        aula204 = findViewById(R.id.baula204);
+        botonesp2.add(aula204);
+        aula205 = findViewById(R.id.baula205);
+        botonesp2.add(aula205);
+        aula206 = findViewById(R.id.baula206);
+        botonesp2.add(aula206);
+        aula207 = findViewById(R.id.baula207);
+        botonesp2.add(aula207);
+        aula208 = findViewById(R.id.baula208);
+        botonesp2.add(aula208);
+        aula209 = findViewById(R.id.baula209);
+        botonesp2.add(aula209);
+        aula210 = findViewById(R.id.baula210);
+        botonesp2.add(aula210);
+        aula211 = findViewById(R.id.baula211);
+        botonesp2.add(aula211);
+        aula212 = findViewById(R.id.baula212);
+        botonesp2.add(aula212);
+        aula213 = findViewById(R.id.baula213);
+        botonesp2.add(aula213);
+        aula214 = findViewById(R.id.baula214);
+        botonesp2.add(aula214);
+        aula215 = findViewById(R.id.baula215);
+        botonesp2.add(aula215);
+        aula216 = findViewById(R.id.baula216);
+        botonesp2.add(aula216);
+        aula217 = findViewById(R.id.baula217);
+        botonesp2.add(aula217);
+        aula218 = findViewById(R.id.baula218);
+        botonesp2.add(aula218);
+        aula219 = findViewById(R.id.baula219);
+        botonesp2.add(aula219);
+        baño201 = findViewById(R.id.bbano201);
+        botonesp2.add(baño201);
+        baño202 = findViewById(R.id.bbano202);
+        botonesp2.add(baño202);
+        baño203 = findViewById(R.id.bbano203);
+        botonesp2.add(baño203);
+        baño204 = findViewById(R.id.bbano204);
+        botonesp2.add(baño204);
+
+        botones = botonesp0;
+        colorBotones(botones);
     }
 
-    public void onResume(){
+   public void onResume(){
         super.onResume();
         t = null;
         RangeNotifier rangeNotifier = (beacons, region) -> {
@@ -123,7 +328,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
                 }
             }
             if (beaconcer != null) {
-                colorBotones();
                 t = dbTransmisor.getTransmisor(beaconcer.getId2().toString());
                 nT1 = t.getNombre();
                 Log.d(TAG,nT1);
@@ -141,297 +345,72 @@ public class Monitorear extends Activity implements MonitorNotifier {
 
 
     public void mostrarMapa(View view){
-        ocultarBotones();
-        String opcion = spinner.getSelectedItem().toString();
-
-
-        switch (opcion) {
-            case "Aulas":
-                baula1.setVisibility(View.VISIBLE);
-                baula2.setVisibility(View.VISIBLE);
-                baula3.setVisibility(View.VISIBLE);
-                baula4.setVisibility(View.VISIBLE);
-                baula5.setVisibility(View.VISIBLE);
-                baula6.setVisibility(View.VISIBLE);
-                baula7.setVisibility(View.VISIBLE);
-                baula8.setVisibility(View.VISIBLE);
-                baula9.setVisibility(View.VISIBLE);
-                baula10.setVisibility(View.VISIBLE);
-                baula11.setVisibility(View.VISIBLE);
-                baula12.setVisibility(View.VISIBLE);
-                baula13.setVisibility(View.VISIBLE);
-                baula14.setVisibility(View.VISIBLE);
-                break;
-            case "Baños":
-                bbano1.setVisibility(View.VISIBLE);
-                bbano2.setVisibility(View.VISIBLE);
-                bbano3.setVisibility(View.VISIBLE);
-                bbano4.setVisibility(View.VISIBLE);
-
-                break;
-            case "Entradas":
-                bentrada1.setVisibility(View.VISIBLE);
-                bentrada2.setVisibility(View.VISIBLE);
-                bentrada3.setVisibility(View.VISIBLE);
-                bentrada4.setVisibility(View.VISIBLE);
-
-                break;
-            case "Cafeteria":
-                bcafeteria.setVisibility(View.VISIBLE);
-
-                break;
-            case "Libreria":
-                blibreria.setVisibility(View.VISIBLE);
-
-                break;
-            case "Banco":
-                bbanco.setVisibility(View.VISIBLE);
-
-                break;
-            case "Capilla":
-                bcapilla.setVisibility(View.VISIBLE);
-
-                break;
-            case "Reprografia":
-                brepo.setVisibility(View.VISIBLE);
-                break;
-            case "Baños 1":
-                bbano1.setVisibility(View.VISIBLE);
-                break;
-            case "Baños 2":
-                bbano2.setVisibility(View.VISIBLE);
-                break;
-            case "Baños 3":
-                bbano3.setVisibility(View.VISIBLE);
-                break;
-            case "Baños 4":
-                bbano4.setVisibility(View.VISIBLE);
-                break;
-            case "Entrada 1":
-                bentrada1.setVisibility(View.VISIBLE);
-                break;
-            case "Entrada 2":
-                bentrada2.setVisibility(View.VISIBLE);
-                break;
-            case "Entrada 3":
-                bentrada3.setVisibility(View.VISIBLE);
-                break;
-            case "Entrada 4":
-                bentrada4.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 001":
-                baula1.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 002":
-                baula2.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 003":
-                baula3.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 004":
-                baula4.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 005":
-                baula5.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 006":
-                baula6.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 007":
-                baula7.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 008":
-                baula8.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 009":
-                baula9.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 010":
-                baula10.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 011":
-                baula11.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 012":
-                baula12.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 013":
-                baula13.setVisibility(View.VISIBLE);
-                break;
-            case "Aula 014":
-                baula14.setVisibility(View.VISIBLE);
-                break;
-            case "Todo":
-                baula1.setVisibility(View.VISIBLE);
-                baula2.setVisibility(View.VISIBLE);
-                baula3.setVisibility(View.VISIBLE);
-                baula4.setVisibility(View.VISIBLE);
-                baula5.setVisibility(View.VISIBLE);
-                baula6.setVisibility(View.VISIBLE);
-                baula7.setVisibility(View.VISIBLE);
-                baula8.setVisibility(View.VISIBLE);
-                baula9.setVisibility(View.VISIBLE);
-                baula10.setVisibility(View.VISIBLE);
-                baula11.setVisibility(View.VISIBLE);
-                baula12.setVisibility(View.VISIBLE);
-                baula13.setVisibility(View.VISIBLE);
-                baula14.setVisibility(View.VISIBLE);
-                bbano1.setVisibility(View.VISIBLE);
-                bbano2.setVisibility(View.VISIBLE);
-                bbano3.setVisibility(View.VISIBLE);
-                bbano4.setVisibility(View.VISIBLE);
-                brepo.setVisibility(View.VISIBLE);
-                bcafeteria.setVisibility(View.VISIBLE);
-                blibreria.setVisibility(View.VISIBLE);
-                bbanco.setVisibility(View.VISIBLE);
-                bcapilla.setVisibility(View.VISIBLE);
-                bentrada1.setVisibility(View.VISIBLE);
-                bentrada2.setVisibility(View.VISIBLE);
-                bentrada3.setVisibility(View.VISIBLE);
-                bentrada4.setVisibility(View.VISIBLE);
-                break;
+       String opcion = spinner.getSelectedItem().toString().replaceAll(" ","");
+       opcion = opcion.toLowerCase();
+       colorBotones(botones);
+       for(Button b : botones){
+           if(opcion.equals("aulas")){
+               if(b.getText().toString().contains("aula")){
+                   b.setBackgroundColor(Color.BLUE);
+               }
+           }else if(opcion.equals("baños")){
+                if(b.getText().toString().contains("baño")){
+                     b.setBackgroundColor(Color.BLUE);
+                }
+           }else if(opcion.equals("entradas")){
+                if(b.getText().toString().contains("entrada")){
+                     b.setBackgroundColor(Color.BLUE);
+                }
+           }else if(opcion.equals("vestibulos")){
+                if(b.getText().toString().contains("vestibulo")){
+                     b.setBackgroundColor(Color.BLUE);
+                }
+           }else if(b.getText().toString().contains(opcion)){
+                   b.setBackgroundColor(Color.BLUE);
+           }
+       }
+    }
+    public void ocultarBotones(ArrayList<Button> botones){
+        for (Button b : botones){
+            b.setVisibility(View.INVISIBLE);
         }
     }
-    public void ocultarBotones(){
-        baula1.setVisibility(View.INVISIBLE);
-        baula2.setVisibility(View.INVISIBLE);
-        baula3.setVisibility(View.INVISIBLE);
-        baula4.setVisibility(View.INVISIBLE);
-        baula5.setVisibility(View.INVISIBLE);
-        baula6.setVisibility(View.INVISIBLE);
-        baula7.setVisibility(View.INVISIBLE);
-        baula8.setVisibility(View.INVISIBLE);
-        baula9.setVisibility(View.INVISIBLE);
-        baula10.setVisibility(View.INVISIBLE);
-        baula11.setVisibility(View.INVISIBLE);
-        baula12.setVisibility(View.INVISIBLE);
-        baula13.setVisibility(View.INVISIBLE);
-        baula14.setVisibility(View.INVISIBLE);
-        bbano1.setVisibility(View.INVISIBLE);
-        bbano2.setVisibility(View.INVISIBLE);
-        bbano3.setVisibility(View.INVISIBLE);
-        bbano4.setVisibility(View.INVISIBLE);
-        brepo.setVisibility(View.INVISIBLE);
-        bcafeteria.setVisibility(View.INVISIBLE);
-        blibreria.setVisibility(View.INVISIBLE);
-        bbanco.setVisibility(View.INVISIBLE);
-        bcapilla.setVisibility(View.INVISIBLE);
-        bentrada1.setVisibility(View.INVISIBLE);
-        bentrada2.setVisibility(View.INVISIBLE);
-        bentrada3.setVisibility(View.INVISIBLE);
-        bentrada4.setVisibility(View.INVISIBLE);
+
+    public void mostrarBotones(ArrayList<Button> botones){
+        for (Button b : botones){
+            b.setVisibility(View.VISIBLE);
+        }
     }
 
-    public void colorBotones(){
-        baula1.setBackgroundColor(Color.DKGRAY);
-        baula2.setBackgroundColor(Color.DKGRAY);
-        baula3.setBackgroundColor(Color.DKGRAY);
-        baula4.setBackgroundColor(Color.DKGRAY);
-        baula5.setBackgroundColor(Color.DKGRAY);
-        baula6.setBackgroundColor(Color.DKGRAY);
-        baula7.setBackgroundColor(Color.DKGRAY);
-        baula8.setBackgroundColor(Color.DKGRAY);
-        baula9.setBackgroundColor(Color.DKGRAY);
-        baula10.setBackgroundColor(Color.DKGRAY);
-        baula11.setBackgroundColor(Color.DKGRAY);
-        baula12.setBackgroundColor(Color.DKGRAY);
-        baula13.setBackgroundColor(Color.DKGRAY);
-        baula14.setBackgroundColor(Color.DKGRAY);
-        bbano1.setBackgroundColor(Color.DKGRAY);
-        bbano2.setBackgroundColor(Color.DKGRAY);
-        bbano3.setBackgroundColor(Color.DKGRAY);
-        bbano4.setBackgroundColor(Color.DKGRAY);
-        brepo.setBackgroundColor(Color.DKGRAY);
-        bcafeteria.setBackgroundColor(Color.DKGRAY);
-        blibreria.setBackgroundColor(Color.DKGRAY);
-        bbanco.setBackgroundColor(Color.DKGRAY);
-        bcapilla.setBackgroundColor(Color.DKGRAY);
-        bentrada1.setBackgroundColor(Color.DKGRAY);
-        bentrada2.setBackgroundColor(Color.DKGRAY);
-        bentrada3.setBackgroundColor(Color.DKGRAY);
-        bentrada4.setBackgroundColor(Color.DKGRAY);
+    public void colorBotones(ArrayList<Button> botones){
+            for (Button b : botones ) {
+                if (b.getText().toString().contains("entrada") || b.getText().toString().contains("baño") ||b.getText().toString().contains("vestibulo") ) {
+                    b.setBackgroundColor(Color.LTGRAY);
+                } else {
+                    b.setBackgroundColor(Color.TRANSPARENT);
+                }
+        }
     }
-    public void botonActual(String opcion) {
-        switch (opcion) {
-            case "cafeteria":
-                bcafeteria.setBackgroundColor(Color.GREEN);
-                break;
-
-            case "banco":
-                bbanco.setBackgroundColor(Color.GREEN);
-                break;
-            case "capilla":
-                bcapilla.setBackgroundColor(Color.GREEN);
-                break;
-            case "reprografia":
-                brepo.setBackgroundColor(Color.GREEN);
-                break;
-            case "baños1":
-                bbano1.setBackgroundColor(Color.GREEN);
-                break;
-            case "baños2":
-                bbano2.setBackgroundColor(Color.GREEN);
-                break;
-            case "baños3":
-                bbano3.setBackgroundColor(Color.GREEN);
-                break;
-            case "baños4":
-                bbano4.setBackgroundColor(Color.GREEN);
-                break;
-            case "entrada1":
-                bentrada1.setBackgroundColor(Color.GREEN);
-                break;
-            case "entrada2":
-                bentrada2.setBackgroundColor(Color.GREEN);
-                break;
-            case "entrada3":
-                bentrada3.setBackgroundColor(Color.GREEN);
-                break;
-            case "entrada4":
-                bentrada4.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula1":
-                baula1.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula2":
-                baula2.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula3":
-                baula3.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula4":
-                baula4.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula5":
-                baula5.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula6":
-                baula6.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula7":
-                baula7.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula8":
-                baula8.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula9":
-                baula9.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula10":
-                baula10.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula11":
-                baula11.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula12":
-                baula12.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula13":
-                baula13.setBackgroundColor(Color.GREEN);
-                break;
-            case "aula14":
-                baula14.setBackgroundColor(Color.GREEN);
-                break;
+    private void botonActual(String opcion) {
+        if(aux != null){
+            botonAntiguo(aux);
+        }
+        aux = opcion;
+        for (Button b : botones){
+            if(b.getText().toString().contains(opcion)) {
+                b.setBackgroundColor(Color.GREEN);
+            }
+        }
+    }
+    public void botonAntiguo(String opcion) {
+        for (Button b : botones){
+            if(b.getText().toString().contains(opcion)) {
+                if (b.getText().toString().contains("entrada") || b.getText().toString().contains("baño") || b.getText().toString().contains("vestibulo")) {
+                    b.setBackgroundColor(Color.LTGRAY);
+                } else {
+                    b.setBackgroundColor(Color.TRANSPARENT);
+                }
+            }
         }
     }
     public void mostrarBoton(View view){
@@ -477,10 +456,35 @@ public class Monitorear extends Activity implements MonitorNotifier {
     public void didDetermineStateForRegion(int state, Region region) {
         //mostrarPorPantalla("didDetermineStateForRegion called with state: " + (state == 1 ? "INSIDE ("+state+")" : "OUTSIDE ("+state+")"));
     }
-    public void menuClick(){
-        beaconManager.stopRangingBeacons(App.escanRegion);
-        beaconManager.removeAllRangeNotifiers();
-        Intent myIntent = new Intent(this, Menu.class);
-        this.startActivity(myIntent);
+
+
+    public void mostrarPlanta0(View view){
+        foto.setImageResource(R.drawable.mapaaulario);
+        ocultarBotones(botones);
+        botones = botonesp0;
+        mostrarBotones(botones);
+        planta0.setBackgroundColor(Color.DKGRAY);
+        planta1.setBackgroundColor(Color.LTGRAY);
+        planta2.setBackgroundColor(Color.LTGRAY);
+    }
+    public void mostrarPlanta1(View view){
+        ocultarBotones(botones);
+        botones = botonesp1;
+        colorBotones(botones);
+        mostrarBotones(botones);
+        foto.setImageResource(R.drawable.mapaaulario1);
+        planta0.setBackgroundColor(Color.LTGRAY);
+        planta1.setBackgroundColor(Color.DKGRAY);
+        planta2.setBackgroundColor(Color.LTGRAY);
+    }
+    public void mostrarPlanta2(View view){
+        ocultarBotones(botones);
+        botones = botonesp2;
+        colorBotones(botones);
+        mostrarBotones(botones);
+        foto.setImageResource(R.drawable.mapaaulario1);
+        planta0.setBackgroundColor(Color.LTGRAY);
+        planta1.setBackgroundColor(Color.LTGRAY);
+        planta2.setBackgroundColor(Color.DKGRAY);
     }
 }

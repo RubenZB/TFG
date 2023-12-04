@@ -39,3 +39,55 @@
 0x29,patio9,Patio 9,b
 0x30,patio11,Patio 11,b
 0x31,patio13,Patio 13,b
+0x32,aula101,Aula 101,Horarios<br>·9:00 - 11:00 Matematicas<br>·11:00 - 13:00 Fisica<br>·13:00 - 15:00 Quimica
+0x33,aula102,Aula 102,Horarios<br>·8:30 - 10:30 Estadistica<br>·10:30 - 12:30 Idioma Moderno (Ingles)<br>·12:30 - 14:30 Idioma Moderno (Frances)
+0x34,aula103,Aula 103,Horarios<br>·9:00 - 11:00 Fundamentos de la Psicopatologia<br>·10:00 - 12:00 Historia de la pobreza
+0x35,aula104,Aula 104,Horarios<br>·8:00 - 10:00 Marketing<br>·10:00 - 12:00 Fundamentos Juridicos<br>·12:00 - 14:00 Fundamentos de la economia
+0x36,aula105,Aula 105,Horarios<br>·15:00 - 17:00 Introduccion a la programacion<br>·17:00 - 19:00 Estructuras de datos
+0x37,aula106,Aula 106,Horarios<br>·16:00 - 18:00 Bases de datos<br>·18:00 - 20:00 Inteligencia artificial
+0x38,aula107,Aula 107,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x39,aula108,Aula 108,Seminiario Ciberseguridad<br>·8:00 - 14:00<br>·16:00 - 20:00
+0x40,aula109,Aula 109,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·10:00 - 12:00 Redes<br>·12:00 - 14:00 Arquitectura de computadores
+0x41,aula110,Aula 110,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x42,aula111,Aula 111,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·14:00 - 16:00 Arquitectura de computadores
+0x43,aula112,Aula 112,Horarios<br>·11:00 - 13:00 Pedagogia Infantil<br>·15:30 - 17:30 Fundamentos de la educacion
+0x44,aula113,Aula 113,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x45,aula114,Aula 114,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x46,aula115,Aula 115,Horarios<br>·10:30 - 12:30 Calculo<br>·15:00 - 17:00 Psicologia de la Educacion<br>·18:00 - 20:00 Idiomar Moderno (Aleman)
+0x47,aula116,Aula 116,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x48,aula117,Aula 117,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x49,aula118,Aula 118,Horarios<br>·11:00 - 13:00 Informatica Gráfica<br>·17:00 - 19:00 Idiomar Moderno (Italiano)
+0x50,aula119,Aula 119,Conferencia Cine Polaco<br>·Primer pase 9:00 - 13:00<br>·Segundo pase 15:00 - 19:00
+0x51,aula101,Aula 201,Horarios<br>·9:00 - 11:00 Matematicas<br>·11:00 - 13:00 Fisica<br>·13:00 - 15:00 Quimica
+0x52,aula202,Aula 202,Horarios<br>·8:30 - 10:30 Estadistica<br>·10:30 - 12:30 Idioma Moderno (Ingles)<br>·12:30 - 14:30 Idioma Moderno (Frances)
+0x53,aula203,Aula 203,Horarios<br>·9:00 - 11:00 Fundamentos de la Psicopatologia<br>·10:00 - 12:00 Historia de la pobreza
+0x54,aula204,Aula 204,Horarios<br>·8:00 - 10:00 Marketing<br>·10:00 - 12:00 Fundamentos Juridicos<br>·12:00 - 14:00 Fundamentos de la economia
+0x55,aula205,Aula 205,Horarios<br>·15:00 - 17:00 Introduccion a la programacion<br>·17:00 - 19:00 Estructuras de datos
+0x56,aula206,Aula 206,Horarios<br>·16:00 - 18:00 Bases de datos<br>·18:00 - 20:00 Inteligencia artificial
+0x57,aula207,Aula 207,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x58,aula208,Aula 208,Seminiario Ciberseguridad<br>·8:00 - 14:00<br>·16:00 - 20:00
+0x59,aula209,Aula 209,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·10:00 - 12:00 Redes<br>·12:00 - 14:00 Arquitectura de computadores
+0x60,aula210,Aula 210,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x61,aula211,Aula 211,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·14:00 - 16:00 Arquitectura de computadores
+0x62,aula212,Aula 212,Horarios<br>·11:00 - 13:00 Pedagogia Infantil<br>·15:30 - 17:30 Fundamentos de la educacion
+0x63,aula213,Aula 213,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x64,aula214,Aula 214,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x65,aula215,Aula 215,Horarios<br>·10:30 - 12:30 Calculo<br>·15:00 - 17:00 Psicologia de la Educacion<br>·18:00 - 20:00 Idiomar Moderno (Aleman)
+0x66,aula216,Aula 216,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x67,aula217,Aula 217,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada
+0x68,aula218,Aula 218,Horarios<br>·11:00 - 13:00 Informatica Gráfica<br>·17:00 - 19:00 Idiomar Moderno (Italiano)
+0x69,aula219,Aula 219,Conferencia Cine Polaco<br>·Primer pase 9:00 - 13:00<br>·Segundo pase 15:00 - 19:00
+0x70,vestibulo101,Vestibulo 101,Entre el aula 1 y la aula 14
+0x71,vestibulo102,Vestibulo 102,Entre el aula 1 y la aula 14
+0x72,vestibulo103,Vestibulo 103,Entre el aula 1 y la aula 14
+0x73,vestibulo201,Vestibulo 201,Entre el aula 1 y la aula 14
+0x74,vestibulo202,Vestibulo 202,Entre el aula 1 y la aula 14
+0x75,vestibulo203,Vestibulo 203,Entre el aula 1 y la aula 14
+0x76,baños101,Baño 101,Entre el aula 7 y el aula 8
+0x77,baños102,Baño 102,Entre el aula 7 y el aula 8
+0x78,baños103,Baño 103,Entre el aula 7 y el aula 8
+0x79,baños104,Baño 104,Entre el aula 7 y el aula 8
+0x80,baños201,Baño 201,Entre el aula 7 y el aula 8
+0x81,baños202,Baño 202,Entre el aula 7 y el aula 8
+0x82,baños203,Baño 203,Entre el aula 7 y el aula 8
+0x83,baños204,Baño 204,Entre el aula 7 y el aula 8

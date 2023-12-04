@@ -25,4 +25,12 @@
          android:onClick="mapaClicked"
          android:text="Iniciar" />
 
+     <ImageView
+         android:id="@+id/logo"
+         android:layout_width="330dp"
+         android:layout_height="263dp"
+         android:layout_marginLeft="30dp"
+         android:src="@drawable/logoinsdu" />
+
+
  </RelativeLayout>

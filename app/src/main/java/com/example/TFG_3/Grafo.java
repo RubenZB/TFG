@@ -18,8 +18,8 @@ import java.util.Set;
 
 public class Grafo {
     private Graph<Transmisor, DefaultWeightedEdge> grafo;
-    private DbHelper dbTransmisor = App.dbTransmisor;
-    private Context context = DbHelper.context;
+    private Basedatos dbTransmisor = App.dbTransmisor;
+    private Context context = Basedatos.context;
 
     public Grafo() {
         grafo = new WeightedMultigraph<>(DefaultWeightedEdge.class);

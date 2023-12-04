@@ -17,7 +17,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class DbHelper extends SQLiteOpenHelper {
+public class Basedatos extends SQLiteOpenHelper {
 
     public static final String COLUMNA_ID = "idBeacon";
     public static final String COLUMNA_NOMBRE = "nombre";
@@ -29,7 +29,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public static Context context;
 
 
-    public DbHelper(@Nullable Context context) {
+    public Basedatos(@Nullable Context context) {
         super(context, DATABASE_NOMBRE, null, DATABASE_VERSION);
         this.context = context;
     }
@@ -54,7 +54,7 @@ public class DbHelper extends SQLiteOpenHelper {
         long id = 0;
 
         try {
-            DbHelper dbHelper = new DbHelper(context);
+            Basedatos dbHelper = new Basedatos(context);
             SQLiteDatabase db = dbHelper.getWritableDatabase();
 
             ContentValues values = new ContentValues();
