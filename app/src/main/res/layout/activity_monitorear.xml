@@ -23,8 +23,8 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:clickable="true"
-        android:onClick="mostrarBoton"
-        android:text="aula001"
+        android:onClick="ventanaBoton"
+        android:text="aula1"
         android:visibility="visible" />
 
     <Button
@@ -35,8 +35,8 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula002" />
+        android:onClick="ventanaBoton"
+        android:text="aula2" />
 
     <Button
         android:id="@+id/baula14"
@@ -46,7 +46,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula14" />
 
     <Button
@@ -57,8 +57,8 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula013" />
+        android:onClick="ventanaBoton"
+        android:text="aula13" />
 
     <Button
         android:id="@+id/baula9"
@@ -68,8 +68,8 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula009" />
+        android:onClick="ventanaBoton"
+        android:text="aula9" />
 
     <Button
         android:id="@+id/baula8"
@@ -79,8 +79,8 @@
         android:layout_marginStart="95dp"
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
-        android:onClick="mostrarBoton"
-        android:text="aula008"
+        android:onClick="ventanaBoton"
+        android:text="aula8"
         android:visibility="visible" />
 
     <Button
@@ -91,7 +91,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="cafeteria" />
 
     <Button
@@ -102,8 +102,8 @@
         android:layout_marginTop="228dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula003" />
+        android:onClick="ventanaBoton"
+        android:text="aula3" />
 
     <Button
         android:id="@+id/baula5"
@@ -113,8 +113,8 @@
         android:layout_marginTop="312dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula005" />
+        android:onClick="ventanaBoton"
+        android:text="aula5" />
 
     <Button
         android:id="@+id/baula4"
@@ -124,8 +124,8 @@
         android:layout_marginTop="274dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula004" />
+        android:onClick="ventanaBoton"
+        android:text="aula4" />
 
     <Button
         android:id="@+id/bcapilla"
@@ -135,7 +135,7 @@
         android:layout_marginTop="386dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="capilla" />
 
     <Button
@@ -146,8 +146,8 @@
         android:layout_marginTop="420dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula006" />
+        android:onClick="ventanaBoton"
+        android:text="aula6" />
 
     <Button
         android:id="@+id/baula7"
@@ -157,8 +157,8 @@
         android:layout_marginTop="473dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula007" />
+        android:onClick="ventanaBoton"
+        android:text="aula7" />
 
     <Button
         android:id="@+id/baula12"
@@ -168,8 +168,8 @@
         android:layout_marginTop="230dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula012" />
+        android:onClick="ventanaBoton"
+        android:text="aula12" />
     <Button
         android:id="@+id/baula11"
         android:layout_width="20dp"
@@ -178,8 +178,8 @@
         android:layout_marginTop="278dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula011" />
+        android:onClick="ventanaBoton"
+        android:text="aula11" />
 
     <Button
         android:id="@+id/bbanco"
@@ -189,7 +189,7 @@
         android:layout_marginTop="419dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="banco" />
 
     <Button
@@ -200,8 +200,8 @@
         android:layout_marginTop="447dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
-        android:text="aula010" />
+        android:onClick="ventanaBoton"
+        android:text="aula10" />
 
     <Button
         android:id="@+id/brepo"
@@ -211,7 +211,7 @@
         android:layout_marginTop="475dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="reprografia" />
 
     <Button
@@ -222,7 +222,7 @@
         android:layout_marginTop="500dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="libreria" />
 
     <Button
@@ -233,7 +233,7 @@
         android:layout_marginTop="185dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="entrada1" />
 
     <Button
@@ -244,7 +244,7 @@
         android:layout_marginTop="353dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="entrada2" />
 
     <Button
@@ -255,7 +255,7 @@
         android:layout_marginTop="525dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="entrada3" />
 
     <Button
@@ -266,7 +266,7 @@
         android:layout_marginTop="353dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="entrada4" />
 
     <Button
@@ -277,7 +277,7 @@
         android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños1" />
 
     <Button
@@ -288,7 +288,7 @@
         android:layout_marginTop="519dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños2" />
 
     <Button
@@ -299,7 +299,7 @@
         android:layout_marginTop="519dp"
         android:layout_marginEnd ="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños3" />
 
     <Button
@@ -310,7 +310,7 @@
         android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
         android:visibility="visible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños4" />
 
     <Button
@@ -321,7 +321,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:clickable="true"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula101"
         android:visibility="invisible" />
 
@@ -333,7 +333,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula102" />
 
     <Button
@@ -344,7 +344,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula119" />
 
     <Button
@@ -355,7 +355,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula118" />
 
     <Button
@@ -366,7 +366,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula109" />
 
     <Button
@@ -377,7 +377,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula110" />
 
     <Button
@@ -388,7 +388,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula111" />
 
     <Button
@@ -399,7 +399,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula112" />
 
     <Button
@@ -410,7 +410,7 @@
         android:layout_marginTop="228dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula103" />
 
     <Button
@@ -421,7 +421,7 @@
         android:layout_marginTop="312dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula105" />
 
     <Button
@@ -432,7 +432,7 @@
         android:layout_marginTop="274dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula104" />
 
     <Button
@@ -443,7 +443,7 @@
         android:layout_marginTop="400dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula106" />
 
     <Button
@@ -454,7 +454,7 @@
         android:layout_marginTop="445dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula107" />
 
     <Button
@@ -465,7 +465,7 @@
         android:layout_marginTop="485dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula108" />
 
     <Button
@@ -476,7 +476,7 @@
         android:layout_marginTop="230dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula117" />
     <Button
         android:id="@+id/baula116"
@@ -486,7 +486,7 @@
         android:layout_marginTop="278dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula116" />
 
     <Button
@@ -497,7 +497,7 @@
         android:layout_marginTop="425dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula115" />
 
     <Button
@@ -508,7 +508,7 @@
         android:layout_marginTop="463dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula114" />
 
     <Button
@@ -519,7 +519,7 @@
         android:layout_marginTop="495dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula113" />
 
     <Button
@@ -530,7 +530,7 @@
         android:layout_marginTop="185dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="vestibulo101" />
 
     <Button
@@ -541,7 +541,7 @@
         android:layout_marginTop="353dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="vestibulo102" />
 
     <Button
@@ -552,7 +552,7 @@
         android:layout_marginTop="525dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="vestibulo103" />
 
     <Button
@@ -563,7 +563,7 @@
         android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños101" />
 
     <Button
@@ -574,7 +574,7 @@
         android:layout_marginTop="519dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños102" />
 
     <Button
@@ -585,7 +585,7 @@
         android:layout_marginTop="519dp"
         android:layout_marginEnd ="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños103" />
 
     <Button
@@ -596,7 +596,7 @@
         android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños104" />
 
     <Button
@@ -607,7 +607,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:clickable="true"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula201"
         android:visibility="invisible" />
 
@@ -619,7 +619,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula202" />
 
     <Button
@@ -630,7 +630,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula219" />
 
     <Button
@@ -641,7 +641,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula218" />
 
     <Button
@@ -652,7 +652,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula209" />
 
     <Button
@@ -663,7 +663,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula210" />
 
     <Button
@@ -674,7 +674,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula211" />
 
     <Button
@@ -685,7 +685,7 @@
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula212" />
 
     <Button
@@ -696,7 +696,7 @@
         android:layout_marginTop="228dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula203" />
 
     <Button
@@ -707,7 +707,7 @@
         android:layout_marginTop="312dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula205" />
 
     <Button
@@ -718,7 +718,7 @@
         android:layout_marginTop="274dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula204" />
 
     <Button
@@ -729,7 +729,7 @@
         android:layout_marginTop="400dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula206" />
 
     <Button
@@ -740,7 +740,7 @@
         android:layout_marginTop="445dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula207" />
 
     <Button
@@ -751,7 +751,7 @@
         android:layout_marginTop="485dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula208" />
 
     <Button
@@ -762,7 +762,7 @@
         android:layout_marginTop="230dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula217" />
     <Button
         android:id="@+id/baula216"
@@ -772,7 +772,7 @@
         android:layout_marginTop="278dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula216" />
 
     <Button
@@ -783,7 +783,7 @@
         android:layout_marginTop="425dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula215" />
 
     <Button
@@ -794,7 +794,7 @@
         android:layout_marginTop="463dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula214" />
 
     <Button
@@ -805,7 +805,7 @@
         android:layout_marginTop="495dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="aula113" />
 
     <Button
@@ -816,7 +816,7 @@
         android:layout_marginTop="185dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="vestibulo101" />
 
     <Button
@@ -827,7 +827,7 @@
         android:layout_marginTop="353dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="vestibulo102" />
 
     <Button
@@ -838,7 +838,7 @@
         android:layout_marginTop="525dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="vestibulo103" />
 
     <Button
@@ -849,7 +849,7 @@
         android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños101" />
 
     <Button
@@ -860,7 +860,7 @@
         android:layout_marginTop="519dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños102" />
 
     <Button
@@ -871,7 +871,7 @@
         android:layout_marginTop="519dp"
         android:layout_marginEnd ="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños103" />
 
     <Button
@@ -882,7 +882,7 @@
         android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
-        android:onClick="mostrarBoton"
+        android:onClick="ventanaBoton"
         android:text="baños104" />
 
     <Spinner

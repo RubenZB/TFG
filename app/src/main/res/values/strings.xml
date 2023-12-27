@@ -3,6 +3,7 @@
     <string name="app_name">insdnav</string>
     <string name="primary_color">Primary color</string>
     <string name="secondary_color">Secondary color</string>
+    <string name="todo">TODO</string>
 
     <string-array name="mapa">
         <item>Aulas</item>

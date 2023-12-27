@@ -8,14 +8,16 @@ public class Transmisor {
     private String nombre;
     private String descripcion;
     private String info;
+    private int piso;
 
 
 
-    public Transmisor(String idBeacon, String nombre, String descripcion, String info ) {
+    public Transmisor(String idBeacon, String nombre, String descripcion, String info, int piso) {
         this.idBeacon = idBeacon;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.info = info;
+        this.piso = piso;
 
     }
     public Transmisor(String idBeacon, String nombre) {
@@ -57,7 +59,12 @@ public class Transmisor {
                 "nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", Informacion='" + info + '\'' +
+                ", piso=" + piso +
                 '}';
+    }
+
+    public int getPiso() {
+        return piso;
     }
 
     @Override

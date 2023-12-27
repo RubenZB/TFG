@@ -23,6 +23,7 @@ public class Basedatos extends SQLiteOpenHelper {
     public static final String COLUMNA_NOMBRE = "nombre";
     public static final String COLUMNA_DESCRIPCION = "descripcion";
     public static final String COLUMNA_INFORMACION = "info";
+    public static final String COLUMNA_PISO = "piso";
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NOMBRE = "TFG_3.db";
     public static final String TABLE_TRANSMISORES = "t_trasmisores";
@@ -31,7 +32,7 @@ public class Basedatos extends SQLiteOpenHelper {
 
     public Basedatos(@Nullable Context context) {
         super(context, DATABASE_NOMBRE, null, DATABASE_VERSION);
-        this.context = context;
+        Basedatos.context = context;
     }
 
     @Override
@@ -40,7 +41,8 @@ public class Basedatos extends SQLiteOpenHelper {
                 + COLUMNA_ID + " TEXT PRIMARY KEY, " +
                 COLUMNA_NOMBRE + " TEXT, " +
                 COLUMNA_DESCRIPCION + " TEXT, " +
-                COLUMNA_INFORMACION + " TEXT)");
+                COLUMNA_INFORMACION + " TEXT,"+
+                COLUMNA_PISO + " INT)");
 
     }
 
@@ -49,7 +51,7 @@ public class Basedatos extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE " + TABLE_TRANSMISORES);
         onCreate(db);
     }
-    public long insertarTransmisor(String idBeacon, String nombre, String descripcion, String info) {
+    public long insertarTransmisor(String idBeacon, String nombre, String descripcion, String info, int piso) {
 
         long id = 0;
 
@@ -62,6 +64,7 @@ public class Basedatos extends SQLiteOpenHelper {
             values.put("nombre", nombre);
             values.put("descripcion", descripcion);
             values.put("info", info);
+            values.put("piso", piso);
             id = db.insert(TABLE_TRANSMISORES, null, values);
             db.close();
         } catch (Exception e) {
@@ -71,7 +74,7 @@ public class Basedatos extends SQLiteOpenHelper {
     }
 
     public void borrarBaseDeDatos() {
-        Context context = this.context;
+        Context context = Basedatos.context;
         context.deleteDatabase("TFG_3.db");
     }
     public ArrayList<Transmisor> mostrarTransmisores(){
@@ -86,8 +89,9 @@ public class Basedatos extends SQLiteOpenHelper {
             String nombre = cursor.getString(1);
             String descripcion = cursor.getString(2);
             String info = cursor.getString(3);
+            int piso = cursor.getInt(4);
 
-            Transmisor transmisor = new Transmisor(idBeacon, nombre, descripcion, info);
+            Transmisor transmisor = new Transmisor(idBeacon, nombre, descripcion, info, piso);
             transmisores.add(transmisor);
         }
 
@@ -123,9 +127,10 @@ public class Basedatos extends SQLiteOpenHelper {
                 String nombre = datos[1];
                 String descripcion = datos[2];
                 String info = datos[3];
+                int piso = Integer.parseInt(datos[4]);
 
                 if(getTransmisor(idBeacon) == null){
-                    long n = insertarTransmisor(idBeacon, nombre, descripcion, info);
+                    long n = insertarTransmisor(idBeacon, nombre, descripcion, info, piso);
                 }else{
                     Log.d("BASE_DATOS", "El transmisor ya existe");
                 }
@@ -159,6 +164,7 @@ public class Basedatos extends SQLiteOpenHelper {
                 String nombre = cursor.getString(1);
                 String descripcion = cursor.getString(2);
                 String info = cursor.getString(3);
+                int piso = cursor.getInt(4);
 
 
                 Log.d("BASE_DATOS", "idBeacon: " + idBeacon + ", nombre: " + nombre + ", descripcion: " + descripcion + ", informacion: " + info);
@@ -177,8 +183,9 @@ public class Basedatos extends SQLiteOpenHelper {
             String nom = cursor.getString(1);
             String descripcion = cursor.getString(2);
             String info = cursor.getString(3);
+            int piso = Integer.parseInt(cursor.getString(4));
 
-            transmisor = new Transmisor(idBeacon, nom, descripcion, info);
+            transmisor = new Transmisor(idBeacon, nom, descripcion, info, piso);
         }
 
         cursor.close();

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".Escaner" >
 
-    <EditText
+     <EditText
         android:id="@+id/rangingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,859 +25,8 @@
         android:id="@+id/imagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/mapaaulario" />
-
-    <ImageView
-        android:id="@+id/a2b1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="147dp"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a1a2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginLeft="80dp"
-        android:visibility="visible"
-        android:src="@drawable/linea" />
-
-    <ImageView
-        android:id="@+id/e1a1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginLeft="131dp"
-        android:visibility="visible"
-        android:src="@drawable/linea" />
-
-    <ImageView
-        android:id="@+id/a14e1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginLeft="183dp"
-        android:visibility="visible"
-        android:src="@drawable/linea" />
-
-    <ImageView
-        android:id="@+id/a14a13"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginLeft="230dp"
-        android:visibility="visible"
-        android:src="@drawable/linea" />
-
-    <ImageView
-        android:id="@+id/a13b4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginLeft="277dp"
-        android:visibility="visible"
-        android:src="@drawable/linea" />
-
-    <ImageView
-        android:id="@+id/b2a8"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginTop="500dp"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a8a9"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="500dp"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a9e3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="133dp"
-        android:layout_marginTop="500dp"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/e3caf"
-        android:layout_width="125dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="174dp"
-        android:layout_marginTop="490dp"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-
-    <ImageView
-        android:id="@+id/cafb3"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginLeft="248dp"
-        android:layout_marginTop="485dp"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/e2p7"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="302dp"
-        android:rotation="0"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p7p8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="314dp"
-        android:rotation="0"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p8p9"
-        android:layout_width="124dp"
-        android:layout_height="124dp"
-        android:layout_marginLeft="175dp"
-        android:layout_marginTop="302dp"
-        android:rotation="0"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p9e4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="258dp"
-        android:layout_marginTop="314dp"
-        android:rotation="0"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/b1a3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="169dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a3a4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="212dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a4a5"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="256dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a5e2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="298dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/e2cap"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="345dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/capa6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="390dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a6a7"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="438dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a7b2"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="491dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/b4a12"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="297dp"
-        android:layout_marginTop="169dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-    <ImageView
-        android:id="@+id/a12a11"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="297dp"
-        android:layout_marginTop="217dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/a11e4_1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="287dp"
-        android:layout_marginTop="280dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-    <ImageView
-        android:id="@+id/a11e4_2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="287dp"
-        android:layout_marginTop="261dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-
-    <ImageView
-        android:id="@+id/e4ban"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="287dp"
-        android:layout_marginTop="348dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-
-    <ImageView
-        android:id="@+id/bana10"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="302dp"
-        android:layout_marginTop="410dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-
-    <ImageView
-        android:id="@+id/a10rep"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="302dp"
-        android:layout_marginTop="446dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/repb3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="297dp"
-        android:layout_marginTop="478dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/e1p2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="168dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p2p6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="226dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p6p8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="283dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p8p10"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="347dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p10p14"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="408dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p14e3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="156dp"
-        android:layout_marginTop="475dp"
-        android:rotation="90"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/b1p1"
-        android:layout_width="100dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="160dp"
-        android:rotation="45"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p1p4"
-        android:layout_width="100dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="199dp"
-        android:rotation="45"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-    <ImageView
-        android:id="@+id/p4p6"
-        android:layout_width="115dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="238dp"
-        android:rotation="30"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/b4p3"
-        android:layout_width="100dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="265dp"
-        android:layout_marginTop="160dp"
-        android:rotation="-45"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p3p5"
-        android:layout_width="100dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="226dp"
-        android:layout_marginTop="199dp"
-        android:rotation="-45"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p5p6"
-        android:layout_width="115dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="238dp"
-        android:rotation="-30"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/b2p13"
-        android:layout_width="100dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="470dp"
-        android:rotation="135"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p13p11"
-        android:layout_width="100dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="432dp"
-        android:rotation="135"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/b3p15"
-        android:layout_width="100dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="269dp"
-        android:layout_marginTop="474dp"
-        android:rotation="-135"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p15p12"
-        android:layout_width="100dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="222dp"
-        android:layout_marginTop="427dp"
-        android:rotation="-135"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p11p10"
-        android:layout_width="115dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="395dp"
-        android:rotation="-30"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/p12p10"
-        android:layout_width="115dp"
-        android:layout_height="97dp"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="395dp"
-        android:rotation="30"
-        android:src="@drawable/linea"
-        android:visibility="visible" />
-
-
-    <ImageView
-        android:id="@+id/pent1"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="189dp"
-        android:src="@drawable/circle"
-        android:visibility="visible"/>
-
-    <ImageView
-        android:id="@+id/paula1"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="138dp"
-        android:src="@drawable/circle"
-        android:visibility="visible"/>
-
-    <ImageView
-        android:id="@+id/paula2"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="90dp"
-        android:src="@drawable/circle"
-        android:visibility="visible"/>
-
-    <ImageView
-        android:id="@+id/pbaños1"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula3"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="222dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula4"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="267dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula5"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="309dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible"/>
-
-    <ImageView
-        android:id="@+id/pent2"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="357dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/pcap"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula6"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="447dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula7"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="497dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/pbaños2"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="532dp"
-        android:layout_marginLeft="48dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula8"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="532dp"
-        android:layout_marginLeft="90dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula9"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="532dp"
-        android:layout_marginLeft="140dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/pent3"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginLeft="189dp"
-        android:layout_marginTop="532dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/pcafe"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="532dp"
-        android:layout_marginLeft="260dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/pbaños3"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="532dp"
-        android:layout_marginLeft="329dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/prepo"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="490dp"
-        android:layout_marginLeft="329dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula10"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="455dp"
-        android:layout_marginLeft="329dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/pbanco"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginLeft="329dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/pent4"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="357dp"
-        android:layout_marginLeft="329dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula11"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="275dp"
-        android:layout_marginLeft="329dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-
-    <ImageView
-        android:id="@+id/paula12"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginLeft="329dp"
-        android:src="@drawable/circle"
-        android:visibility="visible"/>
-
-    <ImageView
-        android:id="@+id/pbaños4"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="329dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula13"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="285dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/paula14"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="240dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-
-    <ImageView
-        android:id="@+id/ppatio1"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginLeft="88dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio2"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginLeft="189dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio3"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginLeft="288dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio4"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="263dp"
-        android:layout_marginLeft="130dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio5"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="263dp"
-        android:layout_marginLeft="246dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio6"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="297dp"
-        android:layout_marginLeft="189dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio7"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="357dp"
-        android:layout_marginLeft="130dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio8"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="357dp"
-        android:layout_marginLeft="189dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio9"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="357dp"
-        android:layout_marginLeft="270dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio13"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="493dp"
-        android:layout_marginLeft="88dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio14"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="482dp"
-        android:layout_marginLeft="189dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio15"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="492dp"
-        android:layout_marginLeft="288dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio11"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="452dp"
-        android:layout_marginLeft="130dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio10"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginLeft="189dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
-
-    <ImageView
-        android:id="@+id/ppatio12"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="450dp"
-        android:layout_marginLeft="246dp"
-        android:src="@drawable/circle"
-        android:visibility="visible" />
+        android:src="@drawable/mapaaulario"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -897,21 +46,2769 @@
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/otruta"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="645dp"
-        android:layout_marginLeft="250dp"
-        android:onClick="cambiarGrafo"
-        android:text="No" />
+        android:id="@+id/planta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="635dp"
+        android:onClick="planta1"
+        android:text="Planta 1" />
 
     <Button
-        android:id="@+id/nav"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="645dp"
-        android:layout_marginLeft="100dp"
-        android:text="Si" />
+        android:id="@+id/planta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="635dp"
+        android:onClick="planta2"
+        android:text="Planta 2" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutp0"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:context=".Escaner" >
+
+        <ImageView
+            android:id="@+id/a2b1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="147dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula2baños1 baños1aula2" />
+
+        <ImageView
+            android:id="@+id/a1a2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="80dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula2aula1 aula1aula2"/>
+
+        <ImageView
+            android:id="@+id/e1a1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="131dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="entrada1aula1 aula1entrada1"/>
+
+        <ImageView
+            android:id="@+id/a14e1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="183dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula14entrada1 entada1aula14"/>
+
+        <ImageView
+            android:id="@+id/a14a13"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="230dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula14aula13 aula13aula14"/>
+
+        <ImageView
+            android:id="@+id/a13b4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="277dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula13baños4 baños4aula13"/>
+
+        <ImageView
+            android:id="@+id/b2a8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños2aula8 aula8baños2"/>
+
+        <ImageView
+            android:id="@+id/a8a9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula8aula9 aula9aula8"/>
+
+        <ImageView
+            android:id="@+id/a9e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula9entrada3 entrada3aula9"/>
+
+        <ImageView
+            android:id="@+id/e3caf"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="174dp"
+            android:layout_marginTop="490dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada3cafeteria cafeteriaentrada3"/>
+
+
+        <ImageView
+            android:id="@+id/cafb3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="248dp"
+            android:layout_marginTop="485dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="cafeteriabaños3 baños3cafeteria"/>
+
+        <ImageView
+            android:id="@+id/e2p7"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="302dp"
+            android:rotation="0"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada2patio7 patio7entrada2"/>
+
+
+        <ImageView
+            android:id="@+id/p7p8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="314dp"
+            android:rotation="0"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio7patio8 patio8patio7"/>
+
+        <ImageView
+            android:id="@+id/p8p9"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="302dp"
+            android:rotation="0"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio8patio9 patio9patio8"/>
+
+        <ImageView
+            android:id="@+id/p9e4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="258dp"
+            android:layout_marginTop="314dp"
+            android:rotation="0"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio9entrada4 entrada4patio9"/>
+
+        <ImageView
+            android:id="@+id/b1a3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="169dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños1aula3 aula3baños1"/>
+
+        <ImageView
+            android:id="@+id/a3a4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="212dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula3aula4 aula4aula3"/>
+
+        <ImageView
+            android:id="@+id/a4a5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="256dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula4aula5 aula5aula4"/>
+
+        <ImageView
+            android:id="@+id/a5e2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="298dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula5entrada2 entrada2aula5"/>
+
+        <ImageView
+            android:id="@+id/e2cap"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="345dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada2capilla capillaentrada2"/>
+
+        <ImageView
+            android:id="@+id/capa6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="390dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="capillaaula6 aula6capilla"/>
+
+        <ImageView
+            android:id="@+id/a6a7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="438dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula6aula7 aula7aula6"/>
+
+        <ImageView
+            android:id="@+id/a7b2"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="491dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula7baños2 baños2aula7"/>
+
+        <ImageView
+            android:id="@+id/b4a12"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="169dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños4aula12 aula12baños4"/>
+        <ImageView
+            android:id="@+id/a12a11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="217dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula12aula11 aula11aula12"/>
+
+        <ImageView
+            android:id="@+id/a11e4_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="280dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula11entrada4 entrada4aula11"/>
+        <ImageView
+            android:id="@+id/a11e4_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="261dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula11entrada4 entrada4aula11"/>
+
+        <ImageView
+            android:id="@+id/e4ban"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="348dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada4banco bancoentrada4"/>
+
+
+        <ImageView
+            android:id="@+id/bana10"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="302dp"
+            android:layout_marginTop="410dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="bancoaula10 aula10banco"/>
+
+
+        <ImageView
+            android:id="@+id/a10rep"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="302dp"
+            android:layout_marginTop="446dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula10reprografia reprografiaula10"/>
+
+        <ImageView
+            android:id="@+id/repb3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="478dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="reprografiabaños3 baños3reprografia"/>
+
+
+        <ImageView
+            android:id="@+id/e1p2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="168dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada1patio2 patio2entrada1"/>
+
+        <ImageView
+            android:id="@+id/p2p6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="226dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio2patio6 patio6patio2"/>
+
+        <ImageView
+            android:id="@+id/p6p8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="283dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio6patio8 patio8patio6"/>
+
+        <ImageView
+            android:id="@+id/p8p10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="347dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio8patio10 patio10patio8"/>
+
+        <ImageView
+            android:id="@+id/p10p14"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="408dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio10patio14 patio14patio10"/>
+
+        <ImageView
+            android:id="@+id/p14e3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="475dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio14entrada3 entrada3patio14"/>
+
+        <ImageView
+            android:id="@+id/b1p1"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="160dp"
+            android:rotation="45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños1patio1 patio1baños1"/>
+
+        <ImageView
+            android:id="@+id/p1p4"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="199dp"
+            android:rotation="45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio1patio4 patio1patio4"/>
+        <ImageView
+            android:id="@+id/p4p6"
+            android:layout_width="115dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="238dp"
+            android:rotation="30"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio4patio6 patio6patio4"/>
+
+        <ImageView
+            android:id="@+id/b4p3"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="160dp"
+            android:rotation="-45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños4patio3 patio3baños4"/>
+
+        <ImageView
+            android:id="@+id/p3p5"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="226dp"
+            android:layout_marginTop="199dp"
+            android:rotation="-45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio3patio5 patio5patio3"/>
+
+        <ImageView
+            android:id="@+id/p5p6"
+            android:layout_width="115dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="238dp"
+            android:rotation="-30"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio5patio6 patio6patio5"/>
+
+        <ImageView
+            android:id="@+id/b2p13"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="470dp"
+            android:rotation="135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños2patio13 patio13baños2"/>
+
+        <ImageView
+            android:id="@+id/p13p11"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="432dp"
+            android:rotation="135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio13patio11 patio11patio13"/>
+
+        <ImageView
+            android:id="@+id/b3p15"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="269dp"
+            android:layout_marginTop="474dp"
+            android:rotation="-135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños3patio15 patio15baños3"/>
+
+        <ImageView
+            android:id="@+id/p15p12"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="222dp"
+            android:layout_marginTop="427dp"
+            android:rotation="-135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio15patio12 patio12patio15"/>
+
+        <ImageView
+            android:id="@+id/p11p10"
+            android:layout_width="115dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="395dp"
+            android:rotation="-30"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio11patio10 patio10patio11"/>
+
+        <ImageView
+            android:id="@+id/p12p10"
+            android:layout_width="115dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="395dp"
+            android:rotation="30"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="patio12patio10 patio10patio12"/>
+
+        <ImageView
+            android:id="@+id/b1esc2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="130dp"
+            android:rotation="45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños1escalera2 escalera2baños1"/>
+
+
+        <ImageView
+            android:id="@+id/e1esc1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="168dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada1escalera1 escalera1entrada1"/>
+
+        <ImageView
+            android:id="@+id/pent1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="entrada1"/>
+
+        <ImageView
+            android:id="@+id/b3esc6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="512dp"
+            android:rotation="-135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños3escalera6 escalera6baños3"/>
+
+        <ImageView
+            android:id="@+id/b4esc9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="314dp"
+            android:layout_marginTop="130dp"
+            android:rotation="-45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños4escalera9 escalera9baños4"/>
+
+        <ImageView
+            android:id="@+id/paula1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="138dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula1"/>
+
+        <ImageView
+            android:id="@+id/paula2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula2"/>
+
+        <ImageView
+            android:id="@+id/pbaños1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños1"/>
+
+        <ImageView
+            android:id="@+id/paula3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="222dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula3"/>
+
+        <ImageView
+            android:id="@+id/paula4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="267dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula4"/>
+
+        <ImageView
+            android:id="@+id/paula5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="309dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula5"/>
+        <ImageView
+            android:id="@+id/e2esc3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="324dp"
+            android:rotation="0"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada2escalera3 escalera3entrada2"/>
+
+        <ImageView
+            android:id="@+id/pent2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="entrada2"/>
+
+        <ImageView
+            android:id="@+id/pcap"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="capilla"/>
+
+        <ImageView
+            android:id="@+id/paula6"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="447dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula6"/>
+
+        <ImageView
+            android:id="@+id/paula7"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="497dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula7"/>
+        <ImageView
+            android:id="@+id/b2esc4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="515dp"
+            android:rotation="135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños2escalera4 escalera4baños2"/>
+
+        <ImageView
+            android:id="@+id/pbaños2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños2"/>
+
+        <ImageView
+            android:id="@+id/paula8"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula8"/>
+
+        <ImageView
+            android:id="@+id/paula9"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="140dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula9"/>
+
+        <ImageView
+            android:id="@+id/e3esc5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="166dp"
+            android:layout_marginTop="492dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada3escalera5 escalera5entrada3"/>
+
+        <ImageView
+            android:id="@+id/pent3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="532dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="entrada3"/>
+
+        <ImageView
+            android:id="@+id/pcafe"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="260dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="cafeteria"/>
+
+        <ImageView
+            android:id="@+id/pbaños3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños3"/>
+
+        <ImageView
+            android:id="@+id/prepo"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="reprografia"/>
+
+        <ImageView
+            android:id="@+id/paula10"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="455dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula10"/>
+
+        <ImageView
+            android:id="@+id/bancoesc7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="380dp"
+            android:rotation="140"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="bancoescalera7 escalera7banco"/>
+
+        <ImageView
+            android:id="@+id/e4esc7"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="343dp"
+            android:rotation="55"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="entrada4escalera7 escalera7entrada4"/>
+
+        <ImageView
+            android:id="@+id/esc8e4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="305dp"
+            android:rotation="125"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="escalera8entrada4 entrada4escalera8"/>
+
+        <ImageView
+            android:id="@+id/esc8a11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="260dp"
+            android:rotation="55"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="escalera8aula11 aula11escalera8"/>
+
+        <ImageView
+            android:id="@+id/pbanco"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="banco"/>
+
+        <ImageView
+            android:id="@+id/pent4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="entrada4"/>
+
+        <ImageView
+            android:id="@+id/paula11"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula11"/>
+
+
+        <ImageView
+            android:id="@+id/paula12"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula12"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/pbaños4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños4"/>
+
+        <ImageView
+            android:id="@+id/paula13"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="285dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula13"/>
+
+        <ImageView
+            android:id="@+id/paula14"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="240dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula14"/>
+
+
+        <ImageView
+            android:id="@+id/ppatio1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="88dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio1"/>
+
+        <ImageView
+            android:id="@+id/ppatio2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio2"/>
+
+        <ImageView
+            android:id="@+id/ppatio3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="288dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio3"/>
+
+        <ImageView
+            android:id="@+id/ppatio4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="263dp"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio4"/>
+
+        <ImageView
+            android:id="@+id/ppatio5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="263dp"
+            android:layout_marginStart="246dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio5"/>
+
+        <ImageView
+            android:id="@+id/ppatio6"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="297dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio6"/>
+
+        <ImageView
+            android:id="@+id/ppatio7"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio7"/>
+
+        <ImageView
+            android:id="@+id/ppatio8"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio8"/>
+
+        <ImageView
+            android:id="@+id/ppatio9"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="270dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio9"/>
+
+        <ImageView
+            android:id="@+id/ppatio13"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="493dp"
+            android:layout_marginStart="88dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio13"/>
+
+        <ImageView
+            android:id="@+id/ppatio14"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="482dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio14"/>
+
+        <ImageView
+            android:id="@+id/ppatio15"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="492dp"
+            android:layout_marginStart="288dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio15"/>
+
+        <ImageView
+            android:id="@+id/ppatio11"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="452dp"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio11"/>
+
+        <ImageView
+            android:id="@+id/ppatio10"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio10"/>
+
+        <ImageView
+            android:id="@+id/ppatio12"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginStart="246dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="patio12"/>
+
+        <ImageView
+            android:id="@+id/pesc1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera1"/>
+
+        <ImageView
+            android:id="@+id/pesc2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera2"/>
+
+        <ImageView
+            android:id="@+id/pesc3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="88dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera3"/>
+
+        <ImageView
+            android:id="@+id/pesc4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="562dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera4"/>
+
+        <ImageView
+            android:id="@+id/pesc5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="502dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera5"/>
+
+        <ImageView
+            android:id="@+id/pesc6"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="560dp"
+            android:layout_marginStart="357dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera6"/>
+
+        <ImageView
+            android:id="@+id/pesc7"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="315dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera7"/>
+
+        <ImageView
+            android:id="@+id/pesc8"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera8"/>
+
+        <ImageView
+            android:id="@+id/pesc9"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera9"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutp1"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:context=".Escaner" >
+
+        <ImageView
+            android:id="@+id/a102b101"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="147dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula102baños101 baños101aula102"/>
+
+        <ImageView
+            android:id="@+id/a101a102"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="80dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula101aula102 aula102aula101"/>
+
+        <ImageView
+            android:id="@+id/v101a101"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="131dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="vestibulo101aula101 aula101vestibulo101"/>
+
+        <ImageView
+            android:id="@+id/a119v101"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="183dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula119vestibulo101 vestibulo101aula119" />
+
+        <ImageView
+            android:id="@+id/a118a119"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="230dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula118aula119 aula119aula118"/>
+
+        <ImageView
+            android:id="@+id/b104a118"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="277dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="bañoa104aula118 aula118baños104"/>
+
+        <ImageView
+            android:id="@+id/b102a109"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños102aula109 aula109baños102" />
+
+        <ImageView
+            android:id="@+id/a109a110"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula109aula110 aula110aula109" />
+
+        <ImageView
+            android:id="@+id/a110v103"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula110vestibulo103 vestibulo103aula110"/>
+
+        <ImageView
+            android:id="@+id/v103a111"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo103aula111 aula111vestibulo103"/>
+
+
+        <ImageView
+            android:id="@+id/a111a112"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula111aula112 aula112aula111"/>
+
+        <ImageView
+            android:id="@+id/a112b103"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="278dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula112baños103 baños103aula112" />
+
+        <ImageView
+            android:id="@+id/b101a103"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="169dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños101aula103 aula103baños101"/>
+
+        <ImageView
+            android:id="@+id/a103a104"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="212dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula103aula104 aula104aula103"/>
+
+        <ImageView
+            android:id="@+id/a104a105"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="256dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula104aula105 aula105aula104"/>
+
+        <ImageView
+            android:id="@+id/a105v102"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="298dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula105vestibulo102 vestibulo102aula105"/>
+
+        <ImageView
+            android:id="@+id/v102a106"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="350dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo102aula106 aula106vestibulo102"/>
+
+        <ImageView
+            android:id="@+id/a106a107"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="395dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula106aula107 aula107aula106"/>
+
+        <ImageView
+            android:id="@+id/a107a108"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="438dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula107aula108 aula108aula107"/>
+
+        <ImageView
+            android:id="@+id/a108b102"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="491dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula108baños102 baños102aula108"/>
+
+        <ImageView
+            android:id="@+id/a117b104"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="169dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula117baños104 baños104aula117"/>
+        <ImageView
+            android:id="@+id/a116a117"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="217dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula116aula117 aula117aula116"/>
+
+        <ImageView
+            android:id="@+id/a116p1_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="280dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula116pasarela1 pasarela1aula116"/>
+        <ImageView
+            android:id="@+id/a116p1_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="261dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula116pasarela1 pasarela1aula116"/>
+
+
+        <ImageView
+            android:id="@+id/a115p1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="348dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula115pasarela1 pasarela1aula115"/>
+
+
+        <ImageView
+            android:id="@+id/a115a114"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="302dp"
+            android:layout_marginTop="417dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula115aula114 aula114aula115" />
+
+
+        <ImageView
+            android:id="@+id/a114a113"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="302dp"
+            android:layout_marginTop="457dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula114aula113 aula113aula114"/>
+
+        <ImageView
+            android:id="@+id/a113b103"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="498dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula113baños103 baños103aula113"/>
+        <ImageView
+            android:id="@+id/b101esc102"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="130dp"
+            android:rotation="45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños101escalera102 escalera102baños101"/>
+        <ImageView
+            android:id="@+id/b102esc104"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="515dp"
+            android:rotation="135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños102escalera104 escalera104baños102"/>
+        <ImageView
+            android:id="@+id/b103esc106"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="512dp"
+            android:rotation="-135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños103escalera106 escalera106baños103"/>
+
+        <ImageView
+            android:id="@+id/b104esc109"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="314dp"
+            android:layout_marginTop="130dp"
+            android:rotation="-45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños104escalera109 escalera109baños" />
+
+        <ImageView
+            android:id="@+id/v101esc101"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="168dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo101escalera101 escalera101vestibulo101"/>
+
+        <ImageView
+            android:id="@+id/v102esc103"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="324dp"
+            android:rotation="0"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo102escalera103 escalera103vestibulo102"/>
+
+        <ImageView
+            android:id="@+id/v103esc105"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="166dp"
+            android:layout_marginTop="492dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo103escalera105 escalera105vestibulo103"/>
+
+        <ImageView
+            android:id="@+id/a115esc107"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="380dp"
+            android:rotation="140"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula115escalera107 escalera107aula115"/>
+
+        <ImageView
+            android:id="@+id/esc107p1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="343dp"
+            android:rotation="55"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="escalera107pasarela1 pasarela1escalera107"/>
+
+        <ImageView
+            android:id="@+id/esc108p1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="305dp"
+            android:rotation="125"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="escalera108pasarela1 pasarela1escalera108"/>
+
+        <ImageView
+            android:id="@+id/esc108a116"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="260dp"
+            android:rotation="55"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="escalera108aula116 aula116escalera108"/>
+
+        <ImageView
+            android:id="@+id/pvest101"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo101"/>
+
+        <ImageView
+            android:id="@+id/paula101"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="138dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula101"/>
+
+        <ImageView
+            android:id="@+id/paula102"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula102"/>
+
+        <ImageView
+            android:id="@+id/pbaños101"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños101"/>
+
+        <ImageView
+            android:id="@+id/paula103"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="222dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula103"/>
+
+        <ImageView
+            android:id="@+id/paula104"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="267dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula104"/>
+
+        <ImageView
+            android:id="@+id/paula105"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="309dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula105"/>
+
+        <ImageView
+            android:id="@+id/pvest102"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo102"/>
+
+        <ImageView
+            android:id="@+id/paula106"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula106"/>
+
+        <ImageView
+            android:id="@+id/paula107"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="455dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula107"/>
+
+        <ImageView
+            android:id="@+id/paula108"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="497dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula108"/>
+
+        <ImageView
+            android:id="@+id/pbaños102"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños102"/>
+
+        <ImageView
+            android:id="@+id/paula109"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula109"/>
+
+        <ImageView
+            android:id="@+id/paula110"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="140dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula110"/>
+
+        <ImageView
+            android:id="@+id/pvest103"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="532dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo103"/>
+
+        <ImageView
+            android:id="@+id/paula111"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="245dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula111"/>
+
+        <ImageView
+            android:id="@+id/paula112"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="293dp"
+            android:layout_marginTop="532dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula112"/>
+
+        <ImageView
+            android:id="@+id/pbaños103"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños103"/>
+
+        <ImageView
+            android:id="@+id/paula113"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="503dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula113"/>
+
+        <ImageView
+            android:id="@+id/paula114"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula114"/>
+
+        <ImageView
+            android:id="@+id/paula115"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="425dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula115"/>
+
+        <ImageView
+            android:id="@+id/ppasarela1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="pasarela1" />
+
+        <ImageView
+            android:id="@+id/paula116"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula116"/>
+
+
+        <ImageView
+            android:id="@+id/paula117"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula117" />
+
+        <ImageView
+            android:id="@+id/pbaños104"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños104"/>
+
+        <ImageView
+            android:id="@+id/paula118"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="285dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula118"/>
+
+        <ImageView
+            android:id="@+id/paula119"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="240dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula119" />
+        <ImageView
+            android:id="@+id/pesc101"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera101"/>
+
+        <ImageView
+            android:id="@+id/pesc102"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera102"/>
+
+        <ImageView
+            android:id="@+id/pesc103"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="88dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera103"/>
+
+        <ImageView
+            android:id="@+id/pesc104"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="562dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera104"/>
+
+        <ImageView
+            android:id="@+id/pesc105"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="502dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera105"/>
+
+        <ImageView
+            android:id="@+id/pesc106"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="560dp"
+            android:layout_marginStart="357dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera106"/>
+
+        <ImageView
+            android:id="@+id/pesc107"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="315dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera107"/>
+
+        <ImageView
+            android:id="@+id/pesc108"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera108"/>
+
+        <ImageView
+            android:id="@+id/pesc109"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera109"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutp2"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:context=".Escaner" >
+
+        <ImageView
+            android:id="@+id/a202b201"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="147dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula202baños201 baños201aula202"/>
+
+        <ImageView
+            android:id="@+id/a201a202"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="80dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula202aula201 aula201aula202"/>
+
+        <ImageView
+            android:id="@+id/v201a201"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="131dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="vestibulo201aula201 aula201vestibulo201"/>
+
+        <ImageView
+            android:id="@+id/a219v201"
+            android:layout_width="82dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="183dp"
+            android:layout_marginTop="147dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula219vestibulo201 vestibulo201aula219"/>
+
+        <ImageView
+            android:id="@+id/a218a219"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="230dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="aula218aula219 aula219aula218"/>
+
+        <ImageView
+            android:id="@+id/b204a218"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginStart="277dp"
+            android:visibility="invisible"
+            android:src="@drawable/linea"
+            android:contentDescription="baños204aula218 aula218baños204"/>
+
+        <ImageView
+            android:id="@+id/b202a209"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños202aula209 aula209baños202"/>
+
+        <ImageView
+            android:id="@+id/a209a210"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula209aula210 aula210aula209"/>
+
+        <ImageView
+            android:id="@+id/a210v203"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula210vestibulo203 vestibulo203aula210"/>
+
+        <ImageView
+            android:id="@+id/v203a211"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo203aula211 aula211vestibulo203"/>
+
+
+        <ImageView
+            android:id="@+id/a211a212"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula211aula212 aula212aula211"/>
+
+        <ImageView
+            android:id="@+id/a212b203"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="278dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula212baños203 baños203aula212"/>
+
+        <ImageView
+            android:id="@+id/b201a203"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="169dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños201aula203 aula203baños201"/>
+
+        <ImageView
+            android:id="@+id/a203a204"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="212dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula203aula204 aula204aula203"/>
+
+        <ImageView
+            android:id="@+id/a204a205"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="256dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula204aula205 aula205aula204"/>
+
+        <ImageView
+            android:id="@+id/a205v202"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="298dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula205vestibulo202 vestibulo202aula205"/>
+
+        <ImageView
+            android:id="@+id/v202a206"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="350dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo202aula206 aula206vestibulo202"/>
+
+        <ImageView
+            android:id="@+id/a206a207"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="395dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula206aula207 aula207aula206"/>
+
+        <ImageView
+            android:id="@+id/a207a208"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="438dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula207aula208 aula208aula207"/>
+
+        <ImageView
+            android:id="@+id/a208b202"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="491dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula208baños202 baños202aula208"/>
+
+        <ImageView
+            android:id="@+id/a217b204"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="169dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula217baños204 baños204aula217"/>
+        <ImageView
+            android:id="@+id/a216a217"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="217dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula216aula217 aula217aula216"/>
+
+        <ImageView
+            android:id="@+id/a216p2_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="280dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula216pasarela2 pasarela2aula216"/>
+        <ImageView
+            android:id="@+id/a216p2_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="261dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula216pasarela2 pasarela2aula216"/>
+
+
+        <ImageView
+            android:id="@+id/a215p2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="348dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula215pasarela2 pasarela2aula215"/>
+
+
+        <ImageView
+            android:id="@+id/a215a214"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="302dp"
+            android:layout_marginTop="417dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula215aula214 aula214aula215"/>
+
+
+        <ImageView
+            android:id="@+id/a214a213"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="302dp"
+            android:layout_marginTop="457dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula213aula214 aula214aula213"/>
+
+        <ImageView
+            android:id="@+id/a213b203"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="498dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula213baños203 baños203aula213"/>
+        <ImageView
+            android:id="@+id/b201esc202"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="130dp"
+            android:rotation="45"
+            android:src="@drawable/linea"
+            android:visibility="invisible" />
+        <ImageView
+            android:id="@+id/b202esc204"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="515dp"
+            android:rotation="135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños202escalera204 escalera204baños202"/>
+        <ImageView
+            android:id="@+id/b203esc206"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="512dp"
+            android:rotation="-135"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños203escalera206 escalera206baños203"/>
+
+        <ImageView
+            android:id="@+id/b204esc209"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="314dp"
+            android:layout_marginTop="130dp"
+            android:rotation="-45"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="baños204escalera209 escalera209baños204"/>
+
+        <ImageView
+            android:id="@+id/v201esc201"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="168dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo201escalera201 escalera201vestibulo201"/>
+
+        <ImageView
+            android:id="@+id/v202esc203"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="324dp"
+            android:rotation="0"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo202escalera203 escalera203vestibulo202"/>
+
+        <ImageView
+            android:id="@+id/v203esc205"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="166dp"
+            android:layout_marginTop="492dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo203escalera205 escalera205vestibulo203"/>
+
+        <ImageView
+            android:id="@+id/a215esc207"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="380dp"
+            android:rotation="140"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula215escalera207 escalera207aula215"/>
+
+        <ImageView
+            android:id="@+id/esc207p2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="343dp"
+            android:rotation="55"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="escalera207pasarela2 pasarela2escalera207"/>
+
+        <ImageView
+            android:id="@+id/esc208p2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="305dp"
+            android:rotation="125"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="escalera208pasarela2 pasarela2escalera208"/>
+
+        <ImageView
+            android:id="@+id/esc208a216"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="260dp"
+            android:rotation="55"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="escalera208aula216 aula216escalera208"/>
+
+
+        <ImageView
+            android:id="@+id/pvest201"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo201"/>
+
+        <ImageView
+            android:id="@+id/paula201"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="138dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula201"/>
+
+        <ImageView
+            android:id="@+id/paula202"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula202"/>
+
+        <ImageView
+            android:id="@+id/pbaños201"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños201"/>
+
+        <ImageView
+            android:id="@+id/paula203"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="222dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula203"/>
+
+        <ImageView
+            android:id="@+id/paula204"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="267dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula204"/>
+
+        <ImageView
+            android:id="@+id/paula205"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="309dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula205"/>
+
+        <ImageView
+            android:id="@+id/pvest202"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo202"/>
+
+        <ImageView
+            android:id="@+id/paula206"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula206"/>
+
+        <ImageView
+            android:id="@+id/paula207"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="455dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula207"/>
+
+        <ImageView
+            android:id="@+id/paula208"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="497dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula208"/>
+
+
+        <ImageView
+            android:id="@+id/pbaños202"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños202"/>
+
+        <ImageView
+            android:id="@+id/paula209"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="90dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula209"/>
+
+        <ImageView
+            android:id="@+id/paula210"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="140dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula210"/>
+
+        <ImageView
+            android:id="@+id/pvest203"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="532dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="vestibulo203"/>
+
+        <ImageView
+            android:id="@+id/paula211"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="245dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula211"/>
+
+        <ImageView
+            android:id="@+id/paula212"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="293dp"
+            android:layout_marginTop="532dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula212"/>
+
+        <ImageView
+            android:id="@+id/pbaños203"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="532dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños203"/>
+
+        <ImageView
+            android:id="@+id/paula213"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="503dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula213"/>
+
+        <ImageView
+            android:id="@+id/paula214"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula214"/>
+
+
+
+        <ImageView
+            android:id="@+id/paula215"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="425dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula215"/>
+
+        <ImageView
+            android:id="@+id/ppasarela2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="pasarela2"/>
+
+        <ImageView
+            android:id="@+id/paula216"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula216"/>
+
+
+        <ImageView
+            android:id="@+id/paula217"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula217"/>
+
+        <ImageView
+            android:id="@+id/pbaños204"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="baños204"/>
+
+        <ImageView
+            android:id="@+id/paula218"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="285dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula218"/>
+
+        <ImageView
+            android:id="@+id/paula219"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="240dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula219"/>
+        <ImageView
+            android:id="@+id/pesc201"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="189dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera201"/>
+
+        <ImageView
+            android:id="@+id/pesc202"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera202"/>
+
+        <ImageView
+            android:id="@+id/pesc203"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="357dp"
+            android:layout_marginStart="88dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera203"/>
+
+        <ImageView
+            android:id="@+id/pesc204"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="562dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera204"/>
+
+        <ImageView
+            android:id="@+id/pesc205"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="502dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera205"/>
+
+        <ImageView
+            android:id="@+id/pesc206"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="560dp"
+            android:layout_marginStart="357dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera206"/>
+
+
+        <ImageView
+            android:id="@+id/pesc207"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="315dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera207"/>
+
+        <ImageView
+            android:id="@+id/pesc208"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera208"/>
+
+        <ImageView
+            android:id="@+id/pesc209"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="359dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="escalera209"/>
+
+    </RelativeLayout>
+
+
 
 
 </RelativeLayout>

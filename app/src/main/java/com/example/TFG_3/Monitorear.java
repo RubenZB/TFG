@@ -28,7 +28,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
     private final BeaconManager beaconManager = BeaconManager.getInstanceForApplication(this);
     private Transmisor t;
     private final Basedatos dbTransmisor = App.dbTransmisor;
-
     public static String nT1;
     public static String nT2;
     private String aux = null;
@@ -92,7 +91,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
     private Button baño102;
     private Button baño103;
     private Button baño104;
-
     private Button vestibulo201;
     private Button vestibulo202;
     private Button vestibulo203;
@@ -138,6 +136,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
+        //Definimos botones
         mostrar = findViewById(R.id.bmostrar);
         planta0 = findViewById(R.id.planta0);
         planta0.setBackgroundColor(Color.DKGRAY);
@@ -343,7 +342,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
 
     }
 
-
+    //Método para mostrar por pantalla los botones que se filtran
     public void mostrarMapa(View view){
        String opcion = spinner.getSelectedItem().toString().replaceAll(" ","");
        opcion = opcion.toLowerCase();
@@ -370,18 +369,21 @@ public class Monitorear extends Activity implements MonitorNotifier {
            }
        }
     }
+
+    //Método para ocultar los botones
     public void ocultarBotones(ArrayList<Button> botones){
         for (Button b : botones){
             b.setVisibility(View.INVISIBLE);
         }
     }
 
+    //Método para mostrar los botones
     public void mostrarBotones(ArrayList<Button> botones){
         for (Button b : botones){
             b.setVisibility(View.VISIBLE);
         }
     }
-
+    //Método para colorear los botones
     public void colorBotones(ArrayList<Button> botones){
             for (Button b : botones ) {
                 if (b.getText().toString().contains("entrada") || b.getText().toString().contains("baño") ||b.getText().toString().contains("vestibulo") ) {
@@ -391,6 +393,8 @@ public class Monitorear extends Activity implements MonitorNotifier {
                 }
         }
     }
+
+    //Método para colorear el botón que indica la posición del usuario
     private void botonActual(String opcion) {
         if(aux != null){
             botonAntiguo(aux);
@@ -402,6 +406,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
             }
         }
     }
+    //Método para colorear el botón que indica la posición anterior del usuario
     public void botonAntiguo(String opcion) {
         for (Button b : botones){
             if(b.getText().toString().contains(opcion)) {
@@ -413,7 +418,9 @@ public class Monitorear extends Activity implements MonitorNotifier {
             }
         }
     }
-    public void mostrarBoton(View view){
+
+    //Método para mostrar una ventana flotante con la información del botón
+    public void ventanaBoton(View view){
         Button button = (Button) view;
         nT2 = button.getText().toString();
         Transmisor tAux = dbTransmisor.buscarTransmisorNombre(nT2);
@@ -457,7 +464,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         //mostrarPorPantalla("didDetermineStateForRegion called with state: " + (state == 1 ? "INSIDE ("+state+")" : "OUTSIDE ("+state+")"));
     }
 
-
+    //Método para mostrar el mapa la planta 0
     public void mostrarPlanta0(View view){
         foto.setImageResource(R.drawable.mapaaulario);
         ocultarBotones(botones);
@@ -467,6 +474,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         planta1.setBackgroundColor(Color.LTGRAY);
         planta2.setBackgroundColor(Color.LTGRAY);
     }
+    //Método para mostrar el mapa la planta 1
     public void mostrarPlanta1(View view){
         ocultarBotones(botones);
         botones = botonesp1;
@@ -477,6 +485,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         planta1.setBackgroundColor(Color.DKGRAY);
         planta2.setBackgroundColor(Color.LTGRAY);
     }
+    //Método para mostrar el mapa la planta 2
     public void mostrarPlanta2(View view){
         ocultarBotones(botones);
         botones = botonesp2;
