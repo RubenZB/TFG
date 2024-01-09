@@ -5,21 +5,14 @@
     android:layout_height="match_parent"
     tools:context=".Escaner" >
 
-     <EditText
-        android:id="@+id/rangingText"
+    <TextView
+        android:id="@+id/tsup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="14dp"
-        android:ems="10"
-        android:gravity="left|top"
-        android:inputType="textMultiLine"
-        android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:visibility="invisible">
-    </EditText>
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="140dp"
+        android:text="Planta 0"
+        android:textSize="25sp" />
 
     <ImageView
         android:id="@+id/imagen"
@@ -41,27 +34,19 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginTop="605dp"
-        android:text="¿Quiere continuar con esta ruta?"
+        android:text="ajdsfjdlf"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/planta1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="635dp"
-        android:onClick="planta1"
-        android:text="Planta 1" />
+    <ImageButton
+        android:id="@+id/tutorial"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="20dp"
+        android:onClick="mostrarTutorial"
+        android:src="@drawable/question"/>
 
-    <Button
-        android:id="@+id/planta2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="635dp"
-        android:onClick="planta2"
-        android:text="Planta 2" />
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/layoutp0"
@@ -1297,7 +1282,7 @@
             android:layout_marginStart="277dp"
             android:visibility="invisible"
             android:src="@drawable/linea"
-            android:contentDescription="bañoa104aula118 aula118baños104"/>
+            android:contentDescription="baños104aula118 aula118baños104"/>
 
         <ImageView
             android:id="@+id/b102a109"

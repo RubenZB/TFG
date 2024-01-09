@@ -25,7 +25,7 @@ public class Menu extends Activity implements MonitorNotifier {
 		Log.d(TAG, "onCreate");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu);
-		verifyBluetooth();
+		verificarBluetooth();
 		requestPermissions();
 		BeaconManager.getInstanceForApplication(this).addMonitorNotifier(this);
 	}
@@ -126,7 +126,7 @@ public class Menu extends Activity implements MonitorNotifier {
 	public void tutorialClicked(View view) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("¿Como funciona?");
-		builder.setMessage("La aplicación detecta los sensore que se encuentran en el entorno y muestra la información asociada a cada uno de ellos.\n"+
+		builder.setMessage("La aplicación detecta los sensores que se encuentran en el entorno y muestra la información asociada a cada uno de ellos.\n"+
 				"Al pulsar el botón de iniciar, se mostrará un mapa con los distintos sitos de interes en el edificio.\n"+
 				"Podemos filtrar los sitios que se muestran en el mapa, para encontrar alguno en especifico.\n"+
 				"Al seleccionar un punto del mapa, se mostrará una ventana con dos opciones: Mostrar información y Mostrar ruta.\n"+
@@ -147,7 +147,7 @@ public class Menu extends Activity implements MonitorNotifier {
 		setContentView(R.layout.activity_menu);
 	}
 
-	private void verifyBluetooth() {
+	private void verificarBluetooth() {
 		try {
 			if (!BeaconManager.getInstanceForApplication(this).checkAvailability()) {
 				final AlertDialog.Builder builder = new AlertDialog.Builder(this);

@@ -1,12 +1,12 @@
-0xe630f4b1dea0,entrada2,Entrada 2,Entre la capila y el aula 5,0
+0x11,entrada2,Entrada 2,Entre la capila y el aula 5,0
 0x530801241127,entrada3,Entrada 3,Entre la cafeteria y el aula 9,0
-0xc36a2cf3dd73,baños3,Baños 3,Entre el la cafeteria y la libreria,0
-0x369586a8a974,patio7,Patio 7,Entrada al patio proxima a la entrada 2,0
-0x640b6d242840,patio8,Patio 8,b,0
-0xfc0ed82db1f5,patio10,Patio 10,b,0
-0x15c210b9f1ea,patio12,Patio 12,b,0
-0xd4fcb04a6573,patio14,Patio 14,b,0
-0x3d4721ba9b35,patio15,Patio 15,b,0
+0x10,baños3,Baños 3,Entre el la cafeteria y la libreria,0
+0x12,patio7,Patio 7,Entrada al patio proxima a la entrada 2,0
+0x87,patio8,Patio 8,b,0
+0x96,patio10,Patio 10,b,0
+0x38,patio12,Patio 12,b,0
+0x39,patio14,Patio 14,b,0
+0x77,patio15,Patio 15,b,0
 0x0,entrada1,Entrada 1,Entre el aula 1 y la aula 14,0
 0x1,aula1,Aula 1,Horarios<br>·9:00 - 11:00 Matematicas<br>·11:00 - 13:00 Fisica<br>·13:00 - 15:00 Quimica,0
 0x2,aula2,Aula 2,Horarios<br>·8:30 - 10:30 Estadistica<br>·10:30 - 12:30 Idioma Moderno (Ingles)<br>·12:30 - 14:30 Idioma Moderno (Frances),0
@@ -17,9 +17,9 @@
 0x7,capilla,Capilla,Horario: 8:00 - 20:00,0
 0x8,aula6,Aula 6,Seminiario Ciberseguridad<br>·8:00 - 14:00<br>·16:00 - 20:00,0
 0x9,aula7,Aula 7,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·10:00 - 12:00 Redes<br>·12:00 - 14:00 Arquitectura de computadores,0
-0x10,baños2,Baño 2,Entre el aula 7 y el aula 8,0
-0x11,aula8,Aula 8,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·14:00 - 16:00 Arquitectura de computadores,0
-0x12,aula9,Aula 9,Horarios<br>·11:00 - 13:00 Pedagogia Infantil<br>·15:30 - 17:30 Fundamentos de la educacion,0
+0xc36a2cf3dd73,baños2,Baño 2,Entre el aula 7 y el aula 8,0
+0xe630f4b1dea0,aula8,Aula 8,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·14:00 - 16:00 Arquitectura de computadores,0
+0x369586a8a974,aula9,Aula 9,Horarios<br>·11:00 - 13:00 Pedagogia Infantil<br>·15:30 - 17:30 Fundamentos de la educacion,0
 0x13,cafeteria,Cafeteria,Horarios: 8:00 - 20:00<br>Menu del dia<br>-Sopa de verduras<br>-Tortilla de patata<br>-Postre y bebida incluido 8Euros,0
 0x14,reprografia,Reprografia,Horario: 8:00 - 20:00,0
 0x15,aula10,Aula 10,Horarios<br>·10:30 - 12:30 Calculo<br>·15:00 - 17:00 Psicologia de la Educacion<br>·18:00 - 20:00 Idiomar Moderno (Aleman),0
@@ -45,8 +45,8 @@
 0x35,aula104,Aula 104,Horarios<br>·8:00 - 10:00 Marketing<br>·10:00 - 12:00 Fundamentos Juridicos<br>·12:00 - 14:00 Fundamentos de la economia,1
 0x36,aula105,Aula 105,Horarios<br>·15:00 - 17:00 Introduccion a la programacion<br>·17:00 - 19:00 Estructuras de datos,1
 0x37,aula106,Aula 106,Horarios<br>·16:00 - 18:00 Bases de datos<br>·18:00 - 20:00 Inteligencia artificial,1
-0x38,aula107,Aula 107,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
-0x39,aula108,Aula 108,Seminiario Ciberseguridad<br>·8:00 - 14:00<br>·16:00 - 20:00,1
+0x15c210b9f1ea,aula107,Aula 107,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
+0xd4fcb04a6573,aula108,Aula 108,Seminiario Ciberseguridad<br>·8:00 - 14:00<br>·16:00 - 20:00,1
 0x40,aula109,Aula 109,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·10:00 - 12:00 Redes<br>·12:00 - 14:00 Arquitectura de computadores,1
 0x41,aula110,Aula 110,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
 0x42,aula111,Aula 111,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·14:00 - 16:00 Arquitectura de computadores,1
@@ -84,7 +84,7 @@
 0x74,vestibulo202,Vestibulo 202,Entre el aula 1 y la aula 14,2
 0x75,vestibulo203,Vestibulo 203,Entre el aula 1 y la aula 14,2
 0x76,baños101,Baño 101,Entre el aula 7 y el aula 8,1
-0x77,baños102,Baño 102,Entre el aula 7 y el aula 8,1
+0x3d4721ba9b35,baños102,Baño 102,Entre el aula 7 y el aula 8,1
 0x78,baños103,Baño 103,Entre el aula 7 y el aula 8,1
 0x79,baños104,Baño 104,Entre el aula 7 y el aula 8,1
 0x80,baños201,Baño 201,Entre el aula 7 y el aula 8,2
@@ -94,7 +94,7 @@
 0x84,escalera1,escalera 1,b,0
 0x85,escalera2,escalera 2,b,0
 0x86,escalera3,escalera 3,b,0
-0x87,escalera4,escalera 4,b,0
+0x640b6d242840,escalera4,escalera 4,b,0
 0x88,escalera5,escalera 5,b,0
 0x89,escalera6,escalera 6,b,0
 0x90,escalera7,escalera 7,b,0
@@ -103,7 +103,7 @@
 0x93,escalera101,escalera 101,b,1
 0x94,escalera102,escalera 102,b,1
 0x95,escalera103,escalera 103,b,1
-0x96,escalera104,escalera 104,b,1
+0xfc0ed82db1f5,escalera104,escalera 104,b,1
 0x97,escalera105,escalera 105,b,1
 0x98,escalera106,escalera 106,b,1
 0x99,escalera107,escalera 107,b,1

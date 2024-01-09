@@ -11,8 +11,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 
 import org.altbeacon.beacon.Beacon;
@@ -28,15 +30,17 @@ public class Monitorear extends Activity implements MonitorNotifier {
     private final BeaconManager beaconManager = BeaconManager.getInstanceForApplication(this);
     private Transmisor t;
     private final Basedatos dbTransmisor = App.dbTransmisor;
-    public static String nT1;
-    public static String nT2;
+    public static String nTransmisor1;
+    public static String nTransmisor2;
     private String aux = null;
+    public static boolean exterior = true;
     private ArrayList<Button> botonesp0 = new ArrayList<>();
     private ArrayList<Button> botonesp1 = new ArrayList<>();
     private ArrayList<Button> botonesp2 = new ArrayList<>();
     private ArrayList<Button> botones = new ArrayList<>();
     private ImageView foto;
     private Spinner spinner;
+    private ImageButton ruta;
     private Button mostrar;
     private Button aula1;
     private Button aula2;
@@ -144,6 +148,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         planta1.setBackgroundColor(Color.LTGRAY);
         planta2 = findViewById(R.id.planta2);
         planta2.setBackgroundColor(Color.LTGRAY);
+        ruta = findViewById(R.id.ruta);
 
         //Definimos botones planta 0
         aula1 = findViewById(R.id.baula1);
@@ -328,9 +333,9 @@ public class Monitorear extends Activity implements MonitorNotifier {
             }
             if (beaconcer != null) {
                 t = dbTransmisor.getTransmisor(beaconcer.getId2().toString());
-                nT1 = t.getNombre();
-                Log.d(TAG,nT1);
-                botonActual(nT1);
+                nTransmisor1 = t.getNombre();
+                Log.d(TAG, nTransmisor1);
+                botonActual(nTransmisor1);
             }
 
 
@@ -422,10 +427,10 @@ public class Monitorear extends Activity implements MonitorNotifier {
     //Método para mostrar una ventana flotante con la información del botón
     public void ventanaBoton(View view){
         Button button = (Button) view;
-        nT2 = button.getText().toString();
-        Transmisor tAux = dbTransmisor.buscarTransmisorNombre(nT2);
+        nTransmisor2 = button.getText().toString();
+        Transmisor tAux = dbTransmisor.buscarTransmisorNombre(nTransmisor2);
         String info = tAux.getInfo();
-        Log.d(TAG,nT2);
+        Log.d(TAG, nTransmisor2);
 
         // Mostrar una ventana flotante temporal con el nombre del botón
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -495,5 +500,29 @@ public class Monitorear extends Activity implements MonitorNotifier {
         planta0.setBackgroundColor(Color.LTGRAY);
         planta1.setBackgroundColor(Color.LTGRAY);
         planta2.setBackgroundColor(Color.DKGRAY);
+    }
+    public void cambiarRuta(View view){
+        if (exterior == true){
+            exterior = false;
+            ruta.setImageResource(R.drawable.snow);
+            Toast.makeText(this, "La ruta será por el interior", Toast.LENGTH_SHORT).show();
+        }else{
+            exterior = true;
+            ruta.setImageResource(R.drawable.sunny);
+            Toast.makeText(this, "La ruta podrá ir por el exterior", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void mostrarTutorial(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Tutorial");
+        builder.setMessage("Para ver la información de un lugar del mapa, pulsa sobre el botón correspondiente.\n" +
+                "Para ver la ruta hasta un lugar del mapa, pulsa sobre el botón correspondiente y después pulsa en el botón 'Ir'.\n" +
+                "Para filtrar los lugares que se muestran en el mapa, selecciona una opción del desplegable y pulsa en el botón 'Mostrar'.\n" +
+                "Para cambiar de planta, pulsa sobre el botón de la planta que quieras ver.\n" +
+                "Para cambiar entre ruta por el interior o por el exterior, pulsa sobre el botón de arriba a la izquierda.");
+        builder.setCancelable(true);
+        builder.setPositiveButton("Aceptar",null);
+        builder.show();
     }
 }

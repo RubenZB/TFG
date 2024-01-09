@@ -46,7 +46,7 @@ public class Grafo {
                     Transmisor transmisor = dbTransmisor.buscarTransmisorNombre(nombreTransmisor);
                     if (transmisor != null) {
                         agregarTransmisor(transmisor);
-                        Log.d("Grafo", "Agregando " + transmisor.getNombre());
+                        //Log.d("Grafo", "Agregando " + transmisor.getNombre());
                     }
                 }
         } catch (IOException e) {
@@ -68,7 +68,7 @@ public class Grafo {
                     double p = Double.parseDouble(datos[2]);
                     if (transmisor1 != null && transmisor2 != null) {
                         conectarTransmisores(transmisor1, transmisor2,p);
-                        Log.d("Grafo", "Conectando " + transmisor1.getNombre() + " con " + transmisor2.getNombre());
+                        //Log.d("Grafo", "Conectando " + transmisor1.getNombre() + " con " + transmisor2.getNombre());
 
                     }
                 }
@@ -125,11 +125,13 @@ public class Grafo {
 
         if (edgeList != null) {
             for (DefaultWeightedEdge edge : edgeList) {
-                Transmisor siguienteTransmisor = Graphs.getOppositeVertex(grafo, edge, camino.get(camino.size() - 1));
-                Transmisor transmisorActual = camino.get(camino.size() - 1);
-                String ar = transmisorActual.getNombre() + siguienteTransmisor.getNombre();
-                camino.add(siguienteTransmisor);
-                arcos.add(ar);
+                Transmisor siguienteTransmisor = grafo.getEdgeSource(edge);
+                Transmisor transmisorActual = grafo.getEdgeTarget(edge);
+                if (!transmisorActual.getNombre().contains("escalera") || !siguienteTransmisor.getNombre().contains("escalera")) {
+                    String ar = transmisorActual.getNombre() + siguienteTransmisor.getNombre();
+                    camino.add(siguienteTransmisor);
+                    arcos.add(ar);
+                }
             }
         }
 

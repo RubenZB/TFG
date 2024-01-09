@@ -9,9 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -31,11 +29,13 @@ public class Escaner extends Activity {
     private final BeaconManager beaconManager = BeaconManager.getInstanceForApplication(this);
     private Transmisor tdetectado;
     private Transmisor tantiguo;
+    private TextView tsup;
     private final Basedatos dbTransmisor = App.dbTransmisor;
     private final Grafo grafo = App.grafo;
     private final Grafo grafo2 = App.grafo2;
-    private final String nT1 = Monitorear.nT1;
-    private final String nT2 = Monitorear.nT2;
+    private final boolean exterior = Monitorear.exterior;
+    private final String nT1 = Monitorear.nTransmisor1;
+    private final String nT2 = Monitorear.nTransmisor2;
     private int piso = 0;
     private ArrayList<ImageView> nodos = new ArrayList<>();
     private ArrayList<ImageView> arcos = new ArrayList<>();
@@ -304,9 +304,6 @@ public class Escaner extends Activity {
     private ImageView p2esc208;
     private ImageView esc208a216;
     private ImageView b204esc209;
-
-    private Button b1;
-    private Button b2;
     private TextView texto;
     private Grafo g;
     private Transmisor torigen;
@@ -322,16 +319,19 @@ public class Escaner extends Activity {
         layoutp0 = findViewById(R.id.layoutp0);
         layoutp1 = findViewById(R.id.layoutp1);
         layoutp2 = findViewById(R.id.layoutp2);
-        Log.d(TAG, grafo.buscarTransmisorPorNombre("escalera6").toString());
         incicializarImagen();
         interfazPiso(nT1);
     }
     @Override
     protected void onResume() {
         super.onResume();
-
+        tsup = findViewById(R.id.tsup);
         texto = findViewById(R.id.texto);
-        g = grafo;
+        if(exterior){
+            g = grafo;
+        }else{
+            g = grafo2;
+        };
         ocultarArcos();
         ocultarPuntos();
         torigen = g.buscarTransmisorPorNombre(nT1);
@@ -339,6 +339,8 @@ public class Escaner extends Activity {
         tdestino = g.buscarTransmisorPorNombre(nT2);
         mostrarCamino(torigen,tdestino,g);
         double p = g.pesototalRuta(camino);
+        texto.setText("La distancia al destino es de: " + p + " metros");
+
 
         RangeNotifier rangeNotifier = (beacons, region) -> {
             int d = 100;
@@ -367,9 +369,14 @@ public class Escaner extends Activity {
                         texto.setText("Has llegado a tu destino");
 
                     } else {
-                        mostrarCamino(tdetectado, tdestino, g);
-                        texto.setText("La distancia al destino es de: " + g.pesototalRuta(camino) + " metros");
-
+                        if(tdetectado.getNombre().contains("escalera")) {
+                            interfazPiso(tdetectado.getNombre());
+                            mostrarCamino(tdetectado, tdestino, g);
+                            texto.setText("La distancia al destino es de: " + g.pesototalRuta(camino) + " metros\n Sube las escaleras");
+                        }else{
+                            mostrarCamino(torigen, tdestino, g);
+                            texto.setText("La distancia al destino es de: " + g.pesototalRuta(camino) + " metros");
+                        }
                     }
                         tantiguo = tdetectado;
                 }
@@ -377,6 +384,11 @@ public class Escaner extends Activity {
                     Log.d(TAG,  e.toString());
             }
         };
+
+        beaconManager.addRangeNotifier(rangeNotifier);
+        beaconManager.setForegroundScanPeriod(1000);
+        beaconManager.setForegroundBetweenScanPeriod(500);
+        beaconManager.startRangingBeacons(App.escanRegion);
     }
     @Override
     protected void onPause() {
@@ -1013,27 +1025,43 @@ public class Escaner extends Activity {
 
     public void interfazPiso(String nomTransmisor){
         Transmisor t = dbTransmisor.buscarTransmisorNombre(nomTransmisor);
+        TextView txt = Escaner.this.findViewById(R.id.tsup);
         if (t.getPiso() == 0){
             layoutp0.setVisibility(View.VISIBLE);
             layoutp1.setVisibility(View.GONE);
             layoutp2.setVisibility(View.GONE);
             img.setImageResource(R.drawable.mapaaulario);
+            txt.setText("Planta 0");
         }else if(t.getPiso() == 1){
             layoutp0.setVisibility(View.GONE);
             layoutp1.setVisibility(View.VISIBLE);
             layoutp2.setVisibility(View.GONE);
             img.setImageResource(R.drawable.mapaaulario1);
+            txt.setText("Planta 1");
         }else if(t.getPiso() == 2){
             layoutp0.setVisibility(View.GONE);
             layoutp1.setVisibility(View.GONE);
             layoutp2.setVisibility(View.VISIBLE);
             img.setImageResource(R.drawable.mapaaulario1);
+            txt.setText("Planta 2");
         }
+    }
+
+    public void mostrarTutorial(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Tutorial");
+        builder.setMessage("El usuario deberá avanzar a traves de la ruta porporcionada para llegar a su destino.\n" +
+                "Para ello, deberá seguir las indicaciones que se le proporcionen en la pantalla.\n" +
+                "Cuando el usuario avance en su ruta, se irá actualizando en tiempo real hasta llegar a su destino.\n" +
+                "En caso de tomar una indicacion de forma erronea,la aplicación le avisará y le proporcionará una nueva ruta.");
+        builder.setCancelable(true);
+        builder.setPositiveButton("Aceptar",null);
+        builder.show();
     }
 
     private void mostrarPorPantalla(final String line) {
         runOnUiThread(() -> {
-            EditText editText = Escaner.this.findViewById(R.id.rangingText);
+            EditText editText = Escaner.this.findViewById(R.id.text);
             editText.setText("");
             editText.append(line+"\n");
         });

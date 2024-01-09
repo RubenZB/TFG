@@ -36,13 +36,12 @@ public class App extends Application implements MonitorNotifier {
             Toast.makeText(this, "Error al crear la base de datos", Toast.LENGTH_SHORT).show();
         }
         //dbTransmisor.borrarBaseDeDatos();
-        dbTransmisor.cargarDatosCSV(db);
-        dbTransmisor.mostrarContenidoBaseDatos();
-        grafo.leerTransmisoresDesdeCSV(this,"nodos.csv");
-        grafo.cargarConexionesDesdeCSV(this,"grafo.csv");
-
-        grafo2.leerTransmisoresDesdeCSV(this,"nodos2.csv");
-        grafo2.cargarConexionesDesdeCSV(this,"grafo2.csv");
+       dbTransmisor.cargarDatosCSV(db);
+       dbTransmisor.mostrarContenidoBaseDatos();
+       grafo.leerTransmisoresDesdeCSV(this,"nodos.csv");
+       grafo.cargarConexionesDesdeCSV(this,"grafo.csv");
+       grafo2.leerTransmisoresDesdeCSV(this,"nodos2.csv");
+       grafo2.cargarConexionesDesdeCSV(this,"grafo2.csv");
 
 
         BeaconManager beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);
