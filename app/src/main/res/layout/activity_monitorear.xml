@@ -806,7 +806,7 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula113" />
+        android:text="aula213" />
 
     <Button
         android:id="@+id/bvestibulo201"
@@ -817,7 +817,7 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo101" />
+        android:text="vestibulo201" />
 
     <Button
         android:id="@+id/bvestibulo202"
@@ -828,7 +828,7 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo102" />
+        android:text="vestibulo202" />
 
     <Button
         android:id="@+id/bvestibulo203"
@@ -839,7 +839,7 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo103" />
+        android:text="vestibulo203" />
 
     <Button
         android:id="@+id/bbano201"
@@ -850,7 +850,7 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños101" />
+        android:text="baños201" />
 
     <Button
         android:id="@+id/bbano202"
@@ -861,7 +861,7 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños102" />
+        android:text="baños202" />
 
     <Button
         android:id="@+id/bbano203"
@@ -872,7 +872,7 @@
         android:layout_marginEnd ="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños103" />
+        android:text="baños203" />
 
     <Button
         android:id="@+id/bbano204"
@@ -883,7 +883,7 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños104" />
+        android:text="baños204" />
 
     <Spinner
         android:id="@+id/spinner"

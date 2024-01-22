@@ -198,6 +198,7 @@ public class Escaner extends Activity {
     private ImageView a104a105;
     private ImageView a105v102;
     private ImageView v102a106;
+    private ImageView a107a108;
     private ImageView a106a107;
     private ImageView a108b102;
     private ImageView b102a109;
@@ -265,6 +266,9 @@ public class Escaner extends Activity {
     private ImageView escalera207;
     private ImageView escalera208;
     private ImageView escalera209;
+
+    private ImageView pasarela1;
+    private ImageView pasarela2;
 
     private ImageView v201a201;
     private ImageView a201a202;
@@ -443,6 +447,7 @@ public class Escaner extends Activity {
             builder.setCancelable(true);
             builder.setPositiveButton("Punto Anterior", null);
             builder.setNegativeButton("Recalcular ruta", (dialog, which) -> {
+                interfazPiso(t.getNombre());
                 mostrarCamino(t,tdestino,g);
                 texto.setText("La distancia al destino es de: " + g.pesototalRuta(camino) + " metros");
 
@@ -478,13 +483,19 @@ public class Escaner extends Activity {
 
         }
     }
-    public void mostrarArco(String a){
+    public void mostrarArco(String a) {
         Log.d(TAG, "Mostrando arco: " + a);
-        for(ImageView i : arcos){
-            Log.d(TAG, "Arco: " + i.getContentDescription());
-            if(i.getContentDescription().toString().contains(a)){
-                i.setVisibility(View.VISIBLE);
-                break;
+        int k = 0;
+        for (ImageView i : arcos) {
+            Log.d(TAG, "Arco: " + k + " " + i.getContentDescription());
+            k++;
+            try {
+                if (i.getContentDescription().toString().contains(a)) {
+                    i.setVisibility(View.VISIBLE);
+                    break;
+                }
+            }catch (Exception e){
+                Log.d(TAG, e.toString());
             }
         }
     }
@@ -602,6 +613,7 @@ public class Escaner extends Activity {
         nodos.add(escalera8);
         escalera9 = findViewById(R.id.pesc9);
         nodos.add(escalera9);
+
         a2b1 = findViewById(R.id.a2b1);
         arcos.add(a2b1);
         a1a2 = findViewById(R.id.a1a2);
@@ -723,8 +735,6 @@ public class Escaner extends Activity {
         b4esc9 = findViewById(R.id.b4esc9);
         arcos.add(b4esc9);
 
-
-
         //Definimos los botones del piso 1
         vestibulo101 = findViewById(R.id.pvest101);
         nodos.add(vestibulo101);
@@ -796,6 +806,9 @@ public class Escaner extends Activity {
         nodos.add(escalera108);
         escalera109 = findViewById(R.id.pesc109);
         nodos.add(escalera109);
+        pasarela1= findViewById(R.id.ppasarela1);
+        nodos.add(pasarela1);
+
         v101a101 = findViewById(R.id.v101a101);
         arcos.add(v101a101);
         a101a102 = findViewById(R.id.a101a102);
@@ -814,6 +827,8 @@ public class Escaner extends Activity {
         arcos.add(v102a106);
         a106a107 = findViewById(R.id.a106a107);
         arcos.add(a106a107);
+        a107a108 = findViewById(R.id.a107a108);
+        arcos.add(a107a108);
         a108b102 = findViewById(R.id.a108b102);
         arcos.add(a108b102);
         b102a109 = findViewById(R.id.b102a109);
@@ -944,6 +959,8 @@ public class Escaner extends Activity {
         nodos.add(escalera208);
         escalera209 = findViewById(R.id.pesc209);
         nodos.add(escalera209);
+        pasarela2= findViewById(R.id.ppasarela2);
+        nodos.add(pasarela2);
 
         v201a201 = findViewById(R.id.v201a201);
         arcos.add(v201a201);

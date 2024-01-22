@@ -139,7 +139,41 @@ public class Monitorear extends Activity implements MonitorNotifier {
                 R.array.mapa, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        incializarBotones();
+        botones = botonesp0;
+        colorBotones(botones);
+    }
 
+   public void onResume(){
+        super.onResume();
+        t = null;
+        RangeNotifier rangeNotifier = (beacons, region) -> {
+            int d = 100;
+            Beacon beaconcer = null;
+            for (Beacon beacon : beacons) {
+                if (beacon.getDistance() < d) {
+                    d = (int) beacon.getDistance();
+                    beaconcer = beacon;
+                    Log.d(TAG, "Beacon: " + beacon.getId2() + " - " + beacon.getDistance() + " metros.");
+                }
+            }
+            if (beaconcer != null) {
+                t = dbTransmisor.getTransmisor(beaconcer.getId2().toString());
+                nTransmisor1 = t.getNombre();
+                Log.d(TAG, nTransmisor1);
+                botonActual(nTransmisor1);
+            }
+
+
+        };
+        beaconManager.addRangeNotifier(rangeNotifier);
+        beaconManager.setForegroundScanPeriod(1000);
+        beaconManager.setForegroundBetweenScanPeriod(500);
+        beaconManager.startRangingBeacons(App.escanRegion);
+
+    }
+
+    public void incializarBotones(){
         //Definimos botones
         mostrar = findViewById(R.id.bmostrar);
         planta0 = findViewById(R.id.planta0);
@@ -313,40 +347,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         botonesp2.add(baño203);
         baño204 = findViewById(R.id.bbano204);
         botonesp2.add(baño204);
-
-        botones = botonesp0;
-        colorBotones(botones);
     }
-
-   public void onResume(){
-        super.onResume();
-        t = null;
-        RangeNotifier rangeNotifier = (beacons, region) -> {
-            int d = 100;
-            Beacon beaconcer = null;
-            for (Beacon beacon : beacons) {
-                if (beacon.getDistance() < d) {
-                    d = (int) beacon.getDistance();
-                    beaconcer = beacon;
-                    Log.d(TAG, "Beacon: " + beacon.getId2() + " - " + beacon.getDistance() + " metros.");
-                }
-            }
-            if (beaconcer != null) {
-                t = dbTransmisor.getTransmisor(beaconcer.getId2().toString());
-                nTransmisor1 = t.getNombre();
-                Log.d(TAG, nTransmisor1);
-                botonActual(nTransmisor1);
-            }
-
-
-        };
-        beaconManager.addRangeNotifier(rangeNotifier);
-        beaconManager.setForegroundScanPeriod(1000);
-        beaconManager.setForegroundBetweenScanPeriod(500);
-        beaconManager.startRangingBeacons(App.escanRegion);
-
-    }
-
     //Método para mostrar por pantalla los botones que se filtran
     public void mostrarMapa(View view){
        String opcion = spinner.getSelectedItem().toString().replaceAll(" ","");
@@ -406,7 +407,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         }
         aux = opcion;
         for (Button b : botones){
-            if(b.getText().toString().contains(opcion)) {
+            if(b.getText().toString().equals(opcion)) {
                 b.setBackgroundColor(Color.GREEN);
             }
         }

@@ -44,6 +44,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="340dp"
         android:layout_marginTop="20dp"
+        android:contentDescription=""
         android:onClick="mostrarTutorial"
         android:src="@drawable/question"/>
 
@@ -376,7 +377,7 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula10reprografia reprografiaula10"/>
+            android:contentDescription="aula10reprografia reprografiaaula10"/>
 
         <ImageView
             android:id="@+id/repb3"
@@ -1186,7 +1187,7 @@
             android:id="@+id/pesc7"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="315dp"
+            android:layout_marginTop="400dp"
             android:layout_marginStart="359dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
@@ -1196,7 +1197,7 @@
             android:id="@+id/pesc8"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="315dp"
             android:layout_marginStart="359dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
@@ -1974,7 +1975,8 @@
             android:id="@+id/pesc107"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="315dp"
+
+            android:layout_marginTop="400dp"
             android:layout_marginStart="359dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
@@ -1984,7 +1986,7 @@
             android:id="@+id/pesc108"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="315dp"
             android:layout_marginStart="359dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
@@ -2629,7 +2631,6 @@
             android:contentDescription="aula214"/>
 
 
-
         <ImageView
             android:id="@+id/paula215"
             android:layout_width="15dp"
@@ -2765,7 +2766,7 @@
             android:id="@+id/pesc207"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="315dp"
+            android:layout_marginTop="400dp"
             android:layout_marginStart="359dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
@@ -2775,7 +2776,7 @@
             android:id="@+id/pesc208"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="315dp"
             android:layout_marginStart="359dp"
             android:src="@drawable/circle"
             android:visibility="invisible"

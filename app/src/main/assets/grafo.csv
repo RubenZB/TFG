@@ -58,7 +58,6 @@ patio14,entrada3,10
 patio12,patio15,7
 patio15,baños3,10
 vestibulo101,aula101,7
-vestibul101,escalera101,10
 escalera101,escalera1,7
 aula101,aula102,7
 aula102,baños101,7
@@ -75,7 +74,7 @@ aula106,aula107,7
 aula107,aula108,7
 aula108,baños102,7
 baños102,escalera104,10
-escalera104,escalera4,7
+escalera4,escalera104,7
 baños102,aula109,7
 aula109,aula110,7
 aula110,vestibulo103,7
@@ -96,6 +95,7 @@ aula115,pasarela1,7
 pasarela1,escalera108,10
 escalera108,escalera8,7
 escalera108,aula116,7
+pasarela1,aula116,10
 aula116,aula117,7
 aula117,baños104,7
 baños104,escalera109,10
@@ -103,6 +103,7 @@ escalera109,escalera9,7
 baños104,aula118,7
 aula118,aula119,7
 aula119,vestibulo101,7
+vestibulo101,escalera101,10
 vestibulo201,aula201,7
 vestibulo201,escalera201,10
 escalera201,escalera101,7
@@ -121,7 +122,7 @@ aula206,aula207,7
 aula207,aula208,7
 aula208,baños202,7
 baños202,escalera204,10
-escalera204,escalera104,7
+escalera104,escalera204,7
 baños202,aula209,7
 aula209,aula210,7
 aula210,vestibulo203,7
