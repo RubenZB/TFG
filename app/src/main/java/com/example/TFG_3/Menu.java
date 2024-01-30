@@ -11,6 +11,9 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+
 import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.MonitorNotifier;
 import org.altbeacon.beacon.Region;
@@ -20,6 +23,7 @@ public class Menu extends Activity implements MonitorNotifier {
 	private static final int PERMISSION_REQUEST_FINE_LOCATION = 1;
 	private static final int PERMISSION_REQUEST_BACKGROUND_LOCATION = 2;
 
+	@RequiresApi(api = Build.VERSION_CODES.Q)
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.d(TAG, "onCreate");
@@ -40,6 +44,7 @@ public class Menu extends Activity implements MonitorNotifier {
 		//mostrarPorPantalla("didDetermineStateForRegion called with state: " + (state == 1 ? "INSIDE ("+state+")" : "OUTSIDE ("+state+")"));
 	}
 
+	@RequiresApi(api = Build.VERSION_CODES.Q)
 	private void requestPermissions() {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 			if (this.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)
@@ -91,7 +96,7 @@ public class Menu extends Activity implements MonitorNotifier {
 
 	@Override
 	public void onRequestPermissionsResult(int requestCode,
-										   String[] permissions, int[] grantResults) {
+										   @NonNull String[] permissions, @NonNull int[] grantResults) {
 		switch (requestCode) {
 			case PERMISSION_REQUEST_FINE_LOCATION: {
 				if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -143,10 +148,6 @@ public class Menu extends Activity implements MonitorNotifier {
 	}
 
 
-	public void menuClicked(View view) {
-		setContentView(R.layout.activity_menu);
-	}
-
 	private void verificarBluetooth() {
 		try {
 			if (!BeaconManager.getInstanceForApplication(this).checkAvailability()) {
@@ -170,14 +171,5 @@ public class Menu extends Activity implements MonitorNotifier {
 
 	}
 
-	/*private String cumulativeLog = "";
-	private void mostrarPorPantalla(String line) {
-		cumulativeLog += line+"\n";
-    	runOnUiThread(() -> {
-			EditText editText = Menu.this
-					.findViewById(R.id.monitoringText);
-			   editText.setText(cumulativeLog);
-		});
-    }*/
 
 }

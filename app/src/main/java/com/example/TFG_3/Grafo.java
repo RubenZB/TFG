@@ -2,6 +2,7 @@ package com.example.TFG_3;
 import android.content.Context;
 import android.util.Log;
 
+
 import org.jgrapht.Graph;
 import org.jgrapht.Graphs;
 import org.jgrapht.alg.shortestpath.DijkstraShortestPath;
@@ -14,12 +15,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
+
 
 public class Grafo {
-    private Graph<Transmisor, DefaultWeightedEdge> grafo;
-    private Basedatos dbTransmisor = App.dbTransmisor;
-    private Context context = Basedatos.context;
+    private final Graph<Transmisor, DefaultWeightedEdge> grafo;
+    private final Basedatos dbTransmisor = App.dbTransmisor;
+
 
     public Grafo() {
         grafo = new WeightedMultigraph<>(DefaultWeightedEdge.class);
@@ -108,7 +109,9 @@ public class Grafo {
                 Transmisor siguienteTransmisor = Graphs.getOppositeVertex(grafo, edge, camino.get(camino.size() - 1));
                 Transmisor transmisorActual = camino.get(camino.size() - 1);
                 String ar = transmisorActual.getNombre() + siguienteTransmisor.getNombre();
+                Log.d("Grafo", "arco " + ar);
                 camino.add(siguienteTransmisor);
+
             }
         }
 
@@ -151,15 +154,5 @@ public class Grafo {
             }
         }
         return peso;
-    }
-    public void mostrarGrafo() {
-        Set<Transmisor> vertices = grafo.vertexSet();
-        for (Transmisor t : vertices) {
-            Log.d("Grafo", t.getNombre());
-        }
-        Set<DefaultWeightedEdge> arcos = grafo.edgeSet();
-        for (DefaultWeightedEdge e : arcos) {
-            Log.d("Grafo", e.toString());
-        }
     }
 }

@@ -13,7 +13,8 @@
         android:layout_height="601dp"
         android:layout_centerInParent="true"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/mapaaulario" />
+        app:srcCompat="@drawable/mapaaulario"
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula1"
@@ -23,9 +24,11 @@
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
         android:clickable="true"
+        android:focusable="true"
         android:onClick="ventanaBoton"
         android:text="aula1"
-        android:visibility="visible" />
+        android:visibility="visible"
+        tools:ignore="HardcodedText,UsingOnClickInXml,TouchTargetSizeCheck,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula2"
@@ -34,9 +37,10 @@
         android:layout_marginStart="95dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula2" />
+        android:text="aula2"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,UsingOnClickInXml,TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/baula14"
@@ -45,9 +49,10 @@
         android:layout_marginStart="233dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula14" />
+        android:text="aula14"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula13"
@@ -56,9 +61,10 @@
         android:layout_marginStart="278dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula13" />
+        android:text="aula13"
+        android:visibility="visible"
+        tools:ignore="TouchTargetSizeCheck,HardcodedText,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula9"
@@ -67,9 +73,10 @@
         android:layout_marginStart="141dp"
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula9" />
+        android:text="aula9"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula8"
@@ -81,7 +88,8 @@
         android:layout_marginEnd="-180dp"
         android:onClick="ventanaBoton"
         android:text="aula8"
-        android:visibility="visible" />
+        android:visibility="visible"
+        tools:ignore="HardcodedText,UsingOnClickInXml,TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/bcafeteria"
@@ -90,9 +98,10 @@
         android:layout_marginStart="257dp"
         android:layout_marginTop="542dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="cafeteria" />
+        android:text="cafeteria"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula3"
@@ -101,9 +110,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="228dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula3" />
+        android:text="aula3"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula5"
@@ -112,9 +122,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="312dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula5" />
+        android:text="aula5"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula4"
@@ -123,9 +134,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="274dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula4" />
+        android:text="aula4"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/bcapilla"
@@ -134,9 +146,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="386dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="capilla" />
+        android:text="capilla"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula6"
@@ -145,9 +158,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="420dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula6" />
+        android:text="aula6"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula7"
@@ -156,9 +170,10 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="473dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula7" />
+        android:text="aula7"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula12"
@@ -167,9 +182,11 @@
         android:layout_marginStart="342dp"
         android:layout_marginTop="230dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula12" />
+        android:text="aula12"
+        android:visibility="visible"
+        tools:ignore="TouchTargetSizeCheck,HardcodedText,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
+
     <Button
         android:id="@+id/baula11"
         android:layout_width="20dp"
@@ -177,9 +194,10 @@
         android:layout_marginStart="342dp"
         android:layout_marginTop="278dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula11" />
+        android:text="aula11"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/bbanco"
@@ -188,9 +206,10 @@
         android:layout_marginStart="342dp"
         android:layout_marginTop="419dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="banco" />
+        android:text="banco"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula10"
@@ -199,9 +218,10 @@
         android:layout_marginStart="342dp"
         android:layout_marginTop="447dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="aula10" />
+        android:text="aula10"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,UsingOnClickInXml,TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/brepo"
@@ -210,9 +230,10 @@
         android:layout_marginStart="342dp"
         android:layout_marginTop="475dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="reprografia" />
+        android:text="reprografia"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/blibreria"
@@ -221,9 +242,10 @@
         android:layout_marginStart="342dp"
         android:layout_marginTop="500dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="libreria" />
+        android:text="libreria"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bentrada1"
@@ -232,9 +254,10 @@
         android:layout_marginStart="186dp"
         android:layout_marginTop="185dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="entrada1" />
+        android:text="entrada1"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
 
     <Button
         android:id="@+id/bentrada2"
@@ -243,9 +266,10 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="353dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="entrada2" />
+        android:text="entrada2"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
 
     <Button
         android:id="@+id/bentrada3"
@@ -254,9 +278,10 @@
         android:layout_marginStart="186dp"
         android:layout_marginTop="525dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="entrada3" />
+        android:text="entrada3"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
 
     <Button
         android:id="@+id/bentrada4"
@@ -265,9 +290,10 @@
         android:layout_marginStart="335dp"
         android:layout_marginTop="353dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="entrada4" />
+        android:text="entrada4"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
 
     <Button
         android:id="@+id/bbano1"
@@ -276,9 +302,10 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="baños1" />
+        android:text="baños1"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/bbano2"
@@ -287,9 +314,10 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="519dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="baños2" />
+        android:text="baños2"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,UsingOnClickInXml,TextSizeCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/bbano3"
@@ -297,10 +325,11 @@
         android:layout_height="20dp"
         android:layout_marginStart="317dp"
         android:layout_marginTop="519dp"
-        android:layout_marginEnd ="-180dp"
-        android:visibility="visible"
+        android:layout_marginEnd="-180dp"
         android:onClick="ventanaBoton"
-        android:text="baños3" />
+        android:text="baños3"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml,TextContrastCheck" />
 
     <Button
         android:id="@+id/bbano4"
@@ -309,9 +338,10 @@
         android:layout_marginStart="317dp"
         android:layout_marginTop="190dp"
         android:layout_marginEnd="-180dp"
-        android:visibility="visible"
         android:onClick="ventanaBoton"
-        android:text="baños4" />
+        android:text="baños4"
+        android:visibility="visible"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,UsingOnClickInXml,TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/baula101"
@@ -323,7 +353,8 @@
         android:clickable="true"
         android:onClick="ventanaBoton"
         android:text="aula101"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula102"
@@ -334,7 +365,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula102" />
+        android:text="aula102"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula119"
@@ -345,7 +377,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula119" />
+        android:text="aula119"
+        tools:ignore="HardcodedText,UsingOnClickInXml"/>
 
     <Button
         android:id="@+id/baula118"
@@ -356,7 +389,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula118" />
+        android:text="aula118"
+        tools:ignore="HardcodedText,UsingOnClickInXml"/>
 
     <Button
         android:id="@+id/baula109"
@@ -367,7 +401,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula109" />
+        android:text="aula109"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula110"
@@ -378,7 +413,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula110" />
+        android:text="aula110"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula111"
@@ -389,7 +425,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula111" />
+        android:text="aula111"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula112"
@@ -400,7 +437,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula112" />
+        android:text="aula112"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula103"
@@ -411,7 +449,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula103" />
+        android:text="aula103"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula105"
@@ -422,7 +461,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula105" />
+        android:text="aula105"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula104"
@@ -433,7 +473,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula104" />
+        android:text="aula104"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula106"
@@ -444,7 +485,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula106" />
+        android:text="aula106"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula107"
@@ -455,7 +497,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula107" />
+        android:text="aula107"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula108"
@@ -466,7 +509,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula108" />
+        android:text="aula108"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula117"
@@ -477,7 +521,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula117" />
+        android:text="aula117"
+        tools:ignore="HardcodedText,UsingOnClickInXml"/>
     <Button
         android:id="@+id/baula116"
         android:layout_width="20dp"
@@ -487,7 +532,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula116" />
+        android:text="aula116"
+        tools:ignore="HardcodedText,UsingOnClickInXml"/>
 
     <Button
         android:id="@+id/baula115"
@@ -498,7 +544,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula115" />
+        android:text="aula115"
+        tools:ignore="HardcodedText,UsingOnClickInXml"/>
 
     <Button
         android:id="@+id/baula114"
@@ -509,7 +556,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula114" />
+        android:text="aula114"
+        tools:ignore="HardcodedText,UsingOnClickInXml"/>
 
     <Button
         android:id="@+id/baula113"
@@ -520,7 +568,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula113" />
+        android:text="aula113"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bvestibulo101"
@@ -531,7 +580,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo101" />
+        android:text="vestibulo101"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bvestibulo102"
@@ -542,7 +592,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo102" />
+        android:text="vestibulo102"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bvestibulo103"
@@ -553,7 +604,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo103" />
+        android:text="vestibulo103"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bbano101"
@@ -564,7 +616,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños101" />
+        android:text="baños101"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bbano102"
@@ -575,7 +628,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños102" />
+        android:text="baños102"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bbano103"
@@ -586,7 +640,8 @@
         android:layout_marginEnd ="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños103" />
+        android:text="baños103"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bbano104"
@@ -597,7 +652,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños104" />
+        android:text="baños104"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula201"
@@ -609,7 +665,9 @@
         android:clickable="true"
         android:onClick="ventanaBoton"
         android:text="aula201"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,UsingOnClickInXml"
+        android:focusable="true" />
 
     <Button
         android:id="@+id/baula202"
@@ -620,7 +678,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula202" />
+        android:text="aula202"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula219"
@@ -631,7 +690,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula219" />
+        android:text="aula219"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula218"
@@ -642,7 +702,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula218" />
+        android:text="aula218"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula209"
@@ -653,7 +714,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula209" />
+        android:text="aula209"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula210"
@@ -664,7 +726,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula210" />
+        android:text="aula210"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula211"
@@ -675,7 +738,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula211" />
+        android:text="aula211"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula212"
@@ -686,7 +750,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula212" />
+        android:text="aula212"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula203"
@@ -697,7 +762,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula203" />
+        android:text="aula203"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula205"
@@ -708,7 +774,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula205" />
+        android:text="aula205"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula204"
@@ -719,7 +786,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula204" />
+        android:text="aula204"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula206"
@@ -730,7 +798,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula206" />
+        android:text="aula206"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula207"
@@ -741,7 +810,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula207" />
+        android:text="aula207"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula208"
@@ -752,7 +822,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula208" />
+        android:text="aula208"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula217"
@@ -763,7 +834,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula217" />
+        android:text="aula217"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
     <Button
         android:id="@+id/baula216"
         android:layout_width="20dp"
@@ -773,7 +845,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula216" />
+        android:text="aula216"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula215"
@@ -784,7 +857,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula215" />
+        android:text="aula215"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula214"
@@ -795,7 +869,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula214" />
+        android:text="aula214"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/baula213"
@@ -806,7 +881,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="aula213" />
+        android:text="aula213"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bvestibulo201"
@@ -817,7 +893,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo201" />
+        android:text="vestibulo201"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bvestibulo202"
@@ -828,7 +905,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo202" />
+        android:text="vestibulo202"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bvestibulo203"
@@ -839,7 +917,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="vestibulo203" />
+        android:text="vestibulo203"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bbano201"
@@ -850,7 +929,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños201" />
+        android:text="baños201"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bbano202"
@@ -861,7 +941,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños202" />
+        android:text="baños202"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bbano203"
@@ -872,7 +953,8 @@
         android:layout_marginEnd ="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños203" />
+        android:text="baños203"
+        tools:ignore="HardcodedText,TooManyViews,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/bbano204"
@@ -883,7 +965,8 @@
         android:layout_marginEnd="-180dp"
         android:visibility="invisible"
         android:onClick="ventanaBoton"
-        android:text="baños204" />
+        android:text="baños204"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -899,7 +982,8 @@
         android:layout_marginStart="260dp"
         android:layout_marginTop="90dp"
         android:onClick="mostrarMapa"
-        android:text="Mostrar" />
+        android:text="Mostrar"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/planta1"
@@ -908,7 +992,8 @@
         android:layout_marginStart="220dp"
         android:layout_marginTop="595dp"
         android:onClick="mostrarPlanta1"
-        android:text="Planta 1" />
+        android:text="Planta 1"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/planta0"
@@ -917,7 +1002,8 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="595dp"
         android:onClick="mostrarPlanta0"
-        android:text="Planta 0" />
+        android:text="Planta 0"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
     <Button
         android:id="@+id/planta2"
         android:layout_width="wrap_content"
@@ -925,7 +1011,8 @@
         android:layout_marginStart="140dp"
         android:layout_marginTop="650dp"
         android:onClick="mostrarPlanta2"
-        android:text="Planta 2" />
+        android:text="Planta 2"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <ImageButton
         android:id="@+id/ruta"
@@ -934,7 +1021,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:onClick="cambiarRuta"
-        android:src="@drawable/sunny"/>
+        android:src="@drawable/sunny"
+        tools:ignore="HardcodedText,UsingOnClickInXml"
+        android:contentDescription="ruta" />
 
     <ImageButton
         android:id="@+id/tutorial"
@@ -943,7 +1032,9 @@
         android:layout_marginStart="340dp"
         android:layout_marginTop="20dp"
         android:onClick="mostrarTutorial"
-        android:src="@drawable/question"/>
+        android:src="@drawable/question"
+        tools:ignore="HardcodedText,SpeakableTextPresentCheck,UsingOnClickInXml"
+        android:contentDescription="tutorial" />
 
 
 

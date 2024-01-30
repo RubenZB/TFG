@@ -2,6 +2,7 @@ package com.example.TFG_3;
 
 import static android.content.ContentValues.TAG;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -27,6 +28,7 @@ public class Basedatos extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NOMBRE = "TFG_3.db";
     public static final String TABLE_TRANSMISORES = "t_trasmisores";
+    @SuppressLint("StaticFieldLeak")
     public static Context context;
 
 
@@ -73,10 +75,6 @@ public class Basedatos extends SQLiteOpenHelper {
         return id;
     }
 
-    public void borrarBaseDeDatos() {
-        Context context = Basedatos.context;
-        context.deleteDatabase("TFG_3.db");
-    }
     public ArrayList<Transmisor> mostrarTransmisores(){
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -111,7 +109,7 @@ public class Basedatos extends SQLiteOpenHelper {
         }
         return transmisor;
     }
-    public void cargarDatosCSV(SQLiteDatabase db) {
+    public void cargarDatosCSV() {
         InputStream inputStream = null;
         BufferedReader reader = null;
 
@@ -131,6 +129,7 @@ public class Basedatos extends SQLiteOpenHelper {
 
                 if(getTransmisor(idBeacon) == null){
                     long n = insertarTransmisor(idBeacon, nombre, descripcion, info, piso);
+                    Log.d("BASE_DATOS", "Transmisor insertado con id: " + n);
                 }else{
                     Log.d("BASE_DATOS", "El transmisor ya existe");
                 }
@@ -167,7 +166,7 @@ public class Basedatos extends SQLiteOpenHelper {
                 int piso = cursor.getInt(4);
 
 
-                Log.d("BASE_DATOS", "idBeacon: " + idBeacon + ", nombre: " + nombre + ", descripcion: " + descripcion + ", informacion: " + info);
+                Log.d("BASE_DATOS", "idBeacon: " + idBeacon + ", nombre: " + nombre + ", descripcion: " + descripcion + ", informacion: " + info + ", piso: " + piso);
             } while (cursor.moveToNext());
         }
 

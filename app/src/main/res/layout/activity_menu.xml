@@ -1,5 +1,4 @@
  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,28 +8,32 @@
          android:id="@+id/Boton1"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:layout_alignParentLeft="true"
-         android:layout_marginLeft="110dp"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="110dp"
          android:layout_marginTop="500dp"
          android:onClick="tutorialClicked"
-         android:text="¿Como funciona?" />
+         android:text="¿Como funciona?"
+         tools:ignore="HardcodedText,UsingOnClickInXml" />
 
      <Button
          android:id="@+id/Boton2"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:layout_alignParentLeft="true"
-         android:layout_marginLeft="150dp"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="150dp"
          android:layout_marginTop="400dp"
          android:onClick="mapaClicked"
-         android:text="Iniciar" />
+         android:text="Iniciar"
+         tools:ignore="HardcodedText,UsingOnClickInXml" />
 
      <ImageView
          android:id="@+id/logo"
          android:layout_width="330dp"
          android:layout_height="263dp"
-         android:layout_marginLeft="30dp"
-         android:src="@drawable/logoinsdu" />
+         android:layout_marginStart="30dp"
+         android:src="@drawable/logoinsdu"
+         android:contentDescription="TODO"
+         tools:ignore="ContentDescription,HardcodedText" />
 
 
  </RelativeLayout>

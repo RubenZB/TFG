@@ -1,14 +1,16 @@
 package com.example.TFG_3;
 
+import androidx.annotation.NonNull;
+
 import java.util.Objects;
 
 public class Transmisor {
 
-    private String idBeacon;
-    private String nombre;
-    private String descripcion;
-    private String info;
-    private int piso;
+    private final String idBeacon;
+    private final String nombre;
+    private final String descripcion;
+    private final String info;
+    private final int piso;
 
 
     public Transmisor(String idBeacon, String nombre, String descripcion, String info, int piso) {
@@ -18,10 +20,6 @@ public class Transmisor {
         this.info = info;
         this.piso = piso;
 
-    }
-    public Transmisor(String idBeacon, String nombre) {
-        this.idBeacon = idBeacon;
-        this.nombre = nombre;
     }
 
     public String getBeacon() {
@@ -44,6 +42,7 @@ public class Transmisor {
         return piso;
     }
 
+    @NonNull
     @Override
     public String toString() {
         return "Transmisor{" +

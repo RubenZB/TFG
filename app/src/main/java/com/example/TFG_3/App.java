@@ -1,5 +1,6 @@
 package com.example.TFG_3;
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
@@ -16,12 +17,15 @@ public class App extends Application implements MonitorNotifier {
     private static final String TAG = "App";
     public static final Region escanRegion = new Region("escanRegion", null, null, null);
 
+    @SuppressLint("StaticFieldLeak")
     public static Basedatos dbTransmisor;
 
     public static boolean insideRegion = false;
 
+    @SuppressLint("StaticFieldLeak")
     public static Grafo grafo;
 
+    @SuppressLint("StaticFieldLeak")
     public static Grafo grafo2;
 
     public void onCreate() {
@@ -36,7 +40,7 @@ public class App extends Application implements MonitorNotifier {
             Toast.makeText(this, "Error al crear la base de datos", Toast.LENGTH_SHORT).show();
         }
         //dbTransmisor.borrarBaseDeDatos();
-       dbTransmisor.cargarDatosCSV(db);
+       dbTransmisor.cargarDatosCSV();
        dbTransmisor.mostrarContenidoBaseDatos();
        grafo.leerTransmisoresDesdeCSV(this,"nodos.csv");
        grafo.cargarConexionesDesdeCSV(this,"grafo.csv");
