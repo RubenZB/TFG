@@ -199,10 +199,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
         botonesp1.add(aula116);
         Button aula117 = findViewById(R.id.baula117);
         botonesp1.add(aula117);
-        Button aula118 = findViewById(R.id.baula118);
-        botonesp1.add(aula118);
-        Button aula119 = findViewById(R.id.baula119);
-        botonesp1.add(aula119);
         Button baño101 = findViewById(R.id.bbano101);
         botonesp1.add(baño101);
         Button baño102 = findViewById(R.id.bbano102);
@@ -253,10 +249,6 @@ public class Monitorear extends Activity implements MonitorNotifier {
         botonesp2.add(aula216);
         Button aula217 = findViewById(R.id.baula217);
         botonesp2.add(aula217);
-        Button aula218 = findViewById(R.id.baula218);
-        botonesp2.add(aula218);
-        Button aula219 = findViewById(R.id.baula219);
-        botonesp2.add(aula219);
         Button baño201 = findViewById(R.id.bbano201);
         botonesp2.add(baño201);
         Button baño202 = findViewById(R.id.bbano202);
@@ -398,7 +390,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         botones = botonesp1;
         colorBotones(botones);
         mostrarBotones(botones);
-        foto.setImageResource(R.drawable.mapaaulario1);
+        foto.setImageResource(R.drawable.mapaaulario2);
         planta0.setBackgroundColor(Color.LTGRAY);
         planta1.setBackgroundColor(Color.DKGRAY);
         planta2.setBackgroundColor(Color.LTGRAY);
@@ -409,7 +401,7 @@ public class Monitorear extends Activity implements MonitorNotifier {
         botones = botonesp2;
         colorBotones(botones);
         mostrarBotones(botones);
-        foto.setImageResource(R.drawable.mapaaulario1);
+        foto.setImageResource(R.drawable.mapaaulario2);
         planta0.setBackgroundColor(Color.LTGRAY);
         planta1.setBackgroundColor(Color.LTGRAY);
         planta2.setBackgroundColor(Color.DKGRAY);

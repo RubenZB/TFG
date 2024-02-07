@@ -39,7 +39,7 @@ public class App extends Application implements MonitorNotifier {
         }else{
             Toast.makeText(this, "Error al crear la base de datos", Toast.LENGTH_SHORT).show();
         }
-        //dbTransmisor.borrarBaseDeDatos();
+         dbTransmisor.borrarBaseDeDatos();
        dbTransmisor.cargarDatosCSV();
        dbTransmisor.mostrarContenidoBaseDatos();
        grafo.leerTransmisoresDesdeCSV(this,"nodos.csv");

@@ -1,12 +1,12 @@
 0x11,entrada2,Entrada 2,Entre la capila y el aula 5,0
-0x530801241127,entrada3,Entrada 3,Entre la cafeteria y el aula 9,0
+0x63,entrada3,Entrada 3,Entre la cafeteria y el aula 9,0
 0x10,baños3,Baños 3,Entre el la cafeteria y la libreria,0
 0x12,patio7,Patio 7,Entrada al patio proxima a la entrada 2,0
-0x87,patio8,Patio 8,b,0
-0x96,patio10,Patio 10,b,0
-0x38,patio12,Patio 12,b,0
-0x39,patio14,Patio 14,b,0
-0x77,patio15,Patio 15,b,0
+0x87,patio8,Patio 8,nodo auxiliar,0
+0x96,patio10,Patio 10,nodo auxiliar,0
+0x38,patio12,Patio 12,nodo auxiliar,0
+0x39,patio14,Patio 14,nodo auxiliar,0
+0x77,patio15,Patio 15,nodo auxiliar,0
 0x0,entrada1,Entrada 1,Entre el aula 1 y la aula 14,0
 0x1,aula1,Aula 1,Horarios<br>·9:00 - 11:00 Matematicas<br>·11:00 - 13:00 Fisica<br>·13:00 - 15:00 Quimica,0
 0x2,aula2,Aula 2,Horarios<br>·8:30 - 10:30 Estadistica<br>·10:30 - 12:30 Idioma Moderno (Ingles)<br>·12:30 - 14:30 Idioma Moderno (Frances),0
@@ -17,9 +17,9 @@
 0x7,capilla,Capilla,Horario: 8:00 - 20:00,0
 0x8,aula6,Aula 6,Seminiario Ciberseguridad<br>·8:00 - 14:00<br>·16:00 - 20:00,0
 0x9,aula7,Aula 7,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·10:00 - 12:00 Redes<br>·12:00 - 14:00 Arquitectura de computadores,0
-0xc36a2cf3dd73,baños2,Baños 2,Entre el aula 7 y el aula 8,0
+0x530801241127,baños2,Baños 2,Entre el aula 7 y el aula 8,0
 0xe630f4b1dea0,aula8,Aula 8,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·14:00 - 16:00 Arquitectura de computadores,0
-0x369586a8a974,aula9,Aula 9,Horarios<br>·11:00 - 13:00 Pedagogia Infantil<br>·15:30 - 17:30 Fundamentos de la educacion,0
+0x105,aula9,Aula 9,Horarios<br>·11:00 - 13:00 Pedagogia Infantil<br>·15:30 - 17:30 Fundamentos de la educacion,0
 0x13,cafeteria,Cafeteria,Horarios: 8:00 - 20:00<br>Menu del dia<br>-Sopa de verduras<br>-Tortilla de patata<br>-Postre y bebida incluido 8Euros,0
 0x14,reprografia,Reprografia,Horario: 8:00 - 20:00,0
 0x15,aula10,Aula 10,Horarios<br>·10:30 - 12:30 Calculo<br>·15:00 - 17:00 Psicologia de la Educacion<br>·18:00 - 20:00 Idiomar Moderno (Aleman),0
@@ -30,22 +30,22 @@
 0x20,baños4,Baños 4,Entre el aula 12 y el aula 13,0
 0x21,aula13,Aula 13,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,0
 0x22,aula14,Aula 14,Horarios<br>·9:00 - 11:00 Fundamentos de la Psicopatologia<br>·10:00 - 12:00 Historia de la pobreza,0
-0x23,patio1,Patio 1,b,0
-0x24,patio2,Patio 2,b,0
-0x25,patio3,Patio 3,b,0
-0x26,patio4,Patio 4,b,0
-0x27,patio5,Patio 5,b,0
-0x28,patio6,Patio 6,b,0
-0x29,patio9,Patio 9,b,0
-0x30,patio11,Patio 11,b,0
-0x31,patio13,Patio 13,b,0
+0x23,patio1,Patio 1,nodo auxiliar,0
+0x24,patio2,Patio 2,nodo auxiliar,0
+0x25,patio3,Patio 3,nodo auxiliar,0
+0x26,patio4,Patio 4,nodo auxiliar,0
+0x27,patio5,Patio 5,nodo auxiliar,0
+0x28,patio6,Patio 6,nodo auxiliar,0
+0x29,patio9,Patio 9,nodo auxiliar,0
+0x30,patio11,Patio 11,nodo auxiliar,0
+0x31,patio13,Patio 13,nodo auxiliar,0
 0x32,aula101,Aula 101,Horarios<br>·9:00 - 11:00 Matematicas<br>·11:00 - 13:00 Fisica<br>·13:00 - 15:00 Quimica,1
 0x33,aula102,Aula 102,Horarios<br>·8:30 - 10:30 Estadistica<br>·10:30 - 12:30 Idioma Moderno (Ingles)<br>·12:30 - 14:30 Idioma Moderno (Frances),1
 0x34,aula103,Aula 103,Horarios<br>·9:00 - 11:00 Fundamentos de la Psicopatologia<br>·10:00 - 12:00 Historia de la pobreza,1
 0x35,aula104,Aula 104,Horarios<br>·8:00 - 10:00 Marketing<br>·10:00 - 12:00 Fundamentos Juridicos<br>·12:00 - 14:00 Fundamentos de la economia,1
 0x36,aula105,Aula 105,Horarios<br>·15:00 - 17:00 Introduccion a la programacion<br>·17:00 - 19:00 Estructuras de datos,1
 0x37,aula106,Aula 106,Horarios<br>·16:00 - 18:00 Bases de datos<br>·18:00 - 20:00 Inteligencia artificial,1
-0x15c210b9f1ea,aula107,Aula 107,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
+0xc36a2cf3dd73,aula107,Aula 107,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
 0xd4fcb04a6573,aula108,Aula 108,Seminiario Ciberseguridad<br>·8:00 - 14:00<br>·16:00 - 20:00,1
 0x40,aula109,Aula 109,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·10:00 - 12:00 Redes<br>·12:00 - 14:00 Arquitectura de computadores,1
 0x41,aula110,Aula 110,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
@@ -56,8 +56,6 @@
 0x46,aula115,Aula 115,Horarios<br>·10:30 - 12:30 Calculo<br>·15:00 - 17:00 Psicologia de la Educacion<br>·18:00 - 20:00 Idiomar Moderno (Aleman),1
 0x47,aula116,Aula 116,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
 0x48,aula117,Aula 117,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
-0x49,aula118,Aula 118,Horarios<br>·11:00 - 13:00 Informatica Gráfica<br>·17:00 - 19:00 Idiomar Moderno (Italiano),1
-0x50,aula119,Aula 119,Conferencia Cine Polaco<br>·Primer pase 9:00 - 13:00<br>·Segundo pase 15:00 - 19:00,1
 0x51,aula201,Aula 201,Horarios<br>·9:00 - 11:00 Matematicas<br>·11:00 - 13:00 Fisica<br>·13:00 - 15:00 Quimica,2
 0x52,aula202,Aula 202,Horarios<br>·8:30 - 10:30 Estadistica<br>·10:30 - 12:30 Idioma Moderno (Ingles)<br>·12:30 - 14:30 Idioma Moderno (Frances),2
 0x53,aula203,Aula 203,Horarios<br>·9:00 - 11:00 Fundamentos de la Psicopatologia<br>·10:00 - 12:00 Historia de la pobreza,2
@@ -70,13 +68,11 @@
 0x60,aula210,Aula 210,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,2
 0x61,aula211,Aula 211,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·14:00 - 16:00 Arquitectura de computadores,2
 0x62,aula212,Aula 212,Horarios<br>·11:00 - 13:00 Pedagogia Infantil<br>·15:30 - 17:30 Fundamentos de la educacion,2
-0x3d4721ba9b35,aula213,Aula 213,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,2
+0x81,aula213,Aula 213,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,2
 0x64,aula214,Aula 214,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,2
 0x65,aula215,Aula 215,Horarios<br>·10:30 - 12:30 Calculo<br>·15:00 - 17:00 Psicologia de la Educacion<br>·18:00 - 20:00 Idiomar Moderno (Aleman),2
 0x66,aula216,Aula 216,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,2
 0x67,aula217,Aula 217,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,2
-0x68,aula218,Aula 218,Horarios<br>·11:00 - 13:00 Informatica Gráfica<br>·17:00 - 19:00 Idiomar Moderno (Italiano),2
-0x69,aula219,Aula 219,Conferencia Cine Polaco<br>·Primer pase 9:00 - 13:00<br>·Segundo pase 15:00 - 19:00,2
 0x70,vestibulo101,Vestibulo 101,Entre el aula 1 y la aula 14,1
 0x71,vestibulo102,Vestibulo 102,Entre el aula 1 y la aula 14,1
 0x72,vestibulo103,Vestibulo 103,Entre el aula 1 y la aula 14,1
@@ -84,39 +80,39 @@
 0x74,vestibulo202,Vestibulo 202,Entre el aula 1 y la aula 14,2
 0x75,vestibulo203,Vestibulo 203,Entre el aula 1 y la aula 14,2
 0x76,baños101,Baños 101,Entre el aula 7 y el aula 8,1
-0x63,baños102,Baños 102,Entre el aula 7 y el aula 8,1
+0xfc0ed82db1f5,baños102,Baños 102,Entre el aula 7 y el aula 8,1
 0x78,baños103,Baños 103,Entre el aula 7 y el aula 8,1
 0x79,baños104,Baños 104,Entre el aula 7 y el aula 8,1
 0x80,baños201,Baños 201,Entre el aula 7 y el aula 8,2
-0x81,baños202,Baños 202,Entre el aula 7 y el aula 8,2
+0x640b6d242840,baños202,Baños 202,Entre el aula 7 y el aula 8,2
 0x82,baños203,Baños 203,Entre el aula 7 y el aula 8,2
 0x83,baños204,Baños 204,Entre el aula 7 y el aula 8,2
-0x84,escalera1,escalera 1,b,0
-0x85,escalera2,escalera 2,b,0
-0x86,escalera3,escalera 3,b,0
-0x640b6d242840,escalera4,escalera 4,b,0
-0x88,escalera5,escalera 5,b,0
-0x89,escalera6,escalera 6,b,0
-0x90,escalera7,escalera 7,b,0
-0x91,escalera8,escalera 8,b,0
-0x92,escalera9,escalera 9,b,0
-0x93,escalera101,escalera 101,b,1
-0x94,escalera102,escalera 102,b,1
-0x95,escalera103,escalera 103,b,1
-0xfc0ed82db1f5,escalera104,escalera 104,b,1
-0x97,escalera105,escalera 105,b,1
-0x98,escalera106,escalera 106,b,1
-0x99,escalera107,escalera 107,b,1
-0x100,escalera108,escalera 108,b,1
-0x101,escalera109,escalera 109,b,1
-0x102,escalera201,escalera 201,b,2
-0x103,escalera202,escalera 202,b,2
-0x104,escalera203,escalera 203,b,2
-0x105,escalera204,escalera 204,b,2
-0x106,escalera205,escalera 205,b,2
-0x107,escalera206,escalera 206,b,2
-0x108,escalera207,escalera 207,b,2
-0x109,escalera208,escalera 208,b,2
-0x110,escalera209,escalera 209,b,2
-0x111,pasarela1,pasarela 1,b,1
-0x112,pasarela2,pasarela 2,b,2
+0x84,escalera1,escalera 1,nodo auxiliar,0
+0x85,escalera2,escalera 2,nodo auxiliar,0
+0x86,escalera3,escalera 3,nodo auxiliar,0
+0x3d4721ba9b35,escalera4,escalera 4,nodo auxiliar,0
+0x88,escalera5,escalera 5,nodo auxiliar,0
+0x89,escalera6,escalera 6,nodo auxiliar,0
+0x90,escalera7,escalera 7,nodo auxiliar,0
+0x91,escalera8,escalera 8,nodo auxiliar,0
+0x92,escalera9,escalera 9,nodo auxiliar,0
+0x93,escalera101,escalera 101,nodo auxiliar,1
+0x94,escalera102,escalera 102,nodo auxiliar,1
+0x95,escalera103,escalera 103,nodo auxiliar,1
+0x15c210b9f1ea,escalera104,escalera 104,nodo auxiliar,1
+0x97,escalera105,escalera 105,nodo auxiliar,1
+0x98,escalera106,escalera 106,nodo auxiliar,1
+0x99,escalera107,escalera 107,nodo auxiliar,1
+0x100,escalera108,escalera 108,nodo auxiliar,1
+0x101,escalera109,escalera 109,nodo auxiliar,1
+0x102,escalera201,escalera 201,nodo auxiliar,2
+0x103,escalera202,escalera 202,nodo auxiliar,2
+0x104,escalera203,escalera 203,nodo auxiliar,2
+0x369586a8a974,escalera204,escalera 204,nodo auxiliar,2
+0x106,escalera205,escalera 205,nodo auxiliar,2
+0x107,escalera206,escalera 206,nodo auxiliar,2
+0x108,escalera207,escalera 207,nodo auxiliar,2
+0x109,escalera208,escalera 208,nodo auxiliar,2
+0x110,escalera209,escalera 209,nodo auxiliar,2
+0x111,pasarela1,pasarela 1,nodo auxiliar,1
+0x112,pasarela2,pasarela 2,nodo auxiliar,2

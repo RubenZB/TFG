@@ -192,4 +192,8 @@ public class Basedatos extends SQLiteOpenHelper {
 
         return transmisor;
     }
+    public void borrarBaseDeDatos() {
+        Context context = Basedatos.context;
+        context.deleteDatabase("TFG_3.db");
+    }
 }

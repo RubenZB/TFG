@@ -354,22 +354,11 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a11e4_1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="287dp"
-            android:layout_marginTop="280dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula11entrada4 entrada4aula11"
-            tools:ignore="HardcodedText" />
-        <ImageView
-            android:id="@+id/a11e4_2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="287dp"
-            android:layout_marginTop="261dp"
+            android:id="@+id/a11e4"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="262dp"
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
@@ -921,7 +910,7 @@
             android:src="@drawable/circle"
             android:visibility="invisible"
             android:contentDescription="reprografia"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText,TooManyViews" />
 
         <ImageView
             android:id="@+id/paula10"
@@ -1026,8 +1015,6 @@
             android:visibility="invisible"
             android:contentDescription="aula12"
             tools:ignore="HardcodedText" />
-
-
 
 
         <ImageView
@@ -1374,155 +1361,144 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a119v101"
+            android:id="@+id/a117v101"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="147dp"
             android:layout_marginStart="183dp"
             android:visibility="invisible"
             android:src="@drawable/linea"
-            android:contentDescription="aula119vestibulo101 vestibulo101aula119"
+            android:contentDescription="aula117vestibulo101 vestibulo101aula117"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a118a119"
+            android:id="@+id/a116a117"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="147dp"
             android:layout_marginStart="230dp"
             android:visibility="invisible"
             android:src="@drawable/linea"
-            android:contentDescription="aula118aula119 aula119aula118"
+            android:contentDescription="aula116aula117 aula117aula116"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/b104a118"
+            android:id="@+id/b104a116"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="147dp"
             android:layout_marginStart="277dp"
             android:visibility="invisible"
             android:src="@drawable/linea"
-            android:contentDescription="baños104aula118 aula118baños104"
+            android:contentDescription="baños104aula116 aula116baños104"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/b102a109"
+            android:id="@+id/b102a108"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="37dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="baños102aula109 aula109baños102"
+            android:contentDescription="baños102aula108 aula108baños102"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a109a110"
+            android:id="@+id/a108a109"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="85dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula109aula110 aula110aula109"
+            android:contentDescription="aula108aula109 aula109aula108"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a110v103"
+            android:id="@+id/a109v103"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="133dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula110vestibulo103 vestibulo103aula110"
+            android:contentDescription="aula109vestibulo103 vestibulo103aula109"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/v103a111"
+            android:id="@+id/v103a110"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="184dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="vestibulo103aula111 aula111vestibulo103"
+            android:contentDescription="vestibulo103aula110 aula110vestibulo103"
             tools:ignore="HardcodedText" />
 
 
         <ImageView
-            android:id="@+id/a111a112"
+            android:id="@+id/a110a111"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="240dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula111aula112 aula112aula111"
+            android:contentDescription="aula110aula111 aula111aula110"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a112b103"
+            android:id="@+id/a111b103"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="278dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula112baños103 baños103aula112"
+            android:contentDescription="aula111baños103 baños103aula111"
             tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/b101a103"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="11dp"
             android:layout_marginTop="169dp"
             android:rotation="90"
             android:src="@drawable/linea"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="baños101aula103 aula103baños101"
             tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/a103a104"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="212dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="228dp"
             android:rotation="90"
             android:src="@drawable/linea"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="aula103aula104 aula104aula103"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a104a105"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="256dp"
+            android:id="@+id/a104v102"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="290dp"
             android:rotation="90"
             android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula104aula105 aula105aula104"
+            android:visibility="visible"
+            android:contentDescription="aula104vestibulo102 vestiubulo102aula104"
             tools:ignore="HardcodedText" />
 
-        <ImageView
-            android:id="@+id/a105v102"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="298dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula105vestibulo102 vestibulo102aula105"
-            tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/v102a106"
+            android:id="@+id/v102a105"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="15dp"
@@ -1530,11 +1506,11 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="vestibulo102aula106 aula106vestibulo102"
+            android:contentDescription="vestibulo102aula105 aula105vestibulo102"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a106a107"
+            android:id="@+id/a105a106"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="15dp"
@@ -1542,11 +1518,11 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula106aula107 aula107aula106"
+            android:contentDescription="aula105aula106 aula106aula105"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a107a108"
+            android:id="@+id/a106a107"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="15dp"
@@ -1554,11 +1530,11 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula107aula108 aula108aula107"
+            android:contentDescription="aula106aula107 aula107aula106"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a108b102"
+            android:id="@+id/a107b102"
             android:layout_width="80dp"
             android:layout_height="60dp"
             android:layout_marginStart="15dp"
@@ -1566,11 +1542,11 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula108baños102 baños102aula108"
+            android:contentDescription="aula107baños102 baños102aula107"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a117b104"
+            android:id="@+id/a115b104"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="297dp"
@@ -1578,93 +1554,68 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula117baños104 baños104aula117"
+            android:contentDescription="aula115baños104 baños104aula115"
             tools:ignore="HardcodedText" />
         <ImageView
-            android:id="@+id/a116a117"
+            android:id="@+id/a114a115"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="212dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula114aula115 aula115aula114"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/a114p1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="265dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula114pasarela1 pasarela1aula114"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/a113p1"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="282dp"
+            android:layout_marginTop="350dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula113pasarela1 pasarela1aula113"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/a112a113"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="421dp"
+            android:contentDescription="aula112aula113 aula112aula113"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/a112b103"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="297dp"
-            android:layout_marginTop="217dp"
+            android:layout_marginTop="482dp"
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula116aula117 aula117aula116"
+            android:contentDescription="aula112baños103 baños103aula112"
             tools:ignore="HardcodedText" />
 
-        <ImageView
-            android:id="@+id/a116p1_1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="287dp"
-            android:layout_marginTop="280dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula116pasarela1 pasarela1aula116"
-            tools:ignore="HardcodedText" />
-        <ImageView
-            android:id="@+id/a116p1_2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="287dp"
-            android:layout_marginTop="261dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula116pasarela1 pasarela1aula116"
-            tools:ignore="HardcodedText" />
-
-
-        <ImageView
-            android:id="@+id/a115p1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="287dp"
-            android:layout_marginTop="348dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula115pasarela1 pasarela1aula115"
-            tools:ignore="HardcodedText" />
-
-
-        <ImageView
-            android:id="@+id/a115a114"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="302dp"
-            android:layout_marginTop="417dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula115aula114 aula114aula115"
-            tools:ignore="HardcodedText" />
-
-
-        <ImageView
-            android:id="@+id/a114a113"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="302dp"
-            android:layout_marginTop="457dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula114aula113 aula113aula114"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/a113b103"
-            android:layout_width="80dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="297dp"
-            android:layout_marginTop="498dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula113baños103 baños103aula113"
-            tools:ignore="HardcodedText" />
         <ImageView
             android:id="@+id/b101esc102"
             android:layout_width="80dp"
@@ -1748,15 +1699,15 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a115esc107"
+            android:id="@+id/a113esc107"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="310dp"
-            android:layout_marginTop="380dp"
-            android:rotation="140"
+            android:layout_marginTop="382dp"
+            android:rotation="133"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula115escalera107 escalera107aula115"
+            android:contentDescription="aula113escalera107 escalera107aula113"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -1784,7 +1735,7 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/esc108a116"
+            android:id="@+id/esc108a114"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="310dp"
@@ -1792,7 +1743,7 @@
             android:rotation="55"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="escalera108aula116 aula116escalera108"
+            android:contentDescription="escalera108aula114 aula114escalera108"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -1843,10 +1794,10 @@
             android:id="@+id/paula103"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="222dp"
+            android:layout_marginTop="235dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/circle"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="aula103"
             tools:ignore="HardcodedText" />
 
@@ -1854,23 +1805,13 @@
             android:id="@+id/paula104"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="267dp"
+            android:layout_marginTop="297dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/circle"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="aula104"
             tools:ignore="HardcodedText" />
 
-        <ImageView
-            android:id="@+id/paula105"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="309dp"
-            android:layout_marginStart="48dp"
-            android:src="@drawable/circle"
-            android:visibility="invisible"
-            android:contentDescription="aula105"
-            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/pvest102"
@@ -1884,10 +1825,21 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula106"
+            android:id="@+id/paula105"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="410dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula105"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/paula106"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="455dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
@@ -1898,22 +1850,11 @@
             android:id="@+id/paula107"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="455dp"
-            android:layout_marginStart="48dp"
-            android:src="@drawable/circle"
-            android:visibility="invisible"
-            android:contentDescription="aula107"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/paula108"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
             android:layout_marginTop="497dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula108"
+            android:contentDescription="aula107"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -1928,25 +1869,25 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula109"
+            android:id="@+id/paula108"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="532dp"
             android:layout_marginStart="90dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula109"
+            android:contentDescription="aula108"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula110"
+            android:id="@+id/paula109"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="532dp"
             android:layout_marginStart="140dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula110"
+            android:contentDescription="aula109"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -1961,25 +1902,25 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula111"
+            android:id="@+id/paula110"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="532dp"
             android:layout_marginStart="245dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula111"
+            android:contentDescription="aula110"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula112"
+            android:id="@+id/paula111"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginStart="293dp"
             android:layout_marginTop="532dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula112"
+            android:contentDescription="aula111"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -1994,36 +1935,26 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
+            android:id="@+id/paula112"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="visible"
+            android:contentDescription="aula112"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageView
             android:id="@+id/paula113"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="503dp"
+            android:layout_marginTop="430dp"
             android:layout_marginStart="329dp"
             android:src="@drawable/circle"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="aula113"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/paula114"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="470dp"
-            android:layout_marginStart="329dp"
-            android:src="@drawable/circle"
-            android:visibility="invisible"
-            android:contentDescription="aula114"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/paula115"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="425dp"
-            android:layout_marginStart="329dp"
-            android:src="@drawable/circle"
-            android:visibility="invisible"
-            android:contentDescription="aula115"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -2038,26 +1969,26 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula116"
+            android:id="@+id/paula114"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="275dp"
+            android:layout_marginTop="283dp"
             android:layout_marginStart="329dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula116"
+            android:contentDescription="aula114"
             tools:ignore="HardcodedText" />
 
 
         <ImageView
-            android:id="@+id/paula117"
+            android:id="@+id/paula115"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="225dp"
             android:layout_marginStart="329dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula117"
+            android:contentDescription="aula115"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -2072,25 +2003,25 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula118"
+            android:id="@+id/paula116"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="180dp"
             android:layout_marginStart="285dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula118"
+            android:contentDescription="aula116"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula119"
+            android:id="@+id/paula117"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="180dp"
             android:layout_marginStart="240dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula119"
+            android:contentDescription="aula117"
             tools:ignore="HardcodedText" />
         <ImageView
             android:id="@+id/pesc101"
@@ -2162,7 +2093,6 @@
             android:id="@+id/pesc107"
             android:layout_width="15dp"
             android:layout_height="15dp"
-
             android:layout_marginTop="400dp"
             android:layout_marginStart="359dp"
             android:src="@drawable/circle"
@@ -2237,155 +2167,143 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a219v201"
+            android:id="@+id/a217v201"
             android:layout_width="82dp"
             android:layout_height="78dp"
             android:layout_marginStart="183dp"
             android:layout_marginTop="147dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula219vestibulo201 vestibulo201aula219"
+            android:contentDescription="aula217vestibulo201 vestibulo201aula217"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a218a219"
+            android:id="@+id/a216a217"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="147dp"
             android:layout_marginStart="230dp"
             android:visibility="invisible"
             android:src="@drawable/linea"
-            android:contentDescription="aula218aula219 aula219aula218"
+            android:contentDescription="aula216aula217 aula217aula216"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/b204a218"
+            android:id="@+id/b204a216"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="147dp"
             android:layout_marginStart="277dp"
             android:visibility="invisible"
             android:src="@drawable/linea"
-            android:contentDescription="baños204aula218 aula218baños204"
+            android:contentDescription="baños204aula216 aula216baños204"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/b202a209"
+            android:id="@+id/b202a208"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="37dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="baños202aula209 aula209baños202"
+            android:contentDescription="baños202aula208 aula208baños202"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a209a210"
+            android:id="@+id/a208a209"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="85dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula209aula210 aula210aula209"
+            android:contentDescription="aula208aula209 aula209aula208"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a210v203"
+            android:id="@+id/a209v203"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="133dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula210vestibulo203 vestibulo203aula210"
+            android:contentDescription="aula209vestibulo203 vestibulo203aula209"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/v203a211"
+            android:id="@+id/v203a210"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="184dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="vestibulo203aula211 aula211vestibulo203"
+            android:contentDescription="vestibulo203aula210 aula210vestibulo203"
             tools:ignore="HardcodedText" />
 
 
         <ImageView
-            android:id="@+id/a211a212"
+            android:id="@+id/a210a211"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="240dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula211aula212 aula212aula211"
+            android:contentDescription="aula210aula211 aula211aula210"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a212b203"
+            android:id="@+id/a211b203"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="278dp"
             android:layout_marginTop="500dp"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula212baños203 baños203aula212"
+            android:contentDescription="aula211baños203 baños203aula211"
             tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/b201a203"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="11dp"
             android:layout_marginTop="169dp"
             android:rotation="90"
             android:src="@drawable/linea"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="baños201aula203 aula203baños201"
             tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/a203a204"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="212dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="228dp"
             android:rotation="90"
             android:src="@drawable/linea"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="aula203aula204 aula204aula203"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a204a205"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="256dp"
+            android:id="@+id/a204v202"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="290dp"
             android:rotation="90"
             android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula204aula205 aula205aula204"
+            android:visibility="visible"
+            android:contentDescription="aula204vestibulo202 vestiubulo202aula204"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a205v202"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="298dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula205vestibulo202 vestibulo202aula205"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/v202a206"
+            android:id="@+id/v202a205"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="15dp"
@@ -2393,11 +2311,11 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="vestibulo202aula206 aula206vestibulo202"
+            android:contentDescription="vestibulo202aula205 aula205vestibulo202"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a206a207"
+            android:id="@+id/a205a206"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="15dp"
@@ -2405,11 +2323,11 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula206aula207 aula207aula206"
+            android:contentDescription="aula205aula206 aula206aula205"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a207a208"
+            android:id="@+id/a206a207"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="15dp"
@@ -2417,11 +2335,11 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula207aula208 aula208aula207"
+            android:contentDescription="aula206aula207 aula207aula206"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a208b202"
+            android:id="@+id/a207b202"
             android:layout_width="80dp"
             android:layout_height="60dp"
             android:layout_marginStart="15dp"
@@ -2429,11 +2347,11 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula208baños202 baños202aula208"
+            android:contentDescription="aula207baños202 baños202aula207"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a217b204"
+            android:id="@+id/a215b204"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="297dp"
@@ -2441,92 +2359,67 @@
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula217baños204 baños204aula217"
+            android:contentDescription="aula215baños204 baños204aula215"
             tools:ignore="HardcodedText" />
         <ImageView
-            android:id="@+id/a216a217"
+            android:id="@+id/a214a215"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="287dp"
+            android:layout_marginTop="212dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula214aula215 aula215aula214"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/a214p2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="265dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula214pasarela2 pasarela2aula214"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageView
+            android:id="@+id/a213p2"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="282dp"
+            android:layout_marginTop="350dp"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            android:contentDescription="aula213pasarela2 pasarela2aula213"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/a212a213"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="421dp"
+            android:contentDescription="aula212aula213 aula212aula213"
+            android:rotation="90"
+            android:src="@drawable/linea"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/a212b203"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="297dp"
-            android:layout_marginTop="217dp"
+            android:layout_marginTop="482dp"
             android:rotation="90"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula216aula217 aula217aula216"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/a216p2_1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="287dp"
-            android:layout_marginTop="280dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula216pasarela2 pasarela2aula216"
-            tools:ignore="HardcodedText" />
-        <ImageView
-            android:id="@+id/a216p2_2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="287dp"
-            android:layout_marginTop="261dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula216pasarela2 pasarela2aula216"
-            tools:ignore="HardcodedText" />
-
-
-        <ImageView
-            android:id="@+id/a215p2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="287dp"
-            android:layout_marginTop="348dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula215pasarela2 pasarela2aula215"
-            tools:ignore="HardcodedText" />
-
-
-        <ImageView
-            android:id="@+id/a215a214"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="302dp"
-            android:layout_marginTop="417dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula215aula214 aula214aula215"
-            tools:ignore="HardcodedText" />
-
-
-        <ImageView
-            android:id="@+id/a214a213"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="302dp"
-            android:layout_marginTop="457dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula213aula214 aula214aula213"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/a213b203"
-            android:layout_width="80dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="297dp"
-            android:layout_marginTop="498dp"
-            android:rotation="90"
-            android:src="@drawable/linea"
-            android:visibility="invisible"
-            android:contentDescription="aula213baños203 baños203aula213"
+            android:contentDescription="aula212baños203 baños203aula212"
             tools:ignore="HardcodedText" />
         <ImageView
             android:id="@+id/b201esc202"
@@ -2611,15 +2504,15 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/a215esc207"
+            android:id="@+id/a213esc207"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="310dp"
-            android:layout_marginTop="380dp"
-            android:rotation="140"
+            android:layout_marginTop="382dp"
+            android:rotation="133"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="aula215escalera207 escalera207aula215"
+            android:contentDescription="aula213escalera207 escalera207aula213"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -2647,7 +2540,7 @@
             tools:ignore="HardcodedText"/>
 
         <ImageView
-            android:id="@+id/esc208a216"
+            android:id="@+id/esc208a214"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="310dp"
@@ -2655,7 +2548,7 @@
             android:rotation="55"
             android:src="@drawable/linea"
             android:visibility="invisible"
-            android:contentDescription="escalera208aula216 aula216escalera208"
+            android:contentDescription="escalera208aula214 aula214escalera208"
             tools:ignore="HardcodedText"/>
 
 
@@ -2707,10 +2600,10 @@
             android:id="@+id/paula203"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="222dp"
+            android:layout_marginTop="235dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/circle"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="aula203"
             tools:ignore="HardcodedText" />
 
@@ -2718,22 +2611,11 @@
             android:id="@+id/paula204"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="267dp"
+            android:layout_marginTop="297dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/circle"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="aula204"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/paula205"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="309dp"
-            android:layout_marginStart="48dp"
-            android:src="@drawable/circle"
-            android:visibility="invisible"
-            android:contentDescription="aula205"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -2748,10 +2630,21 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula206"
+            android:id="@+id/paula205"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="410dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/circle"
+            android:visibility="invisible"
+            android:contentDescription="aula205"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/paula206"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="455dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
@@ -2762,22 +2655,11 @@
             android:id="@+id/paula207"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="455dp"
-            android:layout_marginStart="48dp"
-            android:src="@drawable/circle"
-            android:visibility="invisible"
-            android:contentDescription="aula207"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/paula208"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
             android:layout_marginTop="497dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula208"
+            android:contentDescription="aula207"
             tools:ignore="HardcodedText" />
 
 
@@ -2793,25 +2675,25 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula209"
+            android:id="@+id/paula208"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="532dp"
             android:layout_marginStart="90dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula209"
+            android:contentDescription="aula208"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula210"
+            android:id="@+id/paula209"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="532dp"
             android:layout_marginStart="140dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula210"
+            android:contentDescription="aula209"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -2826,25 +2708,25 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula211"
+            android:id="@+id/paula210"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="532dp"
             android:layout_marginStart="245dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula211"
+            android:contentDescription="aula210"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula212"
+            android:id="@+id/paula211"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginStart="293dp"
             android:layout_marginTop="532dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula212"
+            android:contentDescription="aula211"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -2859,39 +2741,27 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
+            android:id="@+id/paula212"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginStart="329dp"
+            android:src="@drawable/circle"
+            android:visibility="visible"
+            android:contentDescription="aula212"
+            tools:ignore="HardcodedText" />
+
+
+        <ImageView
             android:id="@+id/paula213"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="503dp"
+            android:layout_marginTop="430dp"
             android:layout_marginStart="329dp"
             android:src="@drawable/circle"
-            android:visibility="invisible"
+            android:visibility="visible"
             android:contentDescription="aula213"
             tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/paula214"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="470dp"
-            android:layout_marginStart="329dp"
-            android:src="@drawable/circle"
-            android:visibility="invisible"
-            android:contentDescription="aula214"
-            tools:ignore="HardcodedText" />
-
-
-        <ImageView
-            android:id="@+id/paula215"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="425dp"
-            android:layout_marginStart="329dp"
-            android:src="@drawable/circle"
-            android:visibility="invisible"
-            android:contentDescription="aula215"
-            tools:ignore="HardcodedText" />
-
         <ImageView
             android:id="@+id/ppasarela2"
             android:layout_width="15dp"
@@ -2904,26 +2774,26 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula216"
+            android:id="@+id/paula214"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:layout_marginTop="275dp"
+            android:layout_marginTop="283dp"
             android:layout_marginStart="329dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula216"
+            android:contentDescription="aula214"
             tools:ignore="HardcodedText" />
 
 
         <ImageView
-            android:id="@+id/paula217"
+            android:id="@+id/paula215"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="225dp"
             android:layout_marginStart="329dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula217"
+            android:contentDescription="aula215"
             tools:ignore="HardcodedText" />
 
         <ImageView
@@ -2938,25 +2808,25 @@
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula218"
+            android:id="@+id/paula216"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="180dp"
             android:layout_marginStart="285dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula218"
+            android:contentDescription="aula216"
             tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/paula219"
+            android:id="@+id/paula217"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="180dp"
             android:layout_marginStart="240dp"
             android:src="@drawable/circle"
             android:visibility="invisible"
-            android:contentDescription="aula219"
+            android:contentDescription="aula217"
             tools:ignore="HardcodedText" />
         <ImageView
             android:id="@+id/pesc201"
@@ -3059,8 +2929,5 @@
             tools:ignore="HardcodedText" />
 
     </RelativeLayout>
-
-
-
 
 </RelativeLayout>
