@@ -105,11 +105,11 @@ public class Escaner extends Activity {
 
                     } else {
                         if(tdetectado.getNombre().contains("escalera")) {
-                            interfazPiso(tdetectado.getNombre());
                             mostrarCamino(tdetectado, tdestino, g);
+                            interfazPiso(tdetectado.getNombre());
                             texto.setText("Estas en "+tdetectado.getDescripcion()+"\nLa distancia al destino es de: " + g.pesototalRuta(camino) + " metros\nContinue por las escaleras");
                         }else{
-                            mostrarCamino(torigen, tdestino, g);
+                            mostrarCamino(tdetectado, tdestino, g);
                             texto.setText("Estas en "+tdetectado.getDescripcion()+"\nLa distancia al destino es de: " + g.pesototalRuta(camino) + " metros");
                         }
                     }

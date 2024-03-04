@@ -43,11 +43,11 @@
 0x33,aula102,Aula 102,Horarios<br>·8:30 - 10:30 Estadistica<br>·10:30 - 12:30 Idioma Moderno (Ingles)<br>·12:30 - 14:30 Idioma Moderno (Frances),1
 0x34,aula103,Aula 103,Horarios<br>·9:00 - 11:00 Fundamentos de la Psicopatologia<br>·10:00 - 12:00 Historia de la pobreza,1
 0x35,aula104,Aula 104,Horarios<br>·8:00 - 10:00 Marketing<br>·10:00 - 12:00 Fundamentos Juridicos<br>·12:00 - 14:00 Fundamentos de la economia,1
-0x36,aula105,Aula 105,Horarios<br>·15:00 - 17:00 Introduccion a la programacion<br>·17:00 - 19:00 Estructuras de datos,1
-0x37,aula106,Aula 106,Horarios<br>·16:00 - 18:00 Bases de datos<br>·18:00 - 20:00 Inteligencia artificial,1
-0xc36a2cf3dd73,aula107,Aula 107,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
+0x640b6d242840,aula105,Aula 105,Horarios<br>·15:00 - 17:00 Introduccion a la programacion<br>·17:00 - 19:00 Estructuras de datos,1
+0x369586a8a974,aula106,Aula 106,Horarios<br>·16:00 - 18:00 Bases de datos<br>·18:00 - 20:00 Inteligencia artificial,1
+0xfc0ed82db1f5,aula107,Aula 107,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
 0xd4fcb04a6573,aula108,Aula 108,Seminiario Ciberseguridad<br>·8:00 - 14:00<br>·16:00 - 20:00,1
-0x40,aula109,Aula 109,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·10:00 - 12:00 Redes<br>·12:00 - 14:00 Arquitectura de computadores,1
+0x36,aula109,Aula 109,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·10:00 - 12:00 Redes<br>·12:00 - 14:00 Arquitectura de computadores,1
 0x41,aula110,Aula 110,Horarios<br>·8:00 - 10:00 Analisis de datos<br>·15:30 - 17:30 Estadistica Avanzada,1
 0x42,aula111,Aula 111,Horarios<br>·8:00 - 10:00 Sistemas operativos<br>·14:00 - 16:00 Arquitectura de computadores,1
 0x43,aula112,Aula 112,Horarios<br>·11:00 - 13:00 Pedagogia Infantil<br>·15:30 - 17:30 Fundamentos de la educacion,1
@@ -80,11 +80,11 @@
 0x74,vestibulo202,Vestibulo 202,Entre el aula 1 y la aula 14,2
 0x75,vestibulo203,Vestibulo 203,Entre el aula 1 y la aula 14,2
 0x76,baños101,Baños 101,Entre el aula 7 y el aula 8,1
-0xfc0ed82db1f5,baños102,Baños 102,Entre el aula 7 y el aula 8,1
+0xc36a2cf3dd73,baños102,Baños 102,Entre el aula 7 y el aula 8,1
 0x78,baños103,Baños 103,Entre el aula 7 y el aula 8,1
 0x79,baños104,Baños 104,Entre el aula 7 y el aula 8,1
 0x80,baños201,Baños 201,Entre el aula 7 y el aula 8,2
-0x640b6d242840,baños202,Baños 202,Entre el aula 7 y el aula 8,2
+0x345,baños202,Baños 202,Entre el aula 7 y el aula 8,2
 0x82,baños203,Baños 203,Entre el aula 7 y el aula 8,2
 0x83,baños204,Baños 204,Entre el aula 7 y el aula 8,2
 0x84,escalera1,escalera 1,nodo auxiliar,0
@@ -108,7 +108,7 @@
 0x102,escalera201,escalera 201,nodo auxiliar,2
 0x103,escalera202,escalera 202,nodo auxiliar,2
 0x104,escalera203,escalera 203,nodo auxiliar,2
-0x369586a8a974,escalera204,escalera 204,nodo auxiliar,2
+0x243,escalera204,escalera 204,nodo auxiliar,2
 0x106,escalera205,escalera 205,nodo auxiliar,2
 0x107,escalera206,escalera 206,nodo auxiliar,2
 0x108,escalera207,escalera 207,nodo auxiliar,2
