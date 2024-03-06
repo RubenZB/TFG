@@ -4,8 +4,7 @@ Este proyecto es mi TFG y consiste en una aplicación para la localización y gu
 
 ## Configuración del proyecto con Android Studio:
 
-1.
-Abrir Android Studio y seleccionar la pestaña “File” > “Open” y se abrirá un navegador donde debes seleccionar el proyecto.
+1.Abrir Android Studio y seleccionar la pestaña “File” > “Open” y se abrirá un navegador donde debes seleccionar el proyecto.
 
 2.Se debe comprobar que se utiliza la JBR17, para ello debes seleccionar la pestaña superior “File” > “Settings” con esto se abrirá el panel de configuración y en el apartado “Build, Execution, Deployment” allí se encontrará el subapartado “Build Tools”, donde se sitúa el apartado “Gradle”. Aquí se debe verificar que el Gradle SDK que se encuentra es el JBR17, de no ser así debemos cambiarlo.
 
